@@ -1,0 +1,19 @@
+ IDSET ID_257 (PROPERTIES) (8103 *2 <10> 1265 *2 <10> )                         
+ IDSET ID_258 (HIER-ID) ( PLANT )                                               
+ IDSET ID_259 (STREAM-ID) ( 4022 )                                              
+ LSET L_176 ( %ID_258 & %ID_257 & %ID_259)                                      
+ DSET UTIL-SUMMARY FEEDSUM @L_176 ( 7.70340044D+04 <3> 1.09519456D+01 <3> )     
+ IDSET ID_260 (HIER-ID) ( PLANT )                                               
+ IDSET ID_261 (STREAM-ID) ( 4059 4063 )                                         
+ LSET L_177 ( %ID_260 & %ID_257 & %ID_261)                                      
+ DSET UTIL-SUMMARY PRODSUM @L_177 ( 3.91787820D+04 <3> 1.09353666D+01 <3>       
+ 3.78552225D+04 <3> 1.65789975D-02 <3> )                                        
+ IDSET ID_262 (PROPERTIES) ( 1266 *2 <10> 1267 *2 <10> 1262 *2 <10> 1263 *2 <10>
+ 1264 *2 <10> 1268 *2 <119> )                                                   
+ LSET L_178 ( %ID_262)                                                          
+ DSET UTIL-SUMMARY PLANTSUM @L_178 ( 1.09519456D+01 <3> 1.09519456D+01 <3>      
+ 4.68375339D-15 <3> 0.D0 <3> 4.68375339D-15 <3> 0.D0 <3> )                      
+ IDSET ID_263 (HIER-ID) ( PLANT )                                               
+ LSET L_179 ( %ID_263 & %ID_262)                                                
+ DSET UTIL-SUMMARY HIERSUM @L_179 ( 1.09519456D+01 <3> 1.09519456D+01 <3>       
+ 4.68375339D-15 <3> 0.D0 <3> 4.68375339D-15 <3> 0.D0 <3> )                      

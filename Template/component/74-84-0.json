@@ -1,0 +1,22 @@
+{
+      "alias": "ETHANE",
+      "bioJson": "{\"carbon\":2,\"hydrogen\":6}",
+      "boilingPoint": "184.55",
+      "cas": "74-84-0",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C2H6",
+      "id": "2019269501753876481",
+      "indexNew": 6,
+      "indexOld": 5,
+      "label": "ETHANE",
+      "molarMass": "30.069040000000001",
+      "name": "ETHANE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "2",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

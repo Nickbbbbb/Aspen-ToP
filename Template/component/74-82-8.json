@@ -1,0 +1,22 @@
+{
+      "alias": "METHANE",
+      "bioJson": "{\"carbon\":1,\"hydrogen\":4}",
+      "boilingPoint": "111.66",
+      "cas": "74-82-8",
+      "createBy": "admin",
+      "createTime": "2026-02-03 02:14:57",
+      "dataSource": "PURE",
+      "formula": "CH4",
+      "id": "2018508477346377729",
+      "indexNew": 3,
+      "indexOld": 2,
+      "label": "METHANE",
+      "molarMass": "16.042459999999998",
+      "name": "METHANE",
+      "oilFlag": 0,
+      "projectId": "25be3df3",
+      "realId": "1",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-03 02:14:57"
+    }

@@ -1,0 +1,22 @@
+{
+      "alias": "HYDROGEN",
+      "bioJson": "{\"hydrogen\":2}",
+      "boilingPoint": "20.39",
+      "cas": "1333-74-0",
+      "createBy": "admin",
+      "createTime": "2026-02-07 09:13:43",
+      "dataSource": "PURE",
+      "formula": "H2",
+      "id": "2020063412281794561",
+      "indexNew": 4,
+      "indexOld": 3,
+      "label": "HYDROGEN",
+      "molarMass": "2.0158800000000001",
+      "name": "HYDROGEN",
+      "oilFlag": 0,
+      "projectId": "26d6321f",
+      "realId": "902",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-07 09:13:43"
+    }

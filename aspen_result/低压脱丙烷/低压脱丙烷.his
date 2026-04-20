@@ -1,0 +1,303 @@
+
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + +                                                                         + +
+ + +                      ASPEN PLUS CALCULATION HISTORY                     + +
+ + +                                                                         + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+ ASPEN PLUS IS A TRADEMARK OF           HOTLINE:
+ ASPEN TECHNOLOGY, INC.                 U.S.A. 888/996-7100
+ 781/221-6400                           EUROPE (44) 1189-226555
+
+ PLATFORM: WIN-X64                                       MARCH 12, 2026      
+ VERSION: 40.0   Build 359                               THURSDAY    
+ INSTALLATION:                                           1:44:36 P.M.        
+
+ THIS COPY OF ASPEN PLUS LICENSED TO                                 
+
+
+      ASPEN PLUS (R) IS A PROPRIETARY PRODUCT OF ASPEN TECHNOLOGY, INC.
+      (ASPENTECH), AND MAY BE USED ONLY UNDER AGREEMENT WITH ASPENTECH.
+      RESTRICTED RIGHTS LEGEND:  USE, REPRODUCTION, OR DISCLOSURE BY THE
+      U.S. GOVERNMENT IS SUBJECT TO RESTRICTIONS SET FORTH IN 
+      (i) FAR 52.227-14, Alt. III, (ii) FAR 52.227-19, (iii) DFARS 
+      252.227-7013(c)(1)(ii), or (iv) THE ACCOMPANYING LICENSE AGREEMENT,
+      AS APPLICABLE. FOR PURPOSES OF THE FAR, THIS SOFTWARE SHALL BE DEEMED
+      TO BE "UNPUBLISHED" AND LICENSED WITH DISCLOSURE PROHIBITIONS.
+      CONTRACTOR/SUBCONTRACTOR: ASPEN TECHNOLOGY, INC. 20 CROSBY DRIVE,
+      BEDFORD, MA 01730.
+ *** INPUT SUMMARY ***
+
+ >>CURRENT RUN
+
+   ORIGINAL RUN                           MARCH 12, 2026      
+   1:44:36 P.M.                           THURSDAY    
+   INPUT FILE: _4233kjd.inm
+   RUN ID : _4233kjd
+          1    ;
+          2    ;ÊäÈëÎÄ¼þ´´½¨ÓÉAspen Plus Rel. 40.0 at 13:44:35 Thu Mar 12, 2026
+          3    ;Directory C:\Users\Administrator\Downloads\export-test\aspen_result\µÍÑ¹ÍÑ±ûÍé  Runid µÍÑ¹ÍÑ±ûÍé
+          4    ;
+          5
+          6
+          7    DYNAMICS
+          8        DYNAMICS RESULTS=ON
+          9
+         10    IN-UNITS MET PRESSURE=bar TEMPERATURE=C DELTA-T=C PDROP=bar  &
+         11            INVERSE-PRES='1/bar' SHORT-LENGTH=mm
+         12
+         13    DEF-STREAMS CONVEN ALL
+         14
+         15    MODEL-OPTION
+         16
+         17    DATABANKS 'APV140 PURE40' / 'APV140 AQUEOUS' / 'APV140 SOLIDS' &
+         18             / 'APV140 INORGANIC' / 'APESV140 AP-EOS' /  &
+         19            'NISTV140 NIST-TRC' / NOASPENPCD
+         20
+         21    PROP-SOURCES 'APV140 PURE40' / 'APV140 AQUEOUS' /  &
+         22            'APV140 SOLIDS' / 'APV140 INORGANIC' / 'APESV140 AP-EOS' &
+         23             / 'NISTV140 NIST-TRC'
+         24
+         25    COMPONENTS
+         26        1:3-B-01 C4H6-4 /
+         27        1-BUT-01 C4H8-1 /
+         28        BENZE-01 C6H6 /
+         29        CYCLO-01 C6H12-1 /
+         30        1-BUT-02 C4H6-1 /
+         31        2-MET-01 C5H12-2 /
+         32        METHY-01 C3H4-2 /
+         33        METHY-02 C7H14-6 /
+         34        N-BUT-01 C4H10-1 /
+         35        N-HEX-01 C6H14-1 /
+         36        N-PEN-01 C5H12-1 /
+         37        PROPA-01 C3H4-1 /
+         38        PROPA-02 C3H8 /
+         39        PROPY-01 C3H6-2 /
+         40        TOLUE-01 C7H8
+         41
+         42    SOLVE
+         43        RUN-MODE MODE=SIM
+         44
+         45    FLOWSHEET
+         46        BLOCK B1 IN=4011 2058 OUT=S5 S6
+         47
+         48    PROPERTIES SRK
+         49
+         50    PROP-DATA SRKKIJ-1
+         51        IN-UNITS MET PRESSURE=bar TEMPERATURE=C DELTA-T=C PDROP=bar  &
+         52            INVERSE-PRES='1/bar' SHORT-LENGTH=mm
+         53        PROP-LIST SRKKIJ
+         54        BPVAL 1-BUT-01 N-BUT-01 2.22922000E-3 0.0 0.0 -273.1500000  &
+         55            726.8500000
+         56        BPVAL N-BUT-01 1-BUT-01 2.22922000E-3 0.0 0.0 -273.1500000  &
+         57            726.8500000
+         58        BPVAL 1-BUT-01 PROPY-01 3.64343000E-3 0.0 0.0 -273.1500000  &
+         59            726.8500000
+         60        BPVAL PROPY-01 1-BUT-01 3.64343000E-3 0.0 0.0 -273.1500000  &
+         61            726.8500000
+         62        BPVAL METHY-01 PROPA-02 .0799000000 0.0 0.0 -273.1500000  &
+         63            726.8500000
+         64        BPVAL PROPA-02 METHY-01 .0799000000 0.0 0.0 -273.1500000  &
+         65            726.8500000
+         66        BPVAL METHY-01 PROPY-01 .0279000000 0.0 0.0 -273.1500000  &
+         67            726.8500000
+         68        BPVAL PROPY-01 METHY-01 .0279000000 0.0 0.0 -273.1500000  &
+         69            726.8500000
+         70        BPVAL N-BUT-01 N-PEN-01 .0381884000 0.0 0.0 -273.1500000  &
+         71            726.8500000
+         72        BPVAL N-PEN-01 N-BUT-01 .0381884000 0.0 0.0 -273.1500000  &
+         73            726.8500000
+         74        BPVAL N-BUT-01 PROPA-02 -2.0759400E-3 0.0 0.0 -273.1500000  &
+         75            726.8500000
+         76        BPVAL PROPA-02 N-BUT-01 -2.0759400E-3 0.0 0.0 -273.1500000  &
+         77            726.8500000
+         78        BPVAL N-PEN-01 PROPA-02 -4.3278900E-3 0.0 0.0 -273.1500000  &
+         79            726.8500000
+         80        BPVAL PROPA-02 N-PEN-01 -4.3278900E-3 0.0 0.0 -273.1500000  &
+         81            726.8500000
+         82        BPVAL PROPA-02 PROPY-01 3.00000000E-3 0.0 0.0 -273.1500000  &
+         83            726.8500000
+         84        BPVAL PROPY-01 PROPA-02 3.00000000E-3 0.0 0.0 -273.1500000  &
+         85            726.8500000
+         86        BPVAL 1-BUT-01 1:3-B-01 7.80014000E-4 0.0 0.0 -273.1500000  &
+         87            726.8500000
+         88        BPVAL 1:3-B-01 1-BUT-01 7.80014000E-4 0.0 0.0 -273.1500000  &
+         89            726.8500000
+         90        BPVAL N-BUT-01 1:3-B-01 .0128642000 0.0 0.0 -273.1500000  &
+         91            726.8500000
+         92        BPVAL 1:3-B-01 N-BUT-01 .0128642000 0.0 0.0 -273.1500000  &
+         93            726.8500000
+         94        BPVAL N-BUT-01 BENZE-01 9.90000000E-3 0.0 0.0 -273.1500000  &
+         95            726.8500000
+         96        BPVAL BENZE-01 N-BUT-01 9.90000000E-3 0.0 0.0 -273.1500000  &
+         97            726.8500000
+         98        BPVAL N-PEN-01 BENZE-01 .0224148000 0.0 0.0 -273.1500000  &
+         99            726.8500000
+        100        BPVAL BENZE-01 N-PEN-01 .0224148000 0.0 0.0 -273.1500000  &
+        101            726.8500000
+        102        BPVAL PROPA-02 BENZE-01 .0195580000 0.0 0.0 -273.1500000  &
+        103            726.8500000
+        104        BPVAL BENZE-01 PROPA-02 .0195580000 0.0 0.0 -273.1500000  &
+        105            726.8500000
+        106        BPVAL BENZE-01 N-HEX-01 .0145923000 0.0 0.0 -273.1500000  &
+        107            726.8500000
+        108        BPVAL N-HEX-01 BENZE-01 .0145923000 0.0 0.0 -273.1500000  &
+        109            726.8500000
+        110        BPVAL N-BUT-01 N-HEX-01 .0124471000 0.0 0.0 -273.1500000  &
+        111            726.8500000
+        112        BPVAL N-HEX-01 N-BUT-01 .0124471000 0.0 0.0 -273.1500000  &
+        113            726.8500000
+        114        BPVAL PROPA-02 N-HEX-01 3.05152000E-3 0.0 0.0 -273.1500000  &
+        115            726.8500000
+        116        BPVAL N-HEX-01 PROPA-02 3.05152000E-3 0.0 0.0 -273.1500000  &
+        117            726.8500000
+        118        BPVAL BENZE-01 TOLUE-01 .0200000000 0.0 0.0 -273.1500000  &
+        119            726.8500000
+        120        BPVAL TOLUE-01 BENZE-01 .0200000000 0.0 0.0 -273.1500000  &
+        121            726.8500000
+        122        BPVAL PROPA-02 TOLUE-01 .0330300000 0.0 0.0 -273.1500000  &
+        123            726.8500000
+        124        BPVAL TOLUE-01 PROPA-02 .0330300000 0.0 0.0 -273.1500000  &
+        125            726.8500000
+        126        BPVAL N-BUT-01 2-MET-01 7.83000000E-3 0.0 0.0 -273.1500000  &
+        127            726.8500000
+        128        BPVAL 2-MET-01 N-BUT-01 7.83000000E-3 0.0 0.0 -273.1500000  &
+        129            726.8500000
+        130        BPVAL N-PEN-01 2-MET-01 0.0 0.0 0.0 -273.1500000  &
+        131            726.8500000
+        132        BPVAL 2-MET-01 N-PEN-01 0.0 0.0 0.0 -273.1500000  &
+        133            726.8500000
+        134        BPVAL PROPA-02 2-MET-01 3.05866000E-3 0.0 0.0 -273.1500000  &
+        135            726.8500000
+        136        BPVAL 2-MET-01 PROPA-02 3.05866000E-3 0.0 0.0 -273.1500000  &
+        137            726.8500000
+        138
+        139    STREAM 2058
+        140        SUBSTREAM MIXED TEMP=313.15 <K> PRES=953000. <Pa>  &
+        141            MOLE-FLOW=264.925 <mol/sec>
+        142        MOLE-FRAC 1:3-B-01 0.076 / 1-BUT-01 0.141 / BENZE-01  &
+        143            0.144 / CYCLO-01 0.0585 / 1-BUT-02 0.076 / 2-MET-01  &
+        144            0.108 / METHY-01 0.004 / METHY-02 0.008 / N-BUT-01  &
+        145            0.015 / N-HEX-01 0.06 / N-PEN-01 0.113 / PROPA-01  &
+        146            0.008 / PROPA-02 0.023 / PROPY-01 0.128 / TOLUE-01  &
+        147            0.029
+        148
+        149    STREAM 4011
+        150        SUBSTREAM MIXED TEMP=323.11 <K> PRES=730000. <Pa>  &
+        151            MOLE-FLOW=223.33 <mol/sec>
+        152        MOLE-FRAC 1:3-B-01 0.167 / 1-BUT-01 0.369 / BENZE-01  &
+        153            0.003 / CYCLO-01 0.001 / 1-BUT-02 0.155 / 2-MET-01  &
+        154            0. / METHY-01 0.016 / METHY-02 0.047 / N-BUT-01  &
+        155            0.044 / N-HEX-01 0.001 / N-PEN-01 0.036 / PROPA-01  &
+        156            0.031 / PROPA-02 0.051 / PROPY-01 0.065 / TOLUE-01  &
+        157            0.
+        158
+        159    BLOCK B1 RADFRAC
+        160        PARAM NSTAGE=33 ALGORITHM=STANDARD MAXOL=25 DAMPING=NONE
+        161        PARAM2
+        162        COL-CONFIG CONDENSER=TOTAL
+        163        FEEDS 4011 3 / 2058 9
+        164        PRODUCTS S5 1 L / S6 33 L
+        165        P-SPEC 1 620000. <Pa> / 2 725000. <Pa>
+        166        COL-SPECS DP-STAGE=806.45 <Pa> MOLE-D=120. <mol/sec>  &
+        167            MOLE-RR=1.647
+        168        SPEC 1 MOLE-FRAC 1E-06 COMPS=PROPA-02 STREAMS=S6  &
+        169            SPEC-DESCRIP="Mole purity, 1E-06, PRODUCT"
+        170        VARY 1 MOLE-RR 1. 2.
+        171
+        172    EO-CONV-OPTI
+        173
+        174    STREAM-REPOR MOLEFLOW
+        175    ;
+        176    ;
+        177    ;
+        178    ;
+        179    ;
+ *** INPUT TRANSLATOR MESSAGES ***
+
+  *** THIS RUN USES THE PROPERTIES ENTERPRISE DATABASE ***
+      SQLLOCALDB.APESV140 : (DATAVERSION - 40.0.0.13)                         
+      SQLLOCALDB.APV140 : (DATAVERSION - 40.0.0.13)                           
+      SQLLOCALDB.FACTV140 : (DATAVERSION - 40.0.0.12)                         
+      SQLLOCALDB.NISTV140 : (DATAVERSION - 40.0.0.12)                         
+
+  *   WARNING IN THE "PROPERTIES" PARAGRAPH WHICH BEGINS ON LINE 48             
+                                                               (SECPO.4)        
+      FREE-WATER METHOD SHOULD BE STEAMNBS WHEN THE MAIN                        
+      PROPERTY METHOD IS SRK. DEFAULT FREE-WATER METHOD IS STEAM-TA             
+      PLEASE SPECIFY THE RECOMMENDED FREE-WATER METHOD AND RUN AGAIN.           
+
+  *   WARNING IN THE "STREAM" PARAGRAPH WHICH BEGINS ON LINE 139                
+      STREAM NAME: 2058                                        (SDSMPR.11)      
+      COMPONENT MOLE FRACTIONS ARE NORMALIZED TO UNITY.                         
+
+  *   WARNING IN THE "STREAM" PARAGRAPH WHICH BEGINS ON LINE 149                
+      STREAM NAME: 4011                                        (SDSMPR.11)      
+      COMPONENT MOLE FRACTIONS ARE NORMALIZED TO UNITY.                         
+ 
+ 
+
+ PDF updated                                                                      TIME =      2.59
+
+ *** CALCULATION TRACE ***
+
+
+ *** FLOWSHEET ANALYSIS MESSAGES ***
+
+ FLOWSHEET CONNECTIVITY BY STREAMS       
+
+   STREAM     SOURCE     DEST           STREAM     SOURCE     DEST
+   2058       ----       B1             4011       ----       B1      
+   S5         B1         ----           S6         B1         ----    
+
+ FLOWSHEET CONNECTIVITY BY BLOCKS        
+
+   BLOCK        INLETS                         OUTLETS
+   B1           4011 2058                      S5 S6                       
+
+      COMPUTATION ORDER FOR THE FLOWSHEET IS:
+      B1 
+
+Calculations begin                                                              time      0.26
+
+
+ SIMULATION CALCULATIONS BEGIN                                                    TIME =      0.26
+
+      ENTHALPY CALCULATION FOR INLET STREAM 4011 OF BLOCK B1                      TIME =      0.26
+      KODE = 2  NTRIAL =   3  T = 323.1100  P =  730000.      V =  0.00000      Q =  0.00000    
+
+      ENTHALPY CALCULATION FOR INLET STREAM 2058 OF BLOCK B1                      TIME =      0.31
+      KODE = 2  NTRIAL =   3  T = 313.1500  P =  953000.      V =  0.00000      Q =  0.00000    
+
+      UOS BLOCK B1       MODEL: RADFRAC                                           TIME =      0.31
+
+       Convergence iterations:
+         OL   ML   IL     Err/Tol
+          1    1    3      78.467    
+          2    6   24      5.2190    
+          3    3    7      2.2304    
+          4    3    6     0.15841    
+
+      RESULTS FOR MANIPULATED VARIABLES:
+      VARIABLE     FINAL VALUE    LOWER BOUND    UPPER BOUND
+         1          1.7868         1.0000         2.0000    
+
+      CHECKING PHASE EQUILIBRIUM RESULTS                                          TIME =      0.39
+
+      CHECKING PHASE EQUILIBRIUM RESULTS                                          TIME =      0.39
+
+ Report Writer entered                                                            Time =      6.64
+
+ Results generated                                                                Time =      6.65
+
+ Report Writer entered                                                            Time =      6.81
+
+ Results generated                                                                Time =      6.83
+
+RUN SAVED
+
+
+
+ NO ERRORS OR WARNINGS GENERATED

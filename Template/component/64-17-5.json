@@ -1,0 +1,22 @@
+{
+      "alias": "ETHANOL",
+      "bioJson": "{\"carbon\":2,\"hydrogen\":6,\"oxygen\":1}",
+      "boilingPoint": "351.44",
+      "cas": "64-17-5",
+      "createBy": "admin",
+      "createTime": "2026-02-09 03:29:36",
+      "dataSource": "PURE",
+      "formula": "C2H6O",
+      "id": "2020701588289609730",
+      "indexNew": 3,
+      "indexOld": 2,
+      "label": "ETHANOL",
+      "molarMass": "46.068440000000002",
+      "name": "ETHANOL",
+      "oilFlag": 0,
+      "projectId": "06314616",
+      "realId": "1102",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-09 03:29:36"
+    }

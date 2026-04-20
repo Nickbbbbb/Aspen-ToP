@@ -1,0 +1,33 @@
+{
+    "componentChange": false,
+    "data": { "label": "分流器_1", "status": "" },
+    "hasDebuggerPoint": false,
+    "height": 72,
+    "id": "03f69f8d_85dc6ec9_Splitter1",
+    "name": "Splitter",
+    "nodeLabel": "分流器",
+    "nodeProperties": {},
+    "paramUncomplete": false,
+    "portChange": false,
+    "ports": [
+      {
+        "id": "8e75e7da-0bbd-41a2-bc93-22ef26726db1",
+        "name": "inlet",
+        "relateVirtualPortList": [{ "id": "inlet_0", "name": "inlet", "relatedEntityId": "8e75e7da-0bbd-41a2-bc93-22ef26726db1", "relatedEntityName": "inlet" }]
+      },
+      {
+        "id": "e1fc9da2-489a-4c7e-8bc2-9dc82e1a5490",
+        "name": "outlet",
+        "relateVirtualPortList": [
+          { "id": "outlet_0", "name": "outlet", "relatedEntityId": "e1fc9da2-489a-4c7e-8bc2-9dc82e1a5490", "relatedEntityName": "outlet" },
+          { "id": "outlet_1", "name": "虚拟桩", "relatedEntityId": "e1fc9da2-489a-4c7e-8bc2-9dc82e1a5490", "relatedEntityName": "outlet" },
+          { "id": "outlet_2", "name": "虚拟桩", "relatedEntityId": "e1fc9da2-489a-4c7e-8bc2-9dc82e1a5490", "relatedEntityName": "outlet" }
+        ]
+      }
+    ],
+    "scale": 1,
+    "type": "Splitter",
+    "width": 40,
+    "x": 1633,
+    "y": 237
+  }

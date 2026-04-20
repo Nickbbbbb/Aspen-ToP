@@ -1,0 +1,22 @@
+{
+      "alias": "BIPHENYL-1",
+      "bioJson": "{\"carbon\":12,\"hydrogen\":10}",
+      "boilingPoint": "528.15",
+      "cas": "92-52-4",
+      "createBy": "admin",
+      "createTime": "2026-03-27 02:30:31",
+      "dataSource": "PURE",
+      "formula": "C12H10",
+      "id": "2037356564264902658",
+      "indexNew": 7,
+      "indexOld": 6,
+      "label": "BIPHENYL",
+      "molarMass": "154.20779999999999",
+      "name": "BIPHENYL",
+      "oilFlag": 0,
+      "projectId": "5547f53f",
+      "realId": "558",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-03-27 02:30:31"
+    }

@@ -1,0 +1,29 @@
+{
+    "componentChange": false,
+    "data": { "label": "压缩机_1", "status": "" },
+    "hasDebuggerPoint": false,
+    "height": 50,
+    "id": "8c7245c0_fb997020_Compressor1",
+    "name": "Compressor",
+    "nodeLabel": "压缩机",
+    "nodeProperties": {},
+    "paramUncomplete": false,
+    "portChange": false,
+    "ports": [
+      {
+        "id": "bd06e1f4-38b6-49b0-9109-f37180494fca",
+        "name": "inlet",
+        "relateVirtualPortList": [{ "id": "inlet_0", "name": "inlet", "relatedEntityId": "bd06e1f4-38b6-49b0-9109-f37180494fca", "relatedEntityName": "inlet" }]
+      },
+      {
+        "id": "58516541-b693-4729-9eff-f969d7e34c5b",
+        "name": "outlet",
+        "relateVirtualPortList": [{ "id": "outlet_0", "name": "outlet", "relatedEntityId": "58516541-b693-4729-9eff-f969d7e34c5b", "relatedEntityName": "outlet" }]
+      }
+    ],
+    "scale": 1,
+    "type": "Compressor",
+    "width": 58,
+    "x": 1207,
+    "y": 265
+  }

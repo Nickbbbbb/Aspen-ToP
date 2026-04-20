@@ -1,0 +1,22 @@
+{
+      "alias": "ISOPENTANE",
+      "bioJson": "{\"carbon\":5,\"hydrogen\":12}",
+      "boilingPoint": "300.994",
+      "cas": "78-78-4",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C5H12",
+      "id": "2019269501833568257",
+      "indexNew": 23,
+      "indexOld": 22,
+      "label": "ISOPENTANE",
+      "molarMass": "72.148780000000002",
+      "name": "ISOPENTANE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "8",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

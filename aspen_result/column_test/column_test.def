@@ -1,0 +1,10 @@
+INPUT: column_test.inm
+MODNAME: apmain
+RUNID: column_test
+NEW_RUNID: column_test
+OLD_RUNID: column_test
+PDF: column_test.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:
+DBCONN: _5244cxv.ads

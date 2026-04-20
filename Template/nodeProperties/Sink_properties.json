@@ -1,0 +1,20 @@
+{
+  "calculation_back_end": {
+    "isKeyword": true,
+    "fixed": true,
+    "value": "NATIVE"
+  },
+  "component_cluster": {
+    "isKeyword": true,
+    "fixed": true,
+    "value": "GLOBAL"
+  },
+  "property_package": {
+    "isKeyword": true,
+    "fixed": true,
+    "value": "物性包"
+  },
+  "comp_num": {
+    "isKeyword": true
+  }
+}

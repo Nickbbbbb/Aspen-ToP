@@ -1,0 +1,22 @@
+{
+      "alias": "STYRENE",
+      "bioJson": "{\"carbon\":8,\"hydrogen\":8}",
+      "boilingPoint": "418.31",
+      "cas": "100-42-5",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C8H8",
+      "id": "2019269501862928385",
+      "indexNew": 30,
+      "indexOld": 29,
+      "label": "STYRENE",
+      "molarMass": "104.14912",
+      "name": "STYRENE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "601",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

@@ -1,0 +1,10 @@
+INPUT: 全流程.inm
+MODNAME: apmain
+RUNID: 全流程
+NEW_RUNID: 全流程
+OLD_RUNID: 全流程
+PDF: 全流程.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:
+DBCONN: _0637ose.ads

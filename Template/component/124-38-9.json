@@ -1,0 +1,22 @@
+{
+      "alias": "CARBON DIOXIDE",
+      "bioJson": "{\"carbon\":1,\"oxygen\":2}",
+      "boilingPoint": "",
+      "cas": "124-38-9",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "CO2",
+      "id": "2019269501774848001",
+      "indexNew": 9,
+      "indexOld": 8,
+      "label": "CARBON DIOXIDE",
+      "molarMass": "44.009500000000003",
+      "name": "CARBON DIOXIDE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "909",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

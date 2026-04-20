@@ -1,0 +1,27 @@
+{
+      "calculation_back_end": { "isKeyword": true, "fixed": true, "value": "NATIVE" },
+      "component_cluster": { "isKeyword": true, "fixed": true, "value": "GLOBAL" },
+      "property_package": { "isKeyword": true, "fixed": true, "value": "物性包" },
+      "comp_num": {
+        "isKeyword": true, "value": 2
+      },
+      "no_outlets": {
+        "isKeyword": true, "value": 2
+      },
+      "outlet_pressure": {
+        "isKeyword": true, "fixed": true, "unitType": "pressure", "unit": "Pa", "value": 1000
+      },
+      "split_fraction": {
+        "isKeyword": true,
+        "fixed": true,
+        "unitType": "no_type_percentage",
+        "value": [0.5, 0.5],
+        "rowHeaderType": "port",
+        "rowHeader": ["outlet_0", "outlet_1"],
+        "rows": ["s-11", "s-12"],
+        "cols": ["分流分率"],
+        "rowType": "port",
+        "rowSize": 2,
+        "cloumnSize": 1
+      }
+    }

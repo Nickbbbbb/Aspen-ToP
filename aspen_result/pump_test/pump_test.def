@@ -1,0 +1,10 @@
+INPUT: pump_test.inm
+MODNAME: apmain
+RUNID: pump_test
+NEW_RUNID: pump_test
+OLD_RUNID: pump_test
+PDF: pump_test.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:
+DBCONN: _2310ukx.ads

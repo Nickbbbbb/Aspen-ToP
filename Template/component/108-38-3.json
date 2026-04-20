@@ -1,0 +1,22 @@
+{
+      "alias": "m-XYLENE",
+      "bioJson": "{\"carbon\":8,\"hydrogen\":10}",
+      "boilingPoint": "412.27",
+      "cas": "108-38-3",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C8H10",
+      "id": "2019269501862928386",
+      "indexNew": 31,
+      "indexOld": 30,
+      "label": "m-XYLENE",
+      "molarMass": "106.16500000000001",
+      "name": "m-XYLENE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "506",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

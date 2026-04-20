@@ -1,0 +1,10 @@
+INPUT: comp_test.inm
+MODNAME: apmain
+RUNID: comp_test
+NEW_RUNID: comp_test
+OLD_RUNID: comp_test
+PDF: comp_test.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:
+DBCONN: _4333iwy.ads

@@ -1,0 +1,22 @@
+{
+      "alias": "ETHYLENE",
+      "bioJson": "{\"carbon\":2,\"hydrogen\":4}",
+      "boilingPoint": "169.41",
+      "cas": "74-85-1",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C2H4",
+      "id": "2019269501800013826",
+      "indexNew": 14,
+      "indexOld": 13,
+      "label": "ETHYLENE",
+      "molarMass": "28.053159999999998",
+      "name": "ETHYLENE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "201",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

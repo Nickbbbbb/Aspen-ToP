@@ -1,0 +1,14 @@
+{
+      "baseAlgo": "PR",
+      "createBy": "admin",
+      "createTime": "2026-03-26 09:46:17",
+      "description": "默认物性包",
+      "freeWater": "IF97",
+      "id": "2037103837924417538",
+      "isDefault": true,
+      "methodGroupName": "物性包",
+      "methodGroupSort": 1,
+      "projectId": "5547f53f",
+      "updateBy": "admin",
+      "updateTime": "2026-03-27 02:30:13"
+    }

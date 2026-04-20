@@ -1,0 +1,22 @@
+{
+      "alias": "ETHYLBENZENE",
+      "bioJson": "{\"carbon\":8,\"hydrogen\":10}",
+      "boilingPoint": "409.35",
+      "cas": "100-41-4",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C8H10",
+      "id": "2019269501867122689",
+      "indexNew": 32,
+      "indexOld": 31,
+      "label": "ETHYLBENZENE",
+      "molarMass": "106.16500000000001",
+      "name": "ETHYLBENZENE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "504",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

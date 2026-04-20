@@ -1,0 +1,582 @@
+{
+        "calculation_back_end": {
+          "isKeyword": true,
+          "fixed": true,
+          "value": "NATIVE"
+        },
+        "component_cluster": {
+          "isKeyword": true,
+          "fixed": true,
+          "value": "GLOBAL"
+        },
+        "property_package": {
+          "isKeyword": true,
+          "fixed": true,
+          "value": "物性包"
+        },
+        "comp_num": {
+          "isKeyword": true,
+          "value": 15
+        },
+        "condenser_type": {
+          "isKeyword": true,
+          "value": "1",
+          "realValue": "1"
+        },
+        "top_vapor_fraction_basis": {
+          "isKeyword": true,
+          "value": "0",
+          "realValue": "0"
+        },
+        "top_molar_vapor_fraction": {
+          "isKeyword": true,
+          "fixed": true,
+          "unitType": "molar_fraction",
+          "value": 0.9,
+          "unit": "mol/mol"
+        },
+        "top_mass_vapor_fraction": {
+          "isKeyword": true,
+          "unitType": "mass_fraction"
+        },
+        "reboiler_type": {
+          "isKeyword": true,
+          "value": "0",
+          "realValue": "0"
+        },
+        "valid_phases": {
+          "isKeyword": true,
+          "value": "0",
+          "realValue": "0"
+        },
+        "top_free_water_reflux_ratio": {
+          "isKeyword": true,
+          "unitType": "molar_fraction"
+        },
+        "no_trays": {
+          "isKeyword": true,
+          "value": 174
+        },
+        "feed_trays": {
+          "isKeyword": true,
+          "value": [
+            133
+          ],
+          "rowHeaderType": "port",
+          "rowHeader": [
+            "feed_in_1"
+          ],
+          "rows": [
+            "s-4"
+          ],
+          "cols": [
+            "塔板"
+          ],
+          "rowType": "port",
+          "rowSize": 1,
+          "cloumnSize": 1
+        },
+        "no_feeds": {
+          "isKeyword": true,
+          "value": 1
+        },
+        "no_vapor_side_draw": {
+          "isKeyword": true,
+          "value": 1
+        },
+        "no_liquid_side_draw": {
+          "isKeyword": true,
+          "value": 1
+        },
+        "spec_1_type": {
+          "isKeyword": true,
+          "value": "7",
+          "realValue": "7"
+        },
+        "spec_1_basis": {
+          "isKeyword": true,
+          "value": "0",
+          "realValue": "0"
+        },
+        "reflux_ratio_molar": {
+          "isKeyword": true,
+          "unitType": "no_type_gezero"
+        },
+        "reflux_ratio_mass": {
+          "isKeyword": true,
+          "unitType": "no_type_gezero"
+        },
+        "reflux_molar_flowrate": {
+          "isKeyword": true,
+          "unitType": "molar_flowrate"
+        },
+        "reflux_mass_flowrate": {
+          "isKeyword": true,
+          "unitType": "mass_flowrate"
+        },
+        "condenser_heat_duty": {
+          "isKeyword": true,
+          "unitType": "energy_rate"
+        },
+        "comp_spec_1_id": {
+          "isKeyword": true,
+          "value": 0,
+          "realValue": "1,3-BUTADIENE"
+        },
+        "comp_spec_1_stage": {
+          "isKeyword": true,
+          "value": 10
+        },
+        "comp_spec_1_phase": {
+          "isKeyword": true,
+          "value": "0",
+          "realValue": "0"
+        },
+        "comp_spec_1_molar": {
+          "isKeyword": true,
+          "fixed": true,
+          "unitType": "molar_fraction",
+          "value": 0.041,
+          "unit": "mol/mol"
+        },
+        "comp_spec_1_mass": {
+          "isKeyword": true,
+          "unitType": "mass_fraction"
+        },
+        "temp_spec_1_stage": {
+          "isKeyword": true
+        },
+        "temp_spec_1_value": {
+          "isKeyword": true,
+          "unitType": "temperature"
+        },
+        "spec_2_type": {
+          "isKeyword": true,
+          "value": "7",
+          "realValue": "7"
+        },
+        "spec_2_basis": {
+          "isKeyword": true,
+          "value": "0",
+          "realValue": "0"
+        },
+        "top_product_molar_flowrate": {
+          "isKeyword": true,
+          "unitType": "molar_flowrate"
+        },
+        "top_product_mass_flowrate": {
+          "isKeyword": true,
+          "unitType": "mass_flowrate"
+        },
+        "bottom_product_molar_flowrate": {
+          "isKeyword": true,
+          "unitType": "molar_flowrate"
+        },
+        "bottom_product_mass_flowrate": {
+          "isKeyword": true,
+          "unitType": "mass_flowrate"
+        },
+        "boilup_ratio_molar": {
+          "isKeyword": true,
+          "unitType": "no_type_gezero"
+        },
+        "boilup_ratio_mass": {
+          "isKeyword": true,
+          "unitType": "no_type_gezero"
+        },
+        "reboiler_heat_duty": {
+          "isKeyword": true,
+          "unitType": "energy_rate"
+        },
+        "comp_spec_2_id": {
+          "isKeyword": true,
+          "value": 6,
+          "realValue": "METHYLACETYLENE"
+        },
+        "comp_spec_2_stage": {
+          "isKeyword": true,
+          "value": 174
+        },
+        "comp_spec_2_phase": {
+          "isKeyword": true,
+          "value": "1",
+          "realValue": "1"
+        },
+        "comp_spec_2_molar": {
+          "isKeyword": true,
+          "fixed": true,
+          "unitType": "molar_fraction",
+          "value": 0.05,
+          "unit": "mol/mol"
+        },
+        "comp_spec_2_mass": {
+          "isKeyword": true,
+          "unitType": "mass_fraction"
+        },
+        "temp_spec_2_stage": {
+          "isKeyword": true
+        },
+        "temp_spec_2_value": {
+          "isKeyword": true,
+          "unitType": "temperature"
+        },
+        "reflux_ratio_guess": {
+          "isKeyword": true,
+          "fixed": true,
+          "unitType": "no_type_gezero",
+          "unit": "-",
+          "value": 15
+        },
+        "top_molar_flowrate_guess": {
+          "isKeyword": true,
+          "fixed": true,
+          "unitType": "molar_flowrate",
+          "unit": "mol/s",
+          "value": 303
+        },
+        "pressure_profile": {
+          "value": "1",
+          "realValue": "1"
+        },
+        "tray_1_pressure": {
+          "unitType": "pressure",
+          "value": 1720000,
+          "unit": "Pa"
+        },
+        "tray_2_pressure": {
+          "unitType": "pressure",
+          "value": 1753000,
+          "unit": "Pa"
+        },
+        "tray_pressure_drop": {
+          "unitType": "pressure_drop",
+          "value": 883.72,
+          "unit": "Pa"
+        },
+        "tray_pressure": {
+          "isKeyword": true,
+          "unitType": "pressure",
+          "fixed": true,
+          "unit": "Pa",
+          "value": []
+        },
+        "liquid_side_draw_stages": {
+          "isKeyword": true,
+          "value": [
+            10
+          ],
+          "rowHeaderType": "port",
+          "rowHeader": [
+            "liquid_side_draw_0"
+          ],
+          "rows": [
+            "s-7"
+          ],
+          "cols": [
+            "塔板"
+          ],
+          "rowType": "port",
+          "rowSize": 1,
+          "cloumnSize": 1
+        },
+        "liquid_side_draw_flowrate_basis": {
+          "isKeyword": true,
+          "value": "0",
+          "realValue": "0"
+        },
+        "liquid_side_draw_molar_flowrate": {
+          "isKeyword": true,
+          "fixed": true,
+          "unitType": "molar_flowrate",
+          "value": [
+            1300
+          ],
+          "unit": "mol/s",
+          "rowHeaderType": "port",
+          "rowHeader": [
+            "liquid_side_draw_0"
+          ],
+          "rows": [
+            "s-7"
+          ],
+          "cols": [
+            "流量"
+          ],
+          "rowType": "port",
+          "rowSize": 1,
+          "cloumnSize": 1
+        },
+        "liquid_side_draw_mass_flowrate": {
+          "isKeyword": true,
+          "unitType": "mass_flowrate"
+        },
+        "vapor_side_draw_stages": {
+          "isKeyword": true,
+          "value": [
+            140
+          ],
+          "rowHeaderType": "port",
+          "rowHeader": [
+            "vapor_side_draw_0"
+          ],
+          "rows": [
+            "s-8"
+          ],
+          "cols": [
+            "塔板"
+          ],
+          "rowType": "port",
+          "rowSize": 1,
+          "cloumnSize": 1
+        },
+        "vapor_side_draw_flowrate_basis": {
+          "isKeyword": true,
+          "value": "0",
+          "realValue": "0"
+        },
+        "vapor_side_draw_molar_flowrate": {
+          "isKeyword": true,
+          "fixed": true,
+          "unitType": "molar_flowrate",
+          "value": [
+            217
+          ],
+          "unit": "mol/s",
+          "rowHeaderType": "port",
+          "rowHeader": [
+            "vapor_side_draw_0"
+          ],
+          "rows": [
+            "s-8"
+          ],
+          "cols": [
+            "流量"
+          ],
+          "rowType": "port",
+          "rowSize": 1,
+          "cloumnSize": 1
+        },
+        "vapor_side_draw_mass_flowrate": {
+          "isKeyword": true,
+          "unitType": "mass_flowrate"
+        },
+        "has_side_draw_comp_spec": {
+          "isKeyword": true,
+          "value": "1"
+        },
+        "side_draw_comp_spec_basis": {
+          "isKeyword": true
+        },
+        "side_draw_comp_spec_id": {
+          "isKeyword": true
+        },
+        "side_draw_comp_spec_stage": {
+          "isKeyword": true
+        },
+        "side_draw_comp_spec_phase": {
+          "isKeyword": true
+        },
+        "side_draw_comp_spec_molar": {
+          "isKeyword": true,
+          "unitType": "molar_fraction"
+        },
+        "side_draw_comp_spec_mass": {
+          "isKeyword": true,
+          "unitType": "mass_fraction"
+        },
+        "tray_heat_duty": {
+          "isKeyword": true,
+          "fixed": false,
+          "unitType": "energy_rate",
+          "unit": "J/s"
+        },
+        "tray_efficiency_type": {
+          "isKeyword": true,
+          "value": "2"
+        },
+        "tray_efficiency": {
+          "isKeyword": true
+        },
+        "no_pumparounds": {
+          "isKeyword": true,
+          "fixed": false
+        },
+        "pumparound_draw_stages": {
+          "isKeyword": true,
+          "fixed": false
+        },
+        "pumparound_draw_phases": {
+          "isKeyword": true,
+          "fixed": false
+        },
+        "pumparound_return_stages": {
+          "isKeyword": true,
+          "fixed": false
+        },
+        "pumparound_molar_flowrates": {
+          "isKeyword": true,
+          "fixed": false,
+          "unitType": "molar_flowrate",
+          "unit": "mol/s"
+        },
+        "pumparound_heat_duties": {
+          "isKeyword": true,
+          "fixed": false,
+          "unitType": "energy_rate",
+          "unit": "J/s"
+        },
+        "no_side_strippers": {
+          "isKeyword": true,
+          "fixed": false
+        },
+        "no_side_stripper_trays": {
+          "isKeyword": true,
+          "fixed": false
+        },
+        "main_column_liquid_draw_stages": {
+          "isKeyword": true,
+          "fixed": false
+        },
+        "main_column_return_stages": {
+          "isKeyword": true,
+          "fixed": false
+        },
+        "side_stripper_bottom_molar_flowrates": {
+          "isKeyword": true,
+          "fixed": false,
+          "unitType": "molar_flowrate",
+          "unit": "mol/s"
+        },
+        "product_which_side_stripper": {
+          "isKeyword": true,
+          "fixed": false
+        },
+        "medium_which_side_stripper": {
+          "isKeyword": true,
+          "fixed": false
+        },
+        "no_total_trays": {
+          "isKeyword": true,
+          "value": 174
+        },
+        "solver_type": {
+          "isKeyword": true,
+          "value": 3
+        },
+        "petsc_snes_type": {
+          "isKeyword": true
+        },
+        "petsc_ksp_type": {
+          "isKeyword": true
+        },
+        "petsc_pc_type": {
+          "isKeyword": true
+        },
+        "inner_max_iterations": {
+          "isKeyword": true,
+          "value": 150
+        },
+        "petsc_max_step_size": {
+          "isKeyword": true
+        },
+        "inner_tolerance": {
+          "isKeyword": true,
+          "value": 0.001
+        },
+        "max_temperature_change": {
+          "isKeyword": true,
+          "value": 10
+        },
+        "newton_lm_damping_factor": {
+          "isKeyword": true,
+          "value": 1
+        },
+        "broyden_damping_factor": {
+          "isKeyword": true
+        },
+        "broyden_max_step_size": {
+          "isKeyword": true
+        },
+        "broyden_start_jacobian": {
+          "isKeyword": true
+        },
+        "broyden_jacobian_frequency": {
+          "isKeyword": true
+        },
+        "thread_count": {
+          "isKeyword": true,
+          "value": 8
+        },
+        "outer_max_iterations": {
+          "isKeyword": true,
+          "value": 50
+        },
+        "outer_tolerance": {
+          "isKeyword": true,
+          "value": 0.001
+        },
+        "outer_damping_factor": {
+          "isKeyword": true,
+          "value": 1
+        },
+        "Kb_model": {
+          "isKeyword": true,
+          "value": 1
+        },
+        "Kb_reference_delta_temperature": {
+          "isKeyword": true,
+          "value": 5
+        },
+        "use_history_result_as_guess": {
+          "isKeyword": true,
+          "value": 1
+        },
+        "temperature_profile_guess": {
+          "isKeyword": true,
+          "fixed": false,
+          "unitType": "temperature",
+          "unit": "K"
+        },
+        "vapor_molar_flowrate_profile_guess": {
+          "isKeyword": true,
+          "fixed": false,
+          "unitType": "molar_flowrate",
+          "unit": "mol/s"
+        },
+        "liquid_molar_flowrate_profile_guess": {
+          "isKeyword": true,
+          "fixed": false,
+          "unitType": "molar_flowrate",
+          "unit": "mol/s"
+        },
+        "vapor_molar_composition_profile_guess": {
+          "isKeyword": true,
+          "fixed": false,
+          "unitType": "molar_fraction",
+          "unit": "mol/mol",
+          "value": [],
+          "rowHeaderType": "number",
+          "rowHeader": [],
+          "colHeaderType": "component",
+          "colHeader": [],
+          "rows": [],
+          "cols": [],
+          "rowSize": 0,
+          "cloumnSize": 174
+        },
+        "liquid_molar_composition_profile_guess": {
+          "isKeyword": true,
+          "fixed": false,
+          "unitType": "molar_fraction",
+          "unit": "mol/mol",
+          "value": [],
+          "rowHeaderType": "number",
+          "rowHeader": [],
+          "colHeaderType": "component",
+          "colHeader": [],
+          "rows": [],
+          "cols": [],
+          "rowSize": 0,
+          "cloumnSize": 174
+        }
+      }

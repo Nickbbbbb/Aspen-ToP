@@ -1,0 +1,2043 @@
+{
+    "components": {
+        "fenzi": [
+            "H2",
+            "CH4",
+            "C7H8",
+            "C6H6",
+            "C12H10"
+        ],
+        "label": [
+            "HYDRO-01",
+            "METHA-01",
+            "TOLUE-01",
+            "BENZE-01",
+            "DIPHE-01"
+        ],
+        "cas": [
+            "1333-74-0",
+            "74-82-8",
+            "108-88-3",
+            "71-43-2",
+            "92-52-4"
+        ],
+        "aspen_name": [
+            "HYDROGEN",
+            "METHANE",
+            "TOLUENE",
+            "BENZENE",
+            "DIPHENYL"
+        ],
+        "top_name": [
+            "HYDROGEN",
+            "METHANE",
+            "TOLUENE",
+            "BENZENE",
+            null
+        ]
+    },
+    "blocks": {
+        "B11": {
+            "type": "Heater",
+            "in_streams": [
+                {
+                    "inlet_0": "RAB-HI"
+                }
+            ],
+            "out_streams": [
+                {
+                    "outlet_0": "RAB"
+                }
+            ],
+            "params": {
+                "outlet_stream_temperature": {
+                    "value": 600.0,
+                    "unit": "K"
+                },
+                "comp_nums": 5,
+                "outlet_pressure": {
+                    "value": 3445.05,
+                    "unit": "kPa"
+                }
+            }
+        },
+        "B13": {
+            "type": "Heater",
+            "in_streams": [
+                {
+                    "inlet_0": "E"
+                }
+            ],
+            "out_streams": [
+                {
+                    "outlet_0": "E-S"
+                }
+            ],
+            "params": {
+                "outlet_stream_temperature": {
+                    "value": 300.0,
+                    "unit": "K"
+                },
+                "comp_nums": 5,
+                "outlet_pressure": {
+                    "value": 101.3,
+                    "unit": "kPa"
+                }
+            }
+        },
+        "B16": {
+            "type": "Heater",
+            "in_streams": [
+                {
+                    "inlet_0": "RC-HI"
+                }
+            ],
+            "out_streams": [
+                {
+                    "outlet_0": "RC"
+                }
+            ],
+            "params": {
+                "outlet_stream_temperature": {
+                    "value": 600.0,
+                    "unit": "K"
+                },
+                "comp_nums": 5,
+                "outlet_pressure": {
+                    "value": 3445.05,
+                    "unit": "kPa"
+                }
+            }
+        },
+        "C1": {
+            "type": "Compr",
+            "in_streams": [
+                {
+                    "inlet_0": "RAB-PC"
+                }
+            ],
+            "out_streams": [
+                {
+                    "outlet_0": "RAB-HI"
+                }
+            ],
+            "params": {
+                "outlet_stream_pressure": {
+                    "value": 3445.0,
+                    "unit": "kPa"
+                },
+                "comp_nums": 5,
+                "isentropic_efficiency": {
+                    "value": 0.0,
+                    "unit": ""
+                },
+                "mechanical_efficiency": {
+                    "value": 0.0,
+                    "unit": ""
+                }
+            }
+        },
+        "F1": {
+            "type": "Flash2",
+            "in_streams": [
+                {
+                    "inlet_0": "ABCDE"
+                }
+            ],
+            "out_streams": [
+                {
+                    "vapor_out_0": "AB"
+                },
+                {
+                    "liquid_out_0": "ABCDE-IN"
+                }
+            ],
+            "params": {
+                "SPEC_OPT": {
+                    "value": "TP",
+                    "unit": ""
+                },
+                "system_pressure": {
+                    "value": 3445.05,
+                    "unit": "kPa"
+                },
+                "comp_nums": 5,
+                "system_temperature": {
+                    "value": 300.0,
+                    "unit": "K"
+                },
+                "system_vapor_molar_fraction": {
+                    "value": 0.0,
+                    "unit": ""
+                },
+                "system_heat_duty": {
+                    "value": 0.0,
+                    "unit": "Gcal/hr"
+                }
+            }
+        },
+        "HX1": {
+            "type": "Heater",
+            "in_streams": [
+                {
+                    "inlet_0": "D"
+                }
+            ],
+            "out_streams": [
+                {
+                    "outlet_0": "D-S"
+                }
+            ],
+            "params": {
+                "outlet_stream_temperature": {
+                    "value": 300.0,
+                    "unit": "K"
+                },
+                "comp_nums": 5,
+                "outlet_pressure": {
+                    "value": 101.3,
+                    "unit": "kPa"
+                }
+            }
+        },
+        "HX1-AB": {
+            "type": "Heater",
+            "in_streams": [
+                {
+                    "inlet_0": "IAB-HI"
+                }
+            ],
+            "out_streams": [
+                {
+                    "outlet_0": "IAB"
+                }
+            ],
+            "params": {
+                "outlet_stream_temperature": {
+                    "value": 600.0,
+                    "unit": "K"
+                },
+                "comp_nums": 5,
+                "outlet_pressure": {
+                    "value": 3445.05,
+                    "unit": "kPa"
+                }
+            }
+        },
+        "HX1-C": {
+            "type": "Heater",
+            "in_streams": [
+                {
+                    "inlet_0": "IC-HI"
+                }
+            ],
+            "out_streams": [
+                {
+                    "outlet_0": "IC"
+                }
+            ],
+            "params": {
+                "outlet_stream_temperature": {
+                    "value": 600.0,
+                    "unit": "K"
+                },
+                "comp_nums": 5,
+                "outlet_pressure": {
+                    "value": 3445.05,
+                    "unit": "kPa"
+                }
+            }
+        },
+        "HX2": {
+            "type": "Heater",
+            "in_streams": [
+                {
+                    "inlet_0": "ABCDE-HI"
+                }
+            ],
+            "out_streams": [
+                {
+                    "outlet_0": "ABCDE"
+                }
+            ],
+            "params": {
+                "outlet_stream_temperature": {
+                    "value": 300.0,
+                    "unit": "K"
+                },
+                "comp_nums": 5,
+                "outlet_pressure": {
+                    "value": 3445.0,
+                    "unit": "kPa"
+                }
+            }
+        },
+        "M1": {
+            "type": "Mixer",
+            "in_streams": [
+                {
+                    "inlet_0": "IAB"
+                },
+                {
+                    "inlet_1": "RAB"
+                },
+                {
+                    "inlet_2": "RC"
+                },
+                {
+                    "inlet_3": "IC"
+                }
+            ],
+            "out_streams": [
+                {
+                    "outlet_0": "FRT1"
+                }
+            ],
+            "params": {
+                "outlet_pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "comp_nums": 5,
+                "no_inlets": 4
+            }
+        },
+        "P1-RC": {
+            "type": "Pump",
+            "in_streams": [
+                {
+                    "inlet_0": "RC-PUMP"
+                }
+            ],
+            "out_streams": [
+                {
+                    "outlet_0": "RC-HI"
+                }
+            ],
+            "params": {
+                "OPT_SPEC": {
+                    "value": "PRES",
+                    "unit": ""
+                },
+                "outlet_stream_pressure": {
+                    "value": 3445.05,
+                    "unit": "kPa"
+                },
+                "pressure_increase": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "pressure_ratio": {
+                    "value": 0.0,
+                    "unit": ""
+                },
+                "total_power": {
+                    "value": 0.0,
+                    "unit": "Watt"
+                },
+                "comp_nums": 5,
+                "pumping_efficiency": {
+                    "value": 0.0,
+                    "unit": ""
+                }
+            }
+        },
+        "R1": {
+            "type": "RStoic",
+            "in_streams": [
+                {
+                    "inlet_0": "FRT1"
+                }
+            ],
+            "out_streams": [
+                {
+                    "outlet_0": "INTER1"
+                }
+            ],
+            "params": {}
+        },
+        "R2": {
+            "type": "RStoic",
+            "in_streams": [
+                {
+                    "inlet_0": "INTER1"
+                }
+            ],
+            "out_streams": [
+                {
+                    "outlet_0": "ABCDE-HI"
+                }
+            ],
+            "params": {}
+        },
+        "SP1": {
+            "type": "FSplit",
+            "in_streams": [
+                {
+                    "inlet_0": "AB"
+                }
+            ],
+            "out_streams": [
+                {
+                    "outlet_0": "S1-RAB"
+                },
+                {
+                    "outlet_1": "RAB-PC"
+                }
+            ],
+            "params": {
+                "outlet_pressure": {
+                    "value": null,
+                    "unit": ""
+                },
+                "comp_nums": 5,
+                "no_outlets": 2,
+                "split_fraction_value": [
+                    0.1,
+                    0.9
+                ],
+                "split_fraction_rows": [
+                    "S1-RAB",
+                    "RAB-PC"
+                ],
+                "split_fraction_rowHeader": [
+                    "outlet_0",
+                    "outlet_1"
+                ]
+            }
+        },
+        "SP1-RC": {
+            "type": "FSplit",
+            "in_streams": [
+                {
+                    "inlet_0": "C"
+                }
+            ],
+            "out_streams": [
+                {
+                    "outlet_0": "RC-PUMP"
+                },
+                {
+                    "outlet_1": "S1-RC"
+                }
+            ],
+            "params": {
+                "outlet_pressure": {
+                    "value": null,
+                    "unit": ""
+                },
+                "comp_nums": 5,
+                "no_outlets": 2,
+                "split_fraction_value": [
+                    1,
+                    0.1
+                ],
+                "split_fraction_rows": [
+                    "RC-PUMP",
+                    "S1-RC"
+                ],
+                "split_fraction_rowHeader": [
+                    "outlet_0",
+                    "outlet_1"
+                ]
+            }
+        },
+        "T1": {
+            "type": "RadFrac",
+            "in_streams": [
+                {
+                    "feed_in_0": "ABCDE-IN"
+                }
+            ],
+            "out_streams": [
+                {
+                    "top_vapor_out_0": "AB-FL"
+                },
+                {
+                    "bottom_liquid_out_0": "CDE"
+                }
+            ],
+            "params": {
+                "comp_nums": 5,
+                "CONDENSER": {
+                    "value": "PARTIAL-V",
+                    "unit": ""
+                },
+                "no_trays": {
+                    "value": 7,
+                    "unit": ""
+                },
+                "feed_trays_value": [
+                    6
+                ],
+                "feed_trays_rows": [
+                    "ABCDE-IN"
+                ],
+                "feed_trays_rowHeader": [
+                    "feed_in_0"
+                ],
+                "no_feeds": 1,
+                "vapor_side_draw": {
+                    "stream_name": [],
+                    "stages": [],
+                    "flow": []
+                },
+                "liquid_side_draw": {
+                    "stream_name": [],
+                    "stages": [],
+                    "flow": []
+                },
+                "top_vapor_fraction": {
+                    "value": 1.0,
+                    "unit": ""
+                },
+                "top_molar_flowrate_guess": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                },
+                "reflux_ratio_guess": {
+                    "value": 0.6,
+                    "unit": ""
+                },
+                "tray_1_pressure": {
+                    "value": 300.0,
+                    "unit": "kPa"
+                },
+                "tray_2_pressure": {
+                    "value": 300.0,
+                    "unit": "kPa"
+                },
+                "tray_pressure_drop": {
+                    "value": 0,
+                    "unit": "Pa"
+                },
+                "tray_pressure": [
+                    300.0,
+                    300.0,
+                    300.0,
+                    300.0,
+                    300.0,
+                    300.0,
+                    300.0
+                ],
+                "comp_spec": {
+                    "SPEC_TYPE": [],
+                    "SPEC_PHASE": [],
+                    "PEC_COMPS": [],
+                    "PEC_COMPS_index": [],
+                    "SPEC_STREAMS": [],
+                    "SPEC_DESCRIP": []
+                }
+            }
+        },
+        "T2": {
+            "type": "RadFrac",
+            "in_streams": [
+                {
+                    "feed_in_0": "CDE"
+                }
+            ],
+            "out_streams": [
+                {
+                    "bottom_liquid_out_0": "CE"
+                },
+                {
+                    "top_liquid_out_0": "D"
+                }
+            ],
+            "params": {
+                "comp_nums": 5,
+                "CONDENSER": {
+                    "value": "TOTAL",
+                    "unit": ""
+                },
+                "no_trays": {
+                    "value": 23,
+                    "unit": ""
+                },
+                "feed_trays_value": [
+                    13
+                ],
+                "feed_trays_rows": [
+                    "CDE"
+                ],
+                "feed_trays_rowHeader": [
+                    "feed_in_0"
+                ],
+                "no_feeds": 1,
+                "vapor_side_draw": {
+                    "stream_name": [],
+                    "stages": [],
+                    "flow": []
+                },
+                "liquid_side_draw": {
+                    "stream_name": [],
+                    "stages": [],
+                    "flow": []
+                },
+                "top_vapor_fraction": {
+                    "value": 0.0,
+                    "unit": ""
+                },
+                "top_molar_flowrate_guess": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                },
+                "reflux_ratio_guess": {
+                    "value": 1.28,
+                    "unit": ""
+                },
+                "tray_1_pressure": {
+                    "value": 101.3,
+                    "unit": "kPa"
+                },
+                "tray_2_pressure": {
+                    "value": 101.3,
+                    "unit": "kPa"
+                },
+                "tray_pressure_drop": {
+                    "value": 0,
+                    "unit": "Pa"
+                },
+                "tray_pressure": [
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3
+                ],
+                "comp_spec": {
+                    "SPEC_TYPE": [],
+                    "SPEC_PHASE": [],
+                    "PEC_COMPS": [],
+                    "PEC_COMPS_index": [],
+                    "SPEC_STREAMS": [],
+                    "SPEC_DESCRIP": []
+                }
+            }
+        },
+        "T3": {
+            "type": "RadFrac",
+            "in_streams": [
+                {
+                    "feed_in_0": "CE"
+                }
+            ],
+            "out_streams": [
+                {
+                    "bottom_liquid_out_0": "E"
+                },
+                {
+                    "top_liquid_out_0": "C"
+                }
+            ],
+            "params": {
+                "comp_nums": 5,
+                "CONDENSER": {
+                    "value": "TOTAL",
+                    "unit": ""
+                },
+                "no_trays": {
+                    "value": 10,
+                    "unit": ""
+                },
+                "feed_trays_value": [
+                    7
+                ],
+                "feed_trays_rows": [
+                    "CE"
+                ],
+                "feed_trays_rowHeader": [
+                    "feed_in_0"
+                ],
+                "no_feeds": 1,
+                "vapor_side_draw": {
+                    "stream_name": [],
+                    "stages": [],
+                    "flow": []
+                },
+                "liquid_side_draw": {
+                    "stream_name": [],
+                    "stages": [],
+                    "flow": []
+                },
+                "top_vapor_fraction": {
+                    "value": 0.0,
+                    "unit": ""
+                },
+                "top_molar_flowrate_guess": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                },
+                "reflux_ratio_guess": {
+                    "value": 0.02,
+                    "unit": ""
+                },
+                "tray_1_pressure": {
+                    "value": 101.3,
+                    "unit": "kPa"
+                },
+                "tray_2_pressure": {
+                    "value": 101.3,
+                    "unit": "kPa"
+                },
+                "tray_pressure_drop": {
+                    "value": 0,
+                    "unit": "Pa"
+                },
+                "tray_pressure": [
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3,
+                    101.3
+                ],
+                "comp_spec": {
+                    "SPEC_TYPE": [
+                        "MOLE-RECOV",
+                        "MOLE-RECOV"
+                    ],
+                    "SPEC_PHASE": [
+                        "L",
+                        "L"
+                    ],
+                    "PEC_COMPS": [
+                        "TOLUENE",
+                        "BENZENE"
+                    ],
+                    "PEC_COMPS_index": [
+                        2,
+                        3
+                    ],
+                    "SPEC_STREAMS": [
+                        1,
+                        10
+                    ],
+                    "SPEC_DESCRIP": [
+                        0.995,
+                        0.995
+                    ]
+                }
+            }
+        }
+    },
+    "streams": {
+        "AB": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "AB-FL": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "ABCDE": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "ABCDE-HI": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "ABCDE-IN": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "C": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "CDE": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "CE": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "D": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "D-S": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "E": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "E-S": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "FRT1": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "IAB": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "IAB-HI": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 300.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 3445.05,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 100.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.9,
+                "METHA-01": 0.1,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "IC": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 300.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 3445.05,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 100.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 1.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "IC-HI": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 300.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 3445.05,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 100.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 1.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "INTER1": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "RAB": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "RAB-HI": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "RAB-PC": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "RC": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "RC-HI": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "RC-PUMP": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "S1-RAB": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        },
+        "S1-RC": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "K"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "kPa"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "HYDRO-01": 0.0,
+                "METHA-01": 0.0,
+                "TOLUE-01": 0.0,
+                "BENZE-01": 0.0,
+                "DIPHE-01": 0.0
+            }
+        }
+    },
+    "params": {},
+    "methad": "PENG-ROB",
+    "processGraph": {
+        "id": "1b19e603-efae-4ede-ba0e-449952a136a3",
+        "createBy": "AspenExtractor",
+        "updateTime": "2026-03-27 10:26:07",
+        "nodes": [
+            {
+                "id": "B11",
+                "type": "Heater",
+                "data": {
+                    "label": "B11",
+                    "aspentype": "Heater"
+                },
+                "x": -30.0,
+                "y": -320.0
+            },
+            {
+                "id": "B13",
+                "type": "Heater",
+                "data": {
+                    "label": "B13",
+                    "aspentype": "Heater"
+                },
+                "x": -420.0,
+                "y": 370.0
+            },
+            {
+                "id": "B16",
+                "type": "Heater",
+                "data": {
+                    "label": "B16",
+                    "aspentype": "Heater"
+                },
+                "x": -810.0,
+                "y": -0.0
+            },
+            {
+                "id": "C1",
+                "type": "Compr",
+                "data": {
+                    "label": "C1",
+                    "aspentype": "Compr"
+                },
+                "x": 270.0,
+                "y": -370.0
+            },
+            {
+                "id": "F1",
+                "type": "Flash2",
+                "data": {
+                    "label": "F1",
+                    "aspentype": "Flash2"
+                },
+                "x": 379.7482,
+                "y": -159.7177
+            },
+            {
+                "id": "HX1",
+                "type": "Heater",
+                "data": {
+                    "label": "HX1",
+                    "aspentype": "Heater"
+                },
+                "x": -160.0,
+                "y": 30.0
+            },
+            {
+                "id": "HX1-AB",
+                "type": "Heater",
+                "data": {
+                    "label": "HX1-AB",
+                    "aspentype": "Heater"
+                },
+                "x": -880.3440999999999,
+                "y": -169.3241
+            },
+            {
+                "id": "HX1-C",
+                "type": "Heater",
+                "data": {
+                    "label": "HX1-C",
+                    "aspentype": "Heater"
+                },
+                "x": -830.689,
+                "y": -309.777
+            },
+            {
+                "id": "HX2",
+                "type": "Heater",
+                "data": {
+                    "label": "HX2",
+                    "aspentype": "Heater"
+                },
+                "x": 180.0,
+                "y": -160.0
+            },
+            {
+                "id": "M1",
+                "type": "Mixer",
+                "data": {
+                    "label": "M1",
+                    "aspentype": "Mixer"
+                },
+                "x": -480.0,
+                "y": -180.0
+            },
+            {
+                "id": "P1-RC",
+                "type": "Pump",
+                "data": {
+                    "label": "P1-RC",
+                    "aspentype": "Pump"
+                },
+                "x": -710.0,
+                "y": 160.0
+            },
+            {
+                "id": "R1",
+                "type": "RStoic",
+                "data": {
+                    "label": "R1",
+                    "aspentype": "RStoic"
+                },
+                "x": -270.0,
+                "y": -160.0
+            },
+            {
+                "id": "R2",
+                "type": "RStoic",
+                "data": {
+                    "label": "R2",
+                    "aspentype": "RStoic"
+                },
+                "x": -49.6254,
+                "y": -179.3992
+            },
+            {
+                "id": "SP1",
+                "type": "FSplit",
+                "data": {
+                    "label": "SP1",
+                    "aspentype": "FSplit"
+                },
+                "x": 580.0,
+                "y": -250.0
+            },
+            {
+                "id": "SP1-RC",
+                "type": "FSplit",
+                "data": {
+                    "label": "SP1-RC",
+                    "aspentype": "FSplit"
+                },
+                "x": -429.5391,
+                "y": 199.51239999999999
+            },
+            {
+                "id": "T1",
+                "type": "RadFrac",
+                "data": {
+                    "label": "T1",
+                    "aspentype": "RadFrac"
+                },
+                "x": 290.0,
+                "y": 120.0
+            },
+            {
+                "id": "T2",
+                "type": "RadFrac",
+                "data": {
+                    "label": "T2",
+                    "aspentype": "RadFrac"
+                },
+                "x": 80.1269,
+                "y": 199.5422
+            },
+            {
+                "id": "T3",
+                "type": "RadFrac",
+                "data": {
+                    "label": "T3",
+                    "aspentype": "RadFrac"
+                },
+                "x": -140.3679,
+                "y": 289.9412
+            },
+            {
+                "id": "AB-FL",
+                "type": "Sink",
+                "data": {
+                    "label": "AB-FL"
+                },
+                "x": 99.1518,
+                "y": -96.5745
+            },
+            {
+                "id": "D-S",
+                "type": "Sink",
+                "data": {
+                    "label": "D-S"
+                },
+                "x": -388.6357,
+                "y": 30.0031
+            },
+            {
+                "id": "E-S",
+                "type": "Sink",
+                "data": {
+                    "label": "E-S"
+                },
+                "x": -600.4207,
+                "y": 370.3941
+            },
+            {
+                "id": "IAB-HI",
+                "type": "Source",
+                "data": {
+                    "label": "IAB-HI"
+                },
+                "x": -1076.127,
+                "y": -169.3241
+            },
+            {
+                "id": "IC-HI",
+                "type": "Source",
+                "data": {
+                    "label": "IC-HI"
+                },
+                "x": -1015.1220999999999,
+                "y": -309.777
+            },
+            {
+                "id": "S1-RAB",
+                "type": "Sink",
+                "data": {
+                    "label": "S1-RAB"
+                },
+                "x": 807.1937999999999,
+                "y": -208.87380000000002
+            },
+            {
+                "id": "S1-RC",
+                "type": "Sink",
+                "data": {
+                    "label": "S1-RC"
+                },
+                "x": -747.1648,
+                "y": 309.78970000000004
+            }
+        ],
+        "edges": [
+            {
+                "source": "F1",
+                "target": "SP1",
+                "label": "AB"
+            },
+            {
+                "source": "T1",
+                "target": "AB-FL",
+                "label": "AB-FL"
+            },
+            {
+                "source": "HX2",
+                "target": "F1",
+                "label": "ABCDE"
+            },
+            {
+                "source": "R2",
+                "target": "HX2",
+                "label": "ABCDE-HI"
+            },
+            {
+                "source": "F1",
+                "target": "T1",
+                "label": "ABCDE-IN"
+            },
+            {
+                "source": "T3",
+                "target": "SP1-RC",
+                "label": "C"
+            },
+            {
+                "source": "T1",
+                "target": "T2",
+                "label": "CDE"
+            },
+            {
+                "source": "T2",
+                "target": "T3",
+                "label": "CE"
+            },
+            {
+                "source": "T2",
+                "target": "HX1",
+                "label": "D"
+            },
+            {
+                "source": "HX1",
+                "target": "D-S",
+                "label": "D-S"
+            },
+            {
+                "source": "T3",
+                "target": "B13",
+                "label": "E"
+            },
+            {
+                "source": "B13",
+                "target": "E-S",
+                "label": "E-S"
+            },
+            {
+                "source": "M1",
+                "target": "R1",
+                "label": "FRT1"
+            },
+            {
+                "source": "HX1-AB",
+                "target": "M1",
+                "label": "IAB"
+            },
+            {
+                "source": "IAB-HI",
+                "target": "HX1-AB",
+                "label": "IAB-HI"
+            },
+            {
+                "source": "HX1-C",
+                "target": "M1",
+                "label": "IC"
+            },
+            {
+                "source": "IC-HI",
+                "target": "HX1-C",
+                "label": "IC-HI"
+            },
+            {
+                "source": "R1",
+                "target": "R2",
+                "label": "INTER1"
+            },
+            {
+                "source": "B11",
+                "target": "M1",
+                "label": "RAB"
+            },
+            {
+                "source": "C1",
+                "target": "B11",
+                "label": "RAB-HI"
+            },
+            {
+                "source": "SP1",
+                "target": "C1",
+                "label": "RAB-PC"
+            },
+            {
+                "source": "B16",
+                "target": "M1",
+                "label": "RC"
+            },
+            {
+                "source": "P1-RC",
+                "target": "B16",
+                "label": "RC-HI"
+            },
+            {
+                "source": "SP1-RC",
+                "target": "P1-RC",
+                "label": "RC-PUMP"
+            },
+            {
+                "source": "SP1",
+                "target": "S1-RAB",
+                "label": "S1-RAB"
+            },
+            {
+                "source": "SP1-RC",
+                "target": "S1-RC",
+                "label": "S1-RC"
+            }
+        ]
+    }
+}

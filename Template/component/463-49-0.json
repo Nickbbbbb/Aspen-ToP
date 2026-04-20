@@ -1,0 +1,22 @@
+{
+      "alias": "PROPADIENE",
+      "bioJson": "{\"carbon\":3,\"hydrogen\":4}",
+      "boilingPoint": "238.65",
+      "cas": "463-49-0",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C3H4",
+      "id": "2019269501804208130",
+      "indexNew": 16,
+      "indexOld": 15,
+      "label": "PROPADIENE",
+      "molarMass": "40.063859999999998",
+      "name": "PROPADIENE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "301",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

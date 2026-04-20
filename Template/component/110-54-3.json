@@ -1,0 +1,22 @@
+{
+      "alias": "n-HEXANE",
+      "bioJson": "{\"carbon\":6,\"hydrogen\":14}",
+      "boilingPoint": "341.88",
+      "cas": "110-54-3",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C6H14",
+      "id": "2019269501841956866",
+      "indexNew": 25,
+      "indexOld": 24,
+      "label": "n-HEXANE",
+      "molarMass": "86.175359999999998",
+      "name": "n-HEXANE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "11",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

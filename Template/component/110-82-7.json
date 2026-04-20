@@ -1,0 +1,22 @@
+{
+      "alias": "CYCLOHEXANE",
+      "bioJson": "{\"carbon\":6,\"hydrogen\":12}",
+      "boilingPoint": "353.87",
+      "cas": "110-82-7",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C6H12",
+      "id": "2019269501846151170",
+      "indexNew": 26,
+      "indexOld": 25,
+      "label": "CYCLOHEXANE",
+      "molarMass": "84.159480000000002",
+      "name": "CYCLOHEXANE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "137",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

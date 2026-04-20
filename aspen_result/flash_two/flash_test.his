@@ -1,0 +1,167 @@
+
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + +                                                                         + +
+ + +                      ASPEN PLUS CALCULATION HISTORY                     + +
+ + +                                                                         + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+ ASPEN PLUS IS A TRADEMARK OF           HOTLINE:
+ ASPEN TECHNOLOGY, INC.                 U.S.A. 888/996-7100
+ 781/221-6400                           EUROPE (44) 1189-226555
+
+ PLATFORM: WIN-X64                                       MARCH 10, 2026      
+ VERSION: 40.0   Build 359                               TUESDAY     
+ INSTALLATION:                                           12:22:57 P.M.       
+
+ THIS COPY OF ASPEN PLUS LICENSED TO                                 
+
+
+      ASPEN PLUS (R) IS A PROPRIETARY PRODUCT OF ASPEN TECHNOLOGY, INC.
+      (ASPENTECH), AND MAY BE USED ONLY UNDER AGREEMENT WITH ASPENTECH.
+      RESTRICTED RIGHTS LEGEND:  USE, REPRODUCTION, OR DISCLOSURE BY THE
+      U.S. GOVERNMENT IS SUBJECT TO RESTRICTIONS SET FORTH IN 
+      (i) FAR 52.227-14, Alt. III, (ii) FAR 52.227-19, (iii) DFARS 
+      252.227-7013(c)(1)(ii), or (iv) THE ACCOMPANYING LICENSE AGREEMENT,
+      AS APPLICABLE. FOR PURPOSES OF THE FAR, THIS SOFTWARE SHALL BE DEEMED
+      TO BE "UNPUBLISHED" AND LICENSED WITH DISCLOSURE PROHIBITIONS.
+      CONTRACTOR/SUBCONTRACTOR: ASPEN TECHNOLOGY, INC. 20 CROSBY DRIVE,
+      BEDFORD, MA 01730.
+ *** INPUT SUMMARY ***
+
+ >>CURRENT RUN
+
+   ORIGINAL RUN                           MARCH 10, 2026      
+   12:22:57 P.M.                          TUESDAY     
+   INPUT FILE: _2241uhm.inm
+   RUN ID : _2241uhm
+          1    ;
+          2    ;输入文件创建由Aspen Plus Rel. 40.0 at 12:22:53 Tue Mar 10, 2026
+          3    ;Directory D:\soft\simona_project\aspen_result\flash_test  Runid FLASH_TEST
+          4    ;
+          5
+          6
+          7    DYNAMICS
+          8        DYNAMICS RESULTS=ON
+          9
+         10    IN-UNITS SI SHORT-LENGTH=mm
+         11
+         12    DEF-STREAMS CONVEN ALL
+         13
+         14    DATABANKS 'APV140 PURE40' / 'APV140 AQUEOUS' / 'APV140 SOLIDS' &
+         15             / 'APV140 INORGANIC' / NOASPENPCD
+         16
+         17    PROP-SOURCES 'APV140 PURE40' / 'APV140 AQUEOUS' /  &
+         18            'APV140 SOLIDS' / 'APV140 INORGANIC'
+         19
+         20    COMPONENTS
+         21        HYDRO-01 H2 /
+         22        METHA-01 CH4 /
+         23        BENZE-01 C6H6 /
+         24        TOLUE-01 C7H8
+         25
+         26    SOLVE
+         27        RUN-MODE MODE=SIM
+         28
+         29    FLOWSHEET
+         30        BLOCK FLASH1 IN=FEED OUT=SINKV1 S1
+         31        BLOCK FLASH2 IN=S1 OUT=SINKV2 SINKL2
+         32
+         33    PROPERTIES SRK
+         34
+         35    STREAM FEED
+         36        SUBSTREAM MIXED TEMP=373.15 PRES=3800 MOLE-FLOW=0.28
+         37        MOLE-FRAC HYDRO-01 .66 / METHA-01 .16 / BENZE-01 .16 /  &
+         38            TOLUE-01 .02
+         39
+         40    BLOCK FLASH1 FLASH2
+         41        PARAM TEMP=373.15 PRES=0
+         42
+         43    BLOCK FLASH2 FLASH2
+         44        PARAM TEMP=373.15 PRES=1000
+         45
+         46    EO-CONV-OPTI
+         47
+         48    STREAM-REPOR MOLEFLOW
+         49    ;
+         50    ;
+         51    ;
+         52    ;
+         53    ;
+ *** INPUT TRANSLATOR MESSAGES ***
+
+  *** THIS RUN USES THE PROPERTIES ENTERPRISE DATABASE ***
+      SQLLOCALDB.APESV140 : (DATAVERSION - 40.0.0.13)                         
+      SQLLOCALDB.APV140 : (DATAVERSION - 40.0.0.13)                           
+      SQLLOCALDB.FACTV140 : (DATAVERSION - 40.0.0.12)                         
+      SQLLOCALDB.NISTV140 : (DATAVERSION - 40.0.0.12)                         
+
+  *   WARNING IN THE "PROPERTIES" PARAGRAPH WHICH BEGINS ON LINE 33             
+                                                               (SECPO.4)        
+      FREE-WATER METHOD SHOULD BE STEAMNBS WHEN THE MAIN                        
+      PROPERTY METHOD IS SRK. DEFAULT FREE-WATER METHOD IS STEAM-TA             
+      PLEASE SPECIFY THE RECOMMENDED FREE-WATER METHOD AND RUN AGAIN.           
+ 
+ 
+
+ PDF updated                                                                      TIME =      2.80
+
+ *** CALCULATION TRACE ***
+
+
+ *** FLOWSHEET ANALYSIS MESSAGES ***
+
+ FLOWSHEET CONNECTIVITY BY STREAMS       
+
+   STREAM     SOURCE     DEST           STREAM     SOURCE     DEST
+   FEED       ----       FLASH1         SINKV1     FLASH1     ----    
+   S1         FLASH1     FLASH2         SINKV2     FLASH2     ----    
+   SINKL2     FLASH2     ----                                         
+
+ FLOWSHEET CONNECTIVITY BY BLOCKS        
+
+   BLOCK        INLETS                         OUTLETS
+   FLASH1       FEED                           SINKV1 S1                   
+   FLASH2       S1                             SINKV2 SINKL2               
+
+      COMPUTATION ORDER FOR THE FLOWSHEET IS:
+      FLASH1 FLASH2 
+
+Calculations begin                                                              time      0.40
+
+
+ SIMULATION CALCULATIONS BEGIN                                                    TIME =      0.40
+
+      ENTHALPY CALCULATION FOR INLET STREAM FEED OF BLOCK FLASH1                  TIME =      0.42
+      KODE = 2  NTRIAL =   2  T = 373.1500  P =  3800.00      V =  1.00000      Q =  0.00000    
+
+      UOS BLOCK FLASH1   MODEL: FLASH2                                            TIME =      0.43
+      KODE = 2  NTRIAL =   2  T = 373.1500  P =  3800.00      V =  1.00000      Q =  0.00000    
+
+      UOS BLOCK FLASH2   MODEL: FLASH2                                            TIME =      0.43
+
+  *   WARNING WHILE EXECUTING UNIT OPERATIONS BLOCK: "FLASH2" (MODEL: "FLASH2") 
+                                                               (UFL01I.1)       
+      ZERO FEED TO THE BLOCK.  BLOCK BYPASSED                                   
+
+ Report Writer entered                                                            Time =      1.58
+
+ Results generated                                                                Time =      1.59
+
+ Report Writer entered                                                            Time =      1.62
+
+ Results generated                                                                Time =      1.63
+
+RUN SAVED
+
+
+
+ *** SUMMARY OF ERRORS ***
+
+                  PHYSICAL
+                  PROPERTY  SYSTEM  SIMULATION
+ TERMINAL ERRORS      0        0         0
+   SEVERE ERRORS      0        0         0
+          ERRORS      0        0         0
+        WARNINGS      0        0         1

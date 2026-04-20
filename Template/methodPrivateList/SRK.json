@@ -1,0 +1,14 @@
+{
+      "baseAlgo": "SRK",
+      "createBy": "admin",
+      "createTime": "2026-02-03 02:13:54",
+      "description": "默认物性包",
+      "freeWater": "IF97",
+      "id": "2018508212354445313",
+      "isDefault": true,
+      "methodGroupName": "物性包",
+      "methodGroupSort": 1,
+      "projectId": "25be3df3",
+      "updateBy": "admin",
+      "updateTime": "2026-02-03 02:15:16"
+}

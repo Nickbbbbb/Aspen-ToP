@@ -1,0 +1,22 @@
+{
+      "alias": "TOLUENE",
+      "bioJson": "{\"carbon\":7,\"hydrogen\":8}",
+      "boilingPoint": "383.78",
+      "cas": "108-88-3",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C7H8",
+      "id": "2019269501850345474",
+      "indexNew": 27,
+      "indexOld": 26,
+      "label": "TOLUENE",
+      "molarMass": "92.138419999999996",
+      "name": "TOLUENE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "502",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

@@ -1,0 +1,22 @@
+{
+      "alias": "ACETYLENE",
+      "bioJson": "{\"carbon\":2,\"hydrogen\":2}",
+      "boilingPoint": "",
+      "cas": "74-86-2",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C2H2",
+      "id": "2019269501795819521",
+      "indexNew": 13,
+      "indexOld": 12,
+      "label": "ACETYLENE",
+      "molarMass": "26.037279999999999",
+      "name": "ACETYLENE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "401",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

@@ -1,0 +1,22 @@
+{
+      "alias": "n-DODECANE",
+      "bioJson": "{\"carbon\":12,\"hydrogen\":26}",
+      "boilingPoint": "489.473",
+      "cas": "112-40-3",
+      "createBy": "admin",
+      "createTime": "2026-02-04 06:41:30",
+      "dataSource": "PURE",
+      "formula": "C12H26",
+      "id": "2018937945340801026",
+      "indexNew": 2,
+      "indexOld": 1,
+      "label": "n-DODECANE",
+      "molarMass": "170.33484000000001",
+      "name": "n-DODECANE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "64",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-04 06:41:30"
+    }

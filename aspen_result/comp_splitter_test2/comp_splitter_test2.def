@@ -1,0 +1,10 @@
+INPUT: comp_splitter_test2.inm
+MODNAME: apmain
+RUNID: comp_splitter_test2
+NEW_RUNID: comp_splitter_test2
+OLD_RUNID: comp_splitter_test2
+PDF: comp_splitter_test2.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:
+DBCONN: _1336qlb.ads

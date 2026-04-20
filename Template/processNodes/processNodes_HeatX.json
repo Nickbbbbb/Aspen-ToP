@@ -1,0 +1,39 @@
+{
+    "componentChange": false,
+    "data": { "label": "换热器_1", "status": "" },
+    "hasDebuggerPoint": false,
+    "height": 50,
+    "id": "795f07b5_a1d3b296_HeatExchanger1",
+    "name": "HeatExchanger",
+    "nodeLabel": "换热器",
+    "nodeProperties": {},
+    "paramUncomplete": false,
+    "portChange": false,
+    "ports": [
+      {
+        "id": "09cd70f3-c2b6-42cc-9349-284bf5700b5b",
+        "name": "cold_stream_inlet",
+        "relateVirtualPortList": [{ "id": "cold_stream_inlet_0", "name": "cold_stream_inlet", "relatedEntityId": "09cd70f3-c2b6-42cc-9349-284bf5700b5b", "relatedEntityName": "cold_stream_inlet" }]
+      },
+      {
+        "id": "081fe2f9-c906-46ba-832a-25bebff3909a",
+        "name": "hot_stream_outlet",
+        "relateVirtualPortList": [{ "id": "hot_stream_outlet_0", "name": "hot_stream_outlet", "relatedEntityId": "081fe2f9-c906-46ba-832a-25bebff3909a", "relatedEntityName": "hot_stream_outlet" }]
+      },
+      {
+        "id": "d5101372-115a-46c4-b9ce-414af403268c",
+        "name": "cold_stream_outlet",
+        "relateVirtualPortList": [{ "id": "cold_stream_outlet_0", "name": "cold_stream_outlet", "relatedEntityId": "d5101372-115a-46c4-b9ce-414af403268c", "relatedEntityName": "cold_stream_outlet" }]
+      },
+      {
+        "id": "a974fc0e-203f-432f-9963-6cdd36c30ebc",
+        "name": "hot_stream_inlet",
+        "relateVirtualPortList": [{ "id": "hot_stream_inlet_0", "name": "hot_stream_inlet", "relatedEntityId": "a974fc0e-203f-432f-9963-6cdd36c30ebc", "relatedEntityName": "hot_stream_inlet" }]
+      }
+    ],
+    "scale": 1,
+    "type": "HeatExchanger",
+    "width": 50,
+    "x": 843,
+    "y": 201
+  }

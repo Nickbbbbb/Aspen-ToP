@@ -1,0 +1,22 @@
+{
+      "alias": "PROPANE",
+      "bioJson": "{\"carbon\":3,\"hydrogen\":8}",
+      "boilingPoint": "231.11",
+      "cas": "74-98-6",
+      "createBy": "admin",
+      "createTime": "2026-02-03 02:14:57",
+      "dataSource": "PURE",
+      "formula": "C3H8",
+      "id": "2018508477337989122",
+      "indexNew": 2,
+      "indexOld": 1,
+      "label": "PROPANE",
+      "molarMass": "44.095619999999997",
+      "name": "PROPANE",
+      "oilFlag": 0,
+      "projectId": "25be3df3",
+      "realId": "3",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-03 02:14:57"
+    }

@@ -1,0 +1,22 @@
+{
+      "alias": "BENZENE",
+      "bioJson": "{\"carbon\":6,\"hydrogen\":6}",
+      "boilingPoint": "353.24",
+      "cas": "71-43-2",
+      "createBy": "admin",
+      "createTime": "2026-02-04 06:41:30",
+      "dataSource": "PURE",
+      "formula": "C6H6",
+      "id": "2018937945353383937",
+      "indexNew": 3,
+      "indexOld": 2,
+      "label": "BENZENE",
+      "molarMass": "78.111840000000001",
+      "name": "BENZENE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "501",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-04 06:41:30"
+    }

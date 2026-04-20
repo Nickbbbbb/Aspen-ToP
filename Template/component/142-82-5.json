@@ -1,0 +1,22 @@
+{
+      "alias": "n-HEPTANE",
+      "bioJson": "{\"carbon\":7,\"hydrogen\":16}",
+      "boilingPoint": "371.58",
+      "cas": "142-82-5",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C7H16",
+      "id": "2019269501854539778",
+      "indexNew": 28,
+      "indexOld": 27,
+      "label": "n-HEPTANE",
+      "molarMass": "100.20193999999999",
+      "name": "n-HEPTANE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "17",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

@@ -1,0 +1,10 @@
+SLAVE:
+INPUT: _3118yzf.inm
+MODNAME: apmain
+RUNID: _3118yzf
+NEW_RUNID: _3118yzf
+OLD_RUNID: _3118yzf
+PDF: _3118yzf.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+DBCONN: _3118yzf.ads

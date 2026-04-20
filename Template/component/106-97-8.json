@@ -1,0 +1,22 @@
+{
+      "alias": "n-BUTANE",
+      "bioJson": "{\"carbon\":4,\"hydrogen\":10}",
+      "boilingPoint": "272.65",
+      "cas": "106-97-8",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C4H10",
+      "id": "2019269501825179649",
+      "indexNew": 21,
+      "indexOld": 20,
+      "label": "n-BUTANE",
+      "molarMass": "58.122199999999999",
+      "name": "n-BUTANE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "5",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

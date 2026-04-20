@@ -1,0 +1,10 @@
+SLAVE:
+INPUT: _3403cds.inm
+MODNAME: apmain
+RUNID: _3403cds
+NEW_RUNID: _3403cds
+OLD_RUNID: _3403cds
+PDF: _3403cds.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+DBCONN: _3403cds.ads

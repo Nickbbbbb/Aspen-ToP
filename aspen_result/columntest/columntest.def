@@ -1,0 +1,10 @@
+INPUT: columntest.inm
+MODNAME: apmain
+RUNID: columntest
+NEW_RUNID: columntest
+OLD_RUNID: columntest
+PDF: columntest.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:
+DBCONN: _1735eoh.ads

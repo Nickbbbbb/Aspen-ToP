@@ -1,0 +1,10 @@
+INPUT: flash_test.inm
+MODNAME: apmain
+RUNID: flash_test
+NEW_RUNID: flash_test
+OLD_RUNID: flash_test
+PDF: flash_test.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:
+DBCONN: _2241uhm.ads

@@ -1,0 +1,22 @@
+{
+      "alias": "METHYLCYCLOHEXANE",
+      "bioJson": "{\"carbon\":7,\"hydrogen\":14}",
+      "boilingPoint": "374.084",
+      "cas": "108-87-2",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C7H14",
+      "id": "2019269501858734081",
+      "indexNew": 29,
+      "indexOld": 28,
+      "label": "METHYLCYCLOHEXANE",
+      "molarMass": "98.186059999999998",
+      "name": "METHYLCYCLOHEXANE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "138",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

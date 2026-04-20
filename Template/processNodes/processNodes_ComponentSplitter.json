@@ -1,0 +1,35 @@
+{
+    "componentChange": false,
+    "data": { "label": "组分分离器_1", "status": "" },
+    "hasDebuggerPoint": false,
+    "height": 80,
+    "id": "69ad4ad5_0d55e09b_ComponentSplitter1",
+    "name": "ComponentSplitter",
+    "nodeLabel": "组分分离器",
+    "nodeProperties": {},
+    "paramUncomplete": false,
+    "portChange": false,
+    "ports": [
+      {
+        "id": "f1c5e834-a80e-415a-987c-ccba458587c5",
+        "name": "inlet",
+        "relateVirtualPortList": [
+          { "id": "inlet_0", "name": "inlet", "relatedEntityId": "f1c5e834-a80e-415a-987c-ccba458587c5", "relatedEntityName": "inlet" }
+        ]
+      },
+      {
+        "id": "fb0dfbb1-6b03-4102-8e08-2b4f6852522f",
+        "name": "outlet",
+        "relateVirtualPortList": [
+          { "id": "outlet_1", "name": "虚拟桩", "relatedEntityId": "fb0dfbb1-6b03-4102-8e08-2b4f6852522f", "relatedEntityName": "outlet" },
+          { "id": "outlet_0", "name": "outlet", "relatedEntityId": "fb0dfbb1-6b03-4102-8e08-2b4f6852522f", "relatedEntityName": "outlet" },
+          { "id": "outlet_3", "name": "虚拟桩", "relatedEntityId": "fb0dfbb1-6b03-4102-8e08-2b4f6852522f", "relatedEntityName": "outlet" }
+        ]
+      }
+    ],
+    "scale": 1,
+    "type": "ComponentSplitter",
+    "width": 34,
+    "x": 618,
+    "y": 195
+  }

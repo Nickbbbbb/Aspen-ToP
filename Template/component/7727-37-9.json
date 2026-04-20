@@ -1,0 +1,22 @@
+{
+      "alias": "NITROGEN",
+      "bioJson": "{\"nitrogen\":2}",
+      "boilingPoint": "77.344",
+      "cas": "7727-37-9",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "N2",
+      "id": "2019269501762265089",
+      "indexNew": 8,
+      "indexOld": 7,
+      "label": "NITROGEN",
+      "molarMass": "28.013400000000001",
+      "name": "NITROGEN",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "905",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

@@ -1,0 +1,358 @@
+
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + +                                                                         + +
+ + +                      ASPEN PLUS CALCULATION HISTORY                     + +
+ + +                                                                         + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+ ASPEN PLUS IS A TRADEMARK OF           HOTLINE:
+ ASPEN TECHNOLOGY, INC.                 U.S.A. 888/996-7100
+ 781/221-6400                           EUROPE (44) 1189-226555
+
+ PLATFORM: WIN-X64                                       MARCH 13, 2026      
+ VERSION: 40.0   Build 359                               FRIDAY      
+ INSTALLATION:                                           1:48:48 P.M.        
+
+ THIS COPY OF ASPEN PLUS LICENSED TO                                 
+
+
+      ASPEN PLUS (R) IS A PROPRIETARY PRODUCT OF ASPEN TECHNOLOGY, INC.
+      (ASPENTECH), AND MAY BE USED ONLY UNDER AGREEMENT WITH ASPENTECH.
+      RESTRICTED RIGHTS LEGEND:  USE, REPRODUCTION, OR DISCLOSURE BY THE
+      U.S. GOVERNMENT IS SUBJECT TO RESTRICTIONS SET FORTH IN 
+      (i) FAR 52.227-14, Alt. III, (ii) FAR 52.227-19, (iii) DFARS 
+      252.227-7013(c)(1)(ii), or (iv) THE ACCOMPANYING LICENSE AGREEMENT,
+      AS APPLICABLE. FOR PURPOSES OF THE FAR, THIS SOFTWARE SHALL BE DEEMED
+      TO BE "UNPUBLISHED" AND LICENSED WITH DISCLOSURE PROHIBITIONS.
+      CONTRACTOR/SUBCONTRACTOR: ASPEN TECHNOLOGY, INC. 20 CROSBY DRIVE,
+      BEDFORD, MA 01730.
+ *** INPUT SUMMARY ***
+
+ >>CURRENT RUN
+
+   ORIGINAL RUN                           MARCH 13, 2026      
+   1:48:48 P.M.                           FRIDAY      
+   INPUT FILE: _4803spl.inm
+   RUN ID : _4803spl
+          1    ;
+          2    ;输入文件创建由Aspen Plus Rel. 40.0 at 13:48:48 Fri Mar 13, 2026
+          3    ;Directory D:\soft\simona_project\aspen_result\process_3_20260313_134759_a568721e  Runid PROCESS_3_20260313_134759_A568721E
+          4    ;
+          5
+          6
+          7    DYNAMICS
+          8        DYNAMICS RESULTS=ON
+          9
+         10    IN-UNITS SI SHORT-LENGTH=mm
+         11
+         12    DEF-STREAMS CONVEN ALL
+         13
+         14    DATABANKS 'APV140 PURE40' / 'APV140 AQUEOUS' / 'APV140 SOLIDS' &
+         15             / 'APV140 INORGANIC' / NOASPENPCD
+         16
+         17    PROP-SOURCES 'APV140 PURE40' / 'APV140 AQUEOUS' /  &
+         18            'APV140 SOLIDS' / 'APV140 INORGANIC'
+         19
+         20    COMPONENTS
+         21        N-BUT-01 C4H10-1 /
+         22        WATER H2O
+         23
+         24    SOLVE
+         25        RUN-MODE MODE=SIM
+         26
+         27    FLOWSHEET
+         28        BLOCK MIXER IN=FEED RECYCLE OUT=S1
+         29        BLOCK FLASH IN=S1 OUT=SINKV S2
+         30        BLOCK SPLITTER IN=S2 OUT=SINKL S3
+         31        BLOCK PUMP IN=S3 OUT=RECYCLE
+         32
+         33    PROPERTIES SRK
+         34
+         35    STREAM FEED
+         36        SUBSTREAM MIXED TEMP=320.0 PRES=500000.0 MOLE-FLOW=0.1
+         37        MOLE-FRAC N-BUT-01 .80 / WATER .20
+         38
+         39    STREAM RECYCLE
+         40        SUBSTREAM MIXED TEMP=310.0 PRES=1000000.0 MOLE-FLOW=0.05
+         41        MOLE-FRAC N-BUT-01 .80 / WATER .20
+         42
+         43    BLOCK MIXER MIXER
+         44        PARAM PRES=500000.0
+         45
+         46    BLOCK FLASH FLASH2
+         47        PARAM TEMP=310.0 PRES=300000.0
+         48
+         49    BLOCK PUMP PUMP
+         50        PARAM PRES=1000000.0 EFF=.75
+         51
+         52    BLOCK SPLITTER SSPLIT
+         53        FRAC MIXED SINKL 0.5 / S3 0.5
+         54
+         55    EO-CONV-OPTI
+         56
+         57    TEAR
+         58        TEAR RECYCLE
+         59
+         60    STREAM-REPOR MOLEFLOW
+         61    ;
+         62    ;
+         63    ;
+         64    ;
+         65    ;
+         66    ;
+ *** INPUT TRANSLATOR MESSAGES ***
+
+  *** THIS RUN USES THE PROPERTIES ENTERPRISE DATABASE ***
+      SQLLOCALDB.APESV140 : (DATAVERSION - 40.0.0.13)                         
+      SQLLOCALDB.APV140 : (DATAVERSION - 40.0.0.13)                           
+      SQLLOCALDB.FACTV140 : (DATAVERSION - 40.0.0.12)                         
+      SQLLOCALDB.NISTV140 : (DATAVERSION - 40.0.0.12)                         
+
+  *   WARNING IN THE "PROPERTIES" PARAGRAPH WHICH BEGINS ON LINE 33             
+                                                               (SECPO.4)        
+      FREE-WATER METHOD SHOULD BE STEAMNBS WHEN THE MAIN                        
+      PROPERTY METHOD IS SRK. DEFAULT FREE-WATER METHOD IS STEAM-TA             
+      PLEASE SPECIFY THE RECOMMENDED FREE-WATER METHOD AND RUN AGAIN.           
+ 
+ 
+
+ PDF updated                                                                      TIME =      3.68
+
+ *** CALCULATION TRACE ***
+
+
+ *** FLOWSHEET ANALYSIS MESSAGES ***
+
+ FLOWSHEET CONNECTIVITY BY STREAMS       
+
+   STREAM     SOURCE     DEST           STREAM     SOURCE     DEST
+   FEED       ----       MIXER          S1         MIXER      FLASH   
+   SINKV      FLASH      ----           S2         FLASH      SPLITTER
+   SINKL      SPLITTER   ----           S3         SPLITTER   PUMP    
+   RECYCLE    PUMP       MIXER                                        
+
+ FLOWSHEET CONNECTIVITY BY BLOCKS        
+
+   BLOCK        INLETS                         OUTLETS
+   MIXER        FEED RECYCLE                   S1                          
+   FLASH        S1                             SINKV S2                    
+   SPLITTER     S2                             SINKL S3                    
+   PUMP         S3                             RECYCLE                     
+
+      BLOCK $OLVER01 (METHOD: WEGSTEIN) HAS BEEN DEFINED TO CONVERGE
+               STREAMS: RECYCLE
+
+      COMPUTATION ORDER FOR THE FLOWSHEET IS:
+      $OLVER01 MIXER FLASH SPLITTER PUMP 
+      (RETURN $OLVER01) 
+
+Calculations begin                                                              time      0.43
+
+
+ SIMULATION CALCULATIONS BEGIN                                                    TIME =      0.43
+
+      CONVERGENCE BLOCK $OLVER01  METHOD: WEGSTEIN                                TIME =      0.43
+      ITER   0 For Tear Streams: RECYCLE
+
+      ENTHALPY CALCULATION FOR INLET STREAM RECYCLE OF BLOCK MIXER                TIME =      0.43
+      KODE = 2  NTRIAL =   4  T = 310.0000  P = 1.000000E+06  V =  0.00000      Q =  0.00000    
+
+      ENTHALPY CALCULATION FOR INLET STREAM FEED OF BLOCK MIXER                   TIME =      0.43
+      KODE = 2  NTRIAL =   6  T = 320.0000  P =  500000.      V = 0.814615      Q =  0.00000    
+
+      UOS BLOCK MIXER    MODEL: MIXER                                             TIME =      0.44
+      KODE = 1  NTRIAL =  14  T = 279.4659  P =  500000.      V = 0.801132      Q =  0.00000    
+
+      UOS BLOCK FLASH    MODEL: FLASH2                                            TIME =      0.44
+      KODE = 2  NTRIAL =   5  T = 310.0000  P =  300000.      V = 0.813614      Q =  601381.    
+
+      UOS BLOCK SPLITTER MODEL: SSPLIT                                            TIME =      0.44
+      SPLIT FRACTION SPECIFICATION MATRIX IS:
+        0.50000    
+        0.50000    
+
+      UOS BLOCK PUMP     MODEL: PUMP                                              TIME =      0.50
+      VOL-FLOW   =  0.2649E-03 , DELTA P    =  0.7000E+06 , PUMP EFF   =  0.7500    
+      FLUID PWR  =   185.4     , BRAKE PWR  =   247.2     , ELEC PWR   =   247.2    
+
+      CONVERGENCE BLOCK $OLVER01  METHOD: WEGSTEIN                                TIME =      0.54
+      ITER   1 For Tear Streams: RECYCLE
+
+      --FLASH TEAR STREAM RECYCLE 
+      KODE = 1   NO. TEMP ITER =    3     TEMP =  310.054    
+      KPHASE =    2 KODE =    1 T =  310.054     P = 1.000000E+06 Q =  0.00000    
+
+  LOOP $OLVER01 ITER    1:   4 VARS NOT CONVERGED, MAX ERR/TOL     -36926.        TIME =      0.58
+
+      UOS BLOCK MIXER    MODEL: MIXER                                             TIME =      0.61
+      KODE = 1  NTRIAL =   5  T = 319.2134  P =  500000.      V = 0.714167      Q =  0.00000    
+
+      UOS BLOCK FLASH    MODEL: FLASH2                                            TIME =      0.61
+      KODE = 2  NTRIAL =   1  T = 310.0000  P =  300000.      V = 0.713828      Q = -74748.0    
+
+      UOS BLOCK SPLITTER MODEL: SSPLIT                                            TIME =      0.61
+      SPLIT FRACTION SPECIFICATION MATRIX IS:
+        0.50000    
+        0.50000    
+
+      UOS BLOCK PUMP     MODEL: PUMP                                              TIME =      0.61
+      VOL-FLOW   =  0.3090E-03 , DELTA P    =  0.7000E+06 , PUMP EFF   =  0.7500    
+      FLUID PWR  =   216.3     , BRAKE PWR  =   288.4     , ELEC PWR   =   288.4    
+
+      CONVERGENCE BLOCK $OLVER01  METHOD: WEGSTEIN                                TIME =      0.61
+      ITER   2 For Tear Streams: RECYCLE
+
+      --FLASH TEAR STREAM RECYCLE 
+      KODE = 1   NO. TEMP ITER =    3     TEMP =  310.054    
+      KPHASE =    2 KODE =    1 T =  310.054     P = 1.000000E+06 Q =  0.00000    
+
+  LOOP $OLVER01 ITER    2:   2 VARS NOT CONVERGED, MAX ERR/TOL      1666.7        TIME =      0.61
+
+      UOS BLOCK MIXER    MODEL: MIXER                                             TIME =      0.64
+      KODE = 1  NTRIAL =   3  T = 318.9297  P =  500000.      V = 0.680421      Q =  0.00000    
+
+      UOS BLOCK FLASH    MODEL: FLASH2                                            TIME =      0.64
+      KODE = 2  NTRIAL =   1  T = 310.0000  P =  300000.      V = 0.680277      Q = -74847.6    
+
+      UOS BLOCK SPLITTER MODEL: SSPLIT                                            TIME =      0.64
+      SPLIT FRACTION SPECIFICATION MATRIX IS:
+        0.50000    
+        0.50000    
+
+      UOS BLOCK PUMP     MODEL: PUMP                                              TIME =      0.64
+      VOL-FLOW   =  0.3623E-03 , DELTA P    =  0.7000E+06 , PUMP EFF   =  0.7500    
+      FLUID PWR  =   253.6     , BRAKE PWR  =   338.1     , ELEC PWR   =   338.1    
+
+      CONVERGENCE BLOCK $OLVER01  METHOD: WEGSTEIN                                TIME =      0.64
+      ITER   3 For Tear Streams: RECYCLE
+
+      --FLASH TEAR STREAM RECYCLE 
+      KODE = 1   NO. TEMP ITER =    3     TEMP =  310.054    
+      KPHASE =    2 KODE =    1 T =  310.054     P = 1.000000E+06 Q =  0.00000    
+
+  LOOP $OLVER01 ITER    3:   2 VARS NOT CONVERGED, MAX ERR/TOL     -245.31        TIME =      0.64
+
+      UOS BLOCK MIXER    MODEL: MIXER                                             TIME =      0.64
+      KODE = 1  NTRIAL =   3  T = 318.9770  P =  500000.      V = 0.685966      Q =  0.00000    
+
+      UOS BLOCK FLASH    MODEL: FLASH2                                            TIME =      0.64
+      KODE = 2  NTRIAL =   1  T = 310.0000  P =  300000.      V = 0.685791      Q = -74830.4    
+
+      UOS BLOCK SPLITTER MODEL: SSPLIT                                            TIME =      0.64
+      SPLIT FRACTION SPECIFICATION MATRIX IS:
+        0.50000    
+        0.50000    
+
+      UOS BLOCK PUMP     MODEL: PUMP                                              TIME =      0.64
+      VOL-FLOW   =  0.3532E-03 , DELTA P    =  0.7000E+06 , PUMP EFF   =  0.7500    
+      FLUID PWR  =   247.2     , BRAKE PWR  =   329.6     , ELEC PWR   =   329.6    
+
+      CONVERGENCE BLOCK $OLVER01  METHOD: WEGSTEIN                                TIME =      0.64
+      ITER   4 For Tear Streams: RECYCLE
+
+  LOOP $OLVER01 ITER    4:     *** CONVERGED *** , MAX ERR/TOL    -0.15025E-04    TIME =      0.64
+
+      GENERATING RESULTS FOR UOS BLOCK PUMP     MODEL: PUMP                       TIME =      0.66
+      KODE = 5  NTRIAL =   6  T = 310.0000  P =  300000.      V =  0.00000      Q = 9.643042E-06
+      VOL-FLOW   =  0.3532E-03 , DELTA P    =  0.7000E+06 , PUMP EFF   =  0.7500    
+      FLUID PWR  =   247.2     , BRAKE PWR  =   329.6     , ELEC PWR   =   329.6    
+      NPSH AVAIL =   0.000    
+
+ STREAM SINKL   
+        SUBSTREAM MIXED     F =  1.863864000647976E-02  T =   310.000000000000      P =   300000.000000000    
+                            H =  -287830123.646362      V =   0.00000000000000      L =   1.00000000000000    
+                            ENTROPY =  -8897.37882882572      DENSITY =   950.798965787938      MW =   18.0152822366829    
+        N-BUT-01  1.039408647393456E-09  WATER     1.863863896707111E-02
+
+ STREAM S3      
+        SUBSTREAM MIXED     F =  1.863864000647976E-02  T =   310.000000000000      P =   300000.000000000    
+                            H =  -287830123.646362      V =   0.00000000000000      L =   1.00000000000000    
+                            ENTROPY =  -8897.37882882572      DENSITY =   950.798965787938      MW =   18.0152822366829    
+        N-BUT-01  1.039408647393456E-09  WATER     1.863863896707111E-02
+
+
+*** INPUT SPECIFICATION MESSAGES ***
+
+ FLOWSHEET    IS GENERATED BECAUSE OF OTHER CHANGES 03/13/2026   13:50:33:99 
+ FLOWSHEET
+     BLOCK MIXER IN=FEED RECYCLE OUT=S1
+     BLOCK FLASH IN=S1 OUT=SINKV S2
+     BLOCK SPLITTER IN=S2 OUT=SINKL S3
+     BLOCK PUMP IN=S3 OUT=RECYCLE
+
+ CHANGES WERE MADE TO BLOCK        SPLITTER 03/13/2026   13:50:33:99 
+ BLOCK SPLITTER SSPLIT
+     FRAC MIXED SINKL 0.5
+
+ PDF updated                                                                      TIME =    100.92
+ THIS COPY OF ASPEN PLUS LICENSED TO                                 
+ 
+ 
+
+
+Calculations begin                                                              time    101.08
+
+
+      UOS BLOCK SPLITTER MODEL: SSPLIT                                            TIME =    101.08
+      SPLIT FRACTION SPECIFICATION MATRIX IS:
+        0.50000    
+        0.50000    
+
+      UOS BLOCK PUMP     MODEL: PUMP                                              TIME =    101.08
+      VOL-FLOW   =  0.3532E-03 , DELTA P    =  0.7000E+06 , PUMP EFF   =  0.7500    
+      FLUID PWR  =   247.2     , BRAKE PWR  =   329.6     , ELEC PWR   =   329.6    
+
+      CONVERGENCE BLOCK $OLVER01  METHOD: WEGSTEIN                                TIME =    101.08
+      ITER   0 For Tear Streams: RECYCLE
+
+      UOS BLOCK MIXER    MODEL: MIXER                                             TIME =    101.08
+      KODE = 1  NTRIAL =   1  T = 318.9770  P =  500000.      V = 0.685966      Q =  0.00000    
+
+      UOS BLOCK FLASH    MODEL: FLASH2                                            TIME =    101.08
+      KODE = 2  NTRIAL =   1  T = 310.0000  P =  300000.      V = 0.685791      Q = -74830.4    
+
+      UOS BLOCK SPLITTER MODEL: SSPLIT                                            TIME =    101.08
+      SPLIT FRACTION SPECIFICATION MATRIX IS:
+        0.50000    
+        0.50000    
+
+      UOS BLOCK PUMP     MODEL: PUMP                                              TIME =    101.08
+      VOL-FLOW   =  0.3532E-03 , DELTA P    =  0.7000E+06 , PUMP EFF   =  0.7500    
+      FLUID PWR  =   247.2     , BRAKE PWR  =   329.6     , ELEC PWR   =   329.6    
+
+      CONVERGENCE BLOCK $OLVER01  METHOD: WEGSTEIN                                TIME =    101.08
+      ITER   1 For Tear Streams: RECYCLE
+
+  LOOP $OLVER01 ITER    1:     *** CONVERGED *** , MAX ERR/TOL    -0.19702E-06    TIME =    101.08
+
+      GENERATING RESULTS FOR UOS BLOCK PUMP     MODEL: PUMP                       TIME =    101.08
+      KODE = 5  NTRIAL =   6  T = 310.0000  P =  300000.      V =  0.00000      Q = 9.643042E-06
+      VOL-FLOW   =  0.3532E-03 , DELTA P    =  0.7000E+06 , PUMP EFF   =  0.7500    
+      FLUID PWR  =   247.2     , BRAKE PWR  =   329.6     , ELEC PWR   =   329.6    
+      NPSH AVAIL =   0.000    
+
+ STREAM SINKL   
+        SUBSTREAM MIXED     F =  1.863864000611254E-02  T =   310.000000000000      P =   300000.000000000    
+                            H =  -287830123.646362      V =   0.00000000000000      L =   1.00000000000000    
+                            ENTROPY =  -8897.37882882572      DENSITY =   950.798965787938      MW =   18.0152822366829    
+        N-BUT-01  1.039408647372992E-09  WATER     1.863863896670389E-02
+
+ STREAM S3      
+        SUBSTREAM MIXED     F =  1.863864000611254E-02  T =   310.000000000000      P =   300000.000000000    
+                            H =  -287830123.646362      V =   0.00000000000000      L =   1.00000000000000    
+                            ENTROPY =  -8897.37882882572      DENSITY =   950.798965787938      MW =   18.0152822366829    
+        N-BUT-01  1.039408647372992E-09  WATER     1.863863896670389E-02
+
+ STREAM SINKV   
+        SUBSTREAM MIXED     F =  8.136135999425470E-02  T =   310.000000000000      P =   300000.000000000    
+                            H =  -127097640.569145      V =   1.00000000000000      L =   0.00000000000000    
+                            ENTROPY =  -6372.55831764681      DENSITY =   7.21858171380244      MW =   57.4522997171956    
+        N-BUT-01  7.999999896059136E-02  WATER     1.361361033663342E-03
+
+ STREAM S2      
+        SUBSTREAM MIXED     F =  3.727728001222507E-02  T =   310.000000000000      P =   300000.000000000    
+                            H =  -287830123.646362      V =   0.00000000000000      L =   1.00000000000000    
+                            ENTROPY =  -8897.37882882572      DENSITY =   950.798965787938      MW =   18.0152822366829    
+        N-BUT-01  2.078817294745985E-09  WATER     3.727727793340778E-02

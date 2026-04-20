@@ -1,0 +1,10 @@
+INPUT: heater_test.inm
+MODNAME: apmain
+RUNID: heater_test
+NEW_RUNID: heater_test
+OLD_RUNID: heater_test
+PDF: heater_test.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:
+DBCONN: _4543nuu.ads

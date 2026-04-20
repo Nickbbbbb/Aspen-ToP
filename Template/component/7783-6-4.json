@@ -1,0 +1,22 @@
+{
+      "alias": "HYDROGEN SULFIDE",
+      "bioJson": "{\"S\":1,\"hydrogen\":2}",
+      "boilingPoint": "212.8",
+      "cas": "7783-6-4",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "H2S",
+      "id": "2019269501791625217",
+      "indexNew": 12,
+      "indexOld": 11,
+      "label": "HYDROGEN SULFIDE",
+      "molarMass": "34.080880000000001",
+      "name": "HYDROGEN SULFIDE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "1922",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

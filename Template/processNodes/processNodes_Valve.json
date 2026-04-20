@@ -1,0 +1,46 @@
+{
+      "componentChange": false,
+      "data": {
+        "label": "阀门_1",
+        "status": ""
+      },
+      "hasDebuggerPoint": false,
+      "height": 50,
+      "id": "df08bcf0_6772fa8c_Valve1",
+      "name": "Valve",
+      "nodeLabel": "阀门",
+      "nodeProperties": {},
+      "paramUncomplete": false,
+      "portChange": false,
+      "ports": [
+        {
+          "id": "8718c6c1-dc23-4cca-a7c9-c1ff7b85378a",
+          "name": "inlet",
+          "relateVirtualPortList": [
+            {
+              "id": "inlet_0",
+              "name": "inlet",
+              "relatedEntityId": "8718c6c1-dc23-4cca-a7c9-c1ff7b85378a",
+              "relatedEntityName": "inlet"
+            }
+          ]
+        },
+        {
+          "id": "0d39b7d1-969c-498e-b73a-684e85f41438",
+          "name": "outlet",
+          "relateVirtualPortList": [
+            {
+              "id": "outlet_0",
+              "name": "outlet",
+              "relatedEntityId": "0d39b7d1-969c-498e-b73a-684e85f41438",
+              "relatedEntityName": "outlet"
+            }
+          ]
+        }
+      ],
+      "scale": 1,
+      "type": "Valve",
+      "width": 60,
+      "x": 7358,
+      "y": 242
+    }

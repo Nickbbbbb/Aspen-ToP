@@ -1,0 +1,22 @@
+{
+      "alias": "n-NONANE",
+      "bioJson": "{\"carbon\":9,\"hydrogen\":20}",
+      "boilingPoint": "423.97",
+      "cas": "111-84-2",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C9H20",
+      "id": "2019269501883899906",
+      "indexNew": 36,
+      "indexOld": 35,
+      "label": "n-NONANE",
+      "molarMass": "128.2551",
+      "name": "n-NONANE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "46",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

@@ -1,0 +1,10 @@
+INPUT: all_process.inm
+MODNAME: apmain
+RUNID: all_process
+NEW_RUNID: all_process
+OLD_RUNID: all_process
+PDF: all_process.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:
+DBCONN: _2401hnp.ads

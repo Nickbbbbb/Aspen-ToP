@@ -1,0 +1,2458 @@
+{
+  "componentEquationPrivateList": [],
+  "componentGroupDetailPrivateList": [
+    {
+      "componentGroupId": "2019601286647898114",
+      "componentId": "2019601414381232130",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:37:54",
+      "formula": "CH4",
+      "id": "2019601414502866945",
+      "index": 1,
+      "oilFlag": 0,
+      "substanceType": "CONVENTIONAL",
+      "updateTime": "2026-02-06 02:37:54"
+    },
+    {
+      "componentGroupId": "2019601286647898114",
+      "componentId": "2019601414385426433",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:37:54",
+      "formula": "C2H2",
+      "id": "2019601414507061249",
+      "index": 2,
+      "oilFlag": 0,
+      "substanceType": "CONVENTIONAL",
+      "updateTime": "2026-02-06 02:37:54"
+    }
+  ],
+  "componentGroupPrivateList": [
+    {
+      "componentGroupName": "GLOBAL",
+      "componentGroupSort": 1,
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:37:23",
+      "id": "2019601286647898114",
+      "isDefault": true,
+      "projectId": "8e045e9d",
+      "updateTime": "2026-02-06 02:37:23"
+    }
+  ],
+  "componentList": [
+    {
+      "alias": "METHANE",
+      "bioJson": "{\"carbon\":1,\"hydrogen\":4}",
+      "boilingPoint": "111.66",
+      "cas": "74-82-8",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:37:54",
+      "dataSource": "PURE",
+      "formula": "CH4",
+      "id": "2019601414381232130",
+      "indexNew": 2,
+      "indexOld": 1,
+      "label": "METHANE",
+      "molarMass": "16.042459999999998",
+      "name": "METHANE",
+      "oilFlag": 0,
+      "projectId": "8e045e9d",
+      "realId": "1",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-06 02:37:54"
+    },
+    {
+      "alias": "ACETYLENE",
+      "bioJson": "{\"carbon\":2,\"hydrogen\":2}",
+      "boilingPoint": "",
+      "cas": "74-86-2",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:37:54",
+      "dataSource": "PURE",
+      "formula": "C2H2",
+      "id": "2019601414385426433",
+      "indexNew": 3,
+      "indexOld": 2,
+      "label": "ACETYLENE",
+      "molarMass": "26.037279999999999",
+      "name": "ACETYLENE",
+      "oilFlag": 0,
+      "projectId": "8e045e9d",
+      "realId": "401",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-06 02:37:54"
+    }
+  ],
+  "componentPropertyPrivateList": [],
+  "componentStructureList": [],
+  "methodAlgoList": [
+    {
+      "algoConfigId": "32",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9170,
+      "id": "2019601483167817730",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "33",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483172012033",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "34",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9243,
+      "id": "2019601483176206338",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "35",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9199,
+      "id": "2019601483180400641",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "36",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9218,
+      "id": "2019601483184594945",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "37",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483184594946",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "1",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483188789250",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "2",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 8978,
+      "id": "2019601483192983554",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "3",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9220,
+      "id": "2019601483197177857",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "4",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 8996,
+      "id": "2019601483197177858",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "5",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483201372162",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "6",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9018,
+      "id": "2019601483205566466",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "7",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9090,
+      "id": "2019601483209760769",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "8",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9329,
+      "id": "2019601483209760770",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "9",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483213955073",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "10",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9052,
+      "id": "2019601483218149378",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "11",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 8988,
+      "id": "2019601483222343681",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "12",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9011,
+      "id": "2019601483222343682",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "13",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483226537986",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "14",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9091,
+      "id": "2019601483230732290",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "15",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9028,
+      "id": "2019601483234926593",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "16",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9344,
+      "id": "2019601483234926594",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "17",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483239120897",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "18",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9461,
+      "id": "2019601483243315201",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "19",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9402,
+      "id": "2019601483247509506",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "20",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9432,
+      "id": "2019601483247509507",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "21",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483251703810",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "22",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9509,
+      "id": "2019601483255898114",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "23",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9479,
+      "id": "2019601483260092417",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "24",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9200,
+      "id": "2019601483260092418",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "25",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483264286722",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "26",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9394,
+      "id": "2019601483268481026",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "27",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9358,
+      "id": "2019601483268481027",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "28",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9363,
+      "id": "2019601483272675330",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "29",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483276869633",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "30",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9419,
+      "id": "2019601483281063937",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "31",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9379,
+      "id": "2019601483281063938",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "38",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9281,
+      "id": "2019601483285258241",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "39",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9284,
+      "id": "2019601483289452546",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "40",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 8968,
+      "id": "2019601483289452547",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "41",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483297841153",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "42",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9174,
+      "id": "2019601483297841154",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "43",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9134,
+      "id": "2019601483302035458",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "45",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483302035459",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "46",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9216,
+      "id": "2019601483306229761",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "47",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9165,
+      "id": "2019601483310424065",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "49",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483314618370",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "50",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9427,
+      "id": "2019601483318812673",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "52",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9365,
+      "id": "2019601483318812674",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "53",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9412,
+      "id": "2019601483323006977",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "54",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483327201282",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "55",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9487,
+      "id": "2019601483327201283",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "57",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9465,
+      "id": "2019601483331395585",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "58",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9176,
+      "id": "2019601483335589889",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "63",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483339784194",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "64",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9116,
+      "id": "2019601483339784195",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "65",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483343978497",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "66",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9449,
+      "id": "2019601483348172802",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "67",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483352367105",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "68",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9469,
+      "id": "2019601483356561410",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "69",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9188,
+      "id": "2019601483360755714",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "70",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483369144321",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "71",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9056,
+      "id": "2019601483369144322",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "72",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9008,
+      "id": "2019601483369144323",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "73",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483373338626",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "74",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9114,
+      "id": "2019601483377532930",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "75",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9073,
+      "id": "2019601483381727234",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "76",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483381727235",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "77",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483385921537",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "78",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483390115842",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "79",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483394310145",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "80",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9144,
+      "id": "2019601483394310146",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "81",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9112,
+      "id": "2019601483398504449",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "82",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483402698754",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "83",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9508,
+      "id": "2019601483406893058",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "84",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9438,
+      "id": "2019601483411087362",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "86",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483415281665",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "87",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9301,
+      "id": "2019601483419475970",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "88",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9333,
+      "id": "2019601483423670274",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "89",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483423670275",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "90",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9123,
+      "id": "2019601483427864578",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "91",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9061,
+      "id": "2019601483432058882",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "92",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483436253185",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "93",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9185,
+      "id": "2019601483440447489",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "94",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9157,
+      "id": "2019601483448836097",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "95",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483448836098",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "96",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9259,
+      "id": "2019601483448836099",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "97",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9308,
+      "id": "2019601483453030402",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "98",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483457224705",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "99",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483461419009",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "100",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483465613313",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "101",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483465613314",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "102",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483469807618",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "103",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483474001922",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "104",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483474001923",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "105",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483478196225",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "106",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483482390529",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "107",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483482390530",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "108",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483486584833",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "109",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483486584834",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "110",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483490779137",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "111",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483494973442",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "112",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483494973443",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "113",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483499167746",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "114",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483499167747",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "115",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483503362049",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "116",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483507556354",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "117",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483507556355",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "118",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483511750657",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "119",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483511750658",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "120",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483515944961",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "121",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483520139266",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "122",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9132,
+      "id": "2019601483520139267",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "123",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9237,
+      "id": "2019601483524333569",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "124",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483528527874",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "125",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9492,
+      "id": "2019601483532722177",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "126",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9522,
+      "id": "2019601483532722178",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "127",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483536916482",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "128",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9004,
+      "id": "2019601483541110785",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "129",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9536,
+      "id": "2019601483545305089",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "130",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483549499394",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "131",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9266,
+      "id": "2019601483553693698",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "132",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "customizeMethodId": 9210,
+      "id": "2019601483557888001",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "9537",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483557888002",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "9538",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483562082305",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "9548",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483566276609",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "9549",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483566276610",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "9555",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483570470914",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "9557",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483574665218",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    },
+    {
+      "algoConfigId": "9558",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:10",
+      "id": "2019601483574665219",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:10"
+    }
+  ],
+  "methodFreewaterList": [
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "1",
+      "id": "2019601486078664705",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "2",
+      "id": "2019601486082859009",
+      "method": "PHIV_IDEAL",
+      "methodDict": "PHIV_IDEAL,PHIV_SRK,PHIV_RKA,PHIV_PR,PHIV_RKS,PHIV_PRMHV2,PHIV_RKSMHV2,PHIV_PRWS,PHIV_RKSWS,PHIV_VT,PHIV_RK,PHIV_IF97,PHIV_PA",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "3",
+      "id": "2019601486087053313",
+      "method": "PHIL_IDEAL",
+      "methodDict": "PHIL_IDEAL,PHIL_SRK,PHIL_RKS,PHIL_PR,PHIL_RKS,PHIL_PRMHV2,PHIL_RKSMHV2,PHIL_PRWS,PHIL_RKSWS,PHIL_VT,PHIL_GEN,PHIL_IF97,PHIL_PA",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "4",
+      "id": "2019601486091247617",
+      "method": "PHIS_ANT",
+      "methodDict": "PHIS_ANT,PHIS_GEN",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "6",
+      "id": "2019601486095441922",
+      "method": "PHIVMX_IDEAL",
+      "methodDict": "PHIVMX_IDEAL,PHIVMX_SRK,PHIVMX_PR,PHIVMX_RKS,PHIVMX_VT,PHIVMX_RKA,PHIVMX_PA,PHIVMX_PRMHV2,PHIVMX_RKSMHV2,PHIVMX_PRWS,PHIVMX_RKSWS,PHIVMX_NRTL,PHIVMX_WILISON,PHIVMX_UNIQUAC,PHIVMX_UNIFAC,PHIVMX_GEN",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "7",
+      "id": "2019601486099636225",
+      "method": "PHILMX_IDEAL",
+      "methodDict": "PHILMX_IDEAL,PHILMX_SRK,PHILMX_PR,PHILMX_RKS,,PHILMX_VT,,PHILMX_RKA,,PHILMX_PA,,PHILMX_PRMHV2,,PHILMX_RKSMHV2,,PHILMX_PRWS,,PHILMX_RKSWS,,PHILMX_NRTL,,PHILMX_WILISON,,PHILMX_UNIQUAC,,PHILMX_UNIFAC,,PHILMX_GEN",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "8",
+      "id": "2019601486099636226",
+      "method": "PHISMX_IDEAL",
+      "methodDict": "PHISMX_IDEAL,PHISMX_ANT,PHISMX_GEN,",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "9",
+      "id": "2019601486103830529",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "10",
+      "id": "2019601486108024834",
+      "method": "HV_IDEAL",
+      "methodDict": "HV_IDEAL,HV_SRK,HV_RKA,HV_PR,HV_RKS,HV_PRMHV2,HV_RKSMHV2,HV_PRWS,HV_RLSWS,HV_VT,HV_RK,HV_IF97,HV_PA",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "11",
+      "id": "2019601486112219137",
+      "method": "HL_IDEAL",
+      "methodDict": "HL_IDEAL,HL_SRK,HL_RKA,HL_PR,HL_RKS,HL_PRMHV2,HL_RKSMHV2,HL_PRWS,HL_RKSWS,HL_VT,HL_RK,HL_IF97,HL_PA",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "12",
+      "id": "2019601486116413442",
+      "method": "HS_CP",
+      "methodDict": "HS_CP,HS_GEN,HS_VK",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "14",
+      "id": "2019601486116413443",
+      "method": "HVMX_IDEAL",
+      "methodDict": "HVMX_IDEAL,HVMX_SRK,HVMX_PR,HVMX_RKS,HVMX_VT,HVMX_RKA,HVMX_PA,HVMX_PRMHV2,HVMX_RKSMHV2,HVMX_PRWS,HVMX_RKSWS,HVMX_RK,HVMX_IF97",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "15",
+      "id": "2019601486120607745",
+      "method": "HLMX_VT",
+      "methodDict": "HLMX_VT,HLMX_RKS,HLMX_PA,HLMX_PRMHV2,HLMX_RKSMHV2,HLMX_PRWS,HLMX_RKSWS,HLMX_NRTL,HLMX_WILSON,HLMX_UNIQUAC,HLMX_UNIFAC,HLMX_VANLAAR,HLMX_IF97,HLMX_IDEAL,HLMX_SRK,HLMX_PR,HLMX_RKS",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "16",
+      "id": "2019601486124802050",
+      "method": "HSMX_CPM",
+      "methodDict": "HSMX_CPM,HSMX_VK,",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "17",
+      "id": "2019601486124802051",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "18",
+      "id": "2019601486128996354",
+      "method": "GV_IDEAL",
+      "methodDict": "GV_IDEAL,GV_SRK,GV_RKA,GV_PR,GV_RKS,GV_PRMHV2,GV_RKSMHV2,GV_PRWS,GV_RKSWS,GV_VT,GV_RK,GV_IF97,GV_PA",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "19",
+      "id": "2019601486133190658",
+      "method": "GL_IDEAL",
+      "methodDict": "GL_IDEAL,GL_SRK,GL_RKA,GL_PR,GL_RKS,GL_PRMHV2,GL_RKSMHV2,GL_PRWS,GL_RKSWS,GL_VT,GL_ANT,GL_IF97,GL_PA",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "20",
+      "id": "2019601486133190659",
+      "method": "GS_CPM",
+      "methodDict": "GS_CPM,GS_VK",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "22",
+      "id": "2019601486137384962",
+      "method": "GVMX_IDEAL",
+      "methodDict": "GVMX_IDEAL,GVMX_SRK,GVMX_PR,GVMX_RKS,GVMX_VT,GVMX_RKA,GVMX_PA,GVMX_PRMHV2,GVMX_RKSMHV2,GVMX_PRWS,GVMX_RKSWS,GVMX_RK,GVMX_IF97",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "23",
+      "id": "2019601486141579266",
+      "method": "GLMX_IDEAL",
+      "methodDict": "GLMX_IDEAL,GLMX_SRK,GLMX_PR,GLMX_RKS,GLMX_VT,GLMX_RKA,GLMX_PA,GLMX_PRMHV2,GLMX_RKSMHV2,GLMX_PRWS,GLMX_RKSWS,GLMX_NRTL,GLMX_WILSON,GLMX_UNIQUAC,GLMX_UNIFAC,GLMX_VANLAAR,GLMX_IF97",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "24",
+      "id": "2019601486141579267",
+      "method": "GSMX_CPM",
+      "methodDict": "GSMX_CPM,",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "25",
+      "id": "2019601486145773570",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "26",
+      "id": "2019601486149967873",
+      "method": "SV_IDEAL",
+      "methodDict": "SV_IDEAL,SV_SRK,SV_RKA,SV_PR,SV_RKS,SV_PRMHV2,SV_RKSMHV2,SV_PRWS,SV_RKSWS,SV_VT,SV_RK,SV_IF97,SV_PA",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "27",
+      "id": "2019601486149967874",
+      "method": "SL_GEN",
+      "methodDict": "SL_GEN,SL_SRK,SL_RKA,SL_PR,SL_RKS,SL_PRMHV2,SL_RKSMHV2,SL_PRWS,SL_RKSWS,SL_VT,SL_IDEAL,SL_IF97,SL_PA",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "28",
+      "id": "2019601486154162177",
+      "method": "SS_CPM",
+      "methodDict": "SS_CPM,SS_GEN,SS_VK",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "30",
+      "id": "2019601486158356482",
+      "method": "SVMX_IDEAL",
+      "methodDict": "SVMX_IDEAL,SVMX_SRK,SVMX_PR,SVMX_RKS,SVMX_VT,SVMX_RKA,SVMX_PA,SVMX_PRMHV2,SVMX_RKSMHV2,SVMX_PRWS,SVMX_RKSWS,SVMX_RK,SVMX_IF97",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "31",
+      "id": "2019601486158356483",
+      "method": "SLMX_IDEAL",
+      "methodDict": "SLMX_IDEAL,SLMX_SRK,SLMX_PR,SLMX_RKS,SLMX_VT,SLMX_RKA,SLMX_PA,SLMX_PRMHV2,SLMX_RKSMHV2,SLMX_PRWS,SLMX_RKSWS,SLMX_IF97,SLMX_NRTL,SLMX_WILSON,SLMX_UNIQUAC,SLMX_UNIFAC,SLMX_VANLAAR,",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "32",
+      "id": "2019601486162550786",
+      "method": "SSMX_CPM",
+      "methodDict": "SSMX_CPM,SSMX_VK",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "33",
+      "id": "2019601486162550787",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "34",
+      "id": "2019601486166745089",
+      "method": "VV_IDEAL",
+      "methodDict": "VV_IDEAL,VV_SRK,VV_RKA,VV_PR,VV_RKS,VV_PRMHV2,VV_RKSMHV2,VV_PRWS,VV_RKSWS,VV_VT,VV_RK,VV_IF97,VV_PA,VV_BLS",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "35",
+      "id": "2019601486170939393",
+      "method": "VL_GEN",
+      "methodDict": "VL_GEN,VL_SRK,VL_RKA,VL_PR,VL_RKS,VL_PRMHV2,VL_RKSMHV2,VL_PRWS,VL_RKSWS,VL_VT,VL_RAC,VL_IF97,VL_PA,VL_BLS",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "36",
+      "id": "2019601486175133697",
+      "method": "VS_GEN",
+      "methodDict": "VS_GEN,VS_VK",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "38",
+      "id": "2019601486175133698",
+      "method": "VVMX_IDEAL",
+      "methodDict": "VVMX_IDEAL,VVMX_SRK,VVMX_PR,VVMX_RKS,VVMX_VT,VVMX_RKA,VVMX_PA,VVMX_PRMHV2,VVMX_RKSMHV2,VVMX_PRWS,VVMX_RKSWS,VVMX_RK,VVMX_IF97,VVMX_BLS",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "39",
+      "id": "2019601486179328001",
+      "method": "VLMX_RAC",
+      "methodDict": "VLMX_RAC,VLMX_SRK,VLMX_PR,VLMX_RKS,VLMX_VT,VLMX_RKA,VLMX_PA,VLMX_PRMHV2,VLMX_RKSMHV2,VLMX_PRWS,VLMX_RKSWS,VLMX_RAC,VLMX_IF97,VLMX_BLS",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "40",
+      "id": "2019601486179328002",
+      "method": "VSMX_CPM",
+      "methodDict": "VSMX_CPM,VSMX_VK,VSMX_PM",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "41",
+      "id": "2019601486187716610",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "13",
+      "id": "2019601486187716611",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "29",
+      "id": "2019601486187716612",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "37",
+      "id": "2019601486191910914",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "5",
+      "id": "2019601486191910915",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "42",
+      "id": "2019601486196105217",
+      "method": "MUV_CLS",
+      "methodDict": "MUV_CLS,MUV_GEN,MUV_IF97,MUV_LUC,MUV_TRA,MUV_CEB,MUV_CLS",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "43",
+      "id": "2019601486200299522",
+      "method": "MUL_GEN",
+      "methodDict": "MUL_GEN,MUL_TRA,MUL_IF97,MUL_CLS,MUL_VK",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "46",
+      "id": "2019601486200299523",
+      "method": "MUVMX_CEB",
+      "methodDict": "MUVMX_CEB,MUVMX_CLS,MUVMX_GEN,MUVMX_IF97,MUVMX_LUC,MUVMX_TRA",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "47",
+      "id": "2019601486204493826",
+      "method": "MULMX_API.MULMX_TRA",
+      "methodDict": "MULMX_API.MULMX_TRA,MULMX_IF97,MULMX_CLS,MULMX_AND,MULMX_LS,MULMX_ASPEN",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "49",
+      "id": "2019601486204493827",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "50",
+      "id": "2019601486208688130",
+      "method": "KV_TRA",
+      "methodDict": "KV_TRA,KV_IF97,KV_GEN,KV_WMS,KV_CLS,",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "52",
+      "id": "2019601486212882433",
+      "method": "KL_TRA",
+      "methodDict": "KL_TRA,KL_GEN,KL_CLS,KL_IF97,KL_VK",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "53",
+      "id": "2019601486212882434",
+      "method": "KS_CPM",
+      "methodDict": "KS_CPM,KS_PM",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "55",
+      "id": "2019601486217076738",
+      "method": "KVMX_CLS",
+      "methodDict": "KVMX_CLS,KVMX_GEN,KVMX_IF97,KVMX_TRA,KVMX_WMS",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "57",
+      "id": "2019601486221271041",
+      "method": "KLMX_CLS",
+      "methodDict": "KLMX_CLS,KLMX_GEN,KLMX_IF97,KLMX_TRA,KLMX_VK,KLMX_VRE",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "58",
+      "id": "2019601486221271042",
+      "method": "KSMX_CPM",
+      "methodDict": "KSMX_CPM,KSMX_PM",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "63",
+      "id": "2019601486225465345",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "64",
+      "id": "2019601486229659650",
+      "method": "SIGL_GEN",
+      "methodDict": "SIGL_GEN,SIGL_IF97",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "66",
+      "id": "2019601486233853954",
+      "method": "SIGLMX_APR",
+      "methodDict": "SIGLMX_APR,SIGLMX_PMM",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "67",
+      "id": "2019601486233853955",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "68",
+      "id": "2019601486238048257",
+      "method": "WSL_WSC",
+      "methodDict": "WSL_WSC",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "69",
+      "id": "2019601486242242562",
+      "method": "HCSL_HSC",
+      "methodDict": "HCSL_HSC",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "70",
+      "id": "2019601486246436866",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "71",
+      "id": "2019601486246436867",
+      "method": "DV_DKK",
+      "methodDict": "DV_DKK,DV_GEN",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "72",
+      "id": "2019601486250631169",
+      "method": "DL_GEN",
+      "methodDict": "DL_GEN,",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "73",
+      "id": "2019601486254825473",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "74",
+      "id": "2019601486259019778",
+      "method": "DVMX_GEN",
+      "methodDict": "DVMX_GEN,DVMX_DKK",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "75",
+      "id": "2019601486263214081",
+      "method": "DLMX_WC",
+      "methodDict": "DLMX_WC,DLMX_GEN",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "76",
+      "id": "2019601486263214082",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "77",
+      "id": "2019601486267408385",
+      "method": "PHILPC_IDEAL",
+      "methodDict": "PHILPC_IDEAL,PHILPC_ANT",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "78",
+      "id": "2019601486271602690",
+      "method": "PHISPC_IDEAL",
+      "methodDict": "PHISPC_IDEAL,PHISPC_ANT,",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "79",
+      "id": "2019601486271602691",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "80",
+      "id": "2019601486275796994",
+      "method": "DSV_IDEAL",
+      "methodDict": "DSV_IDEAL,DSV_IF97,DSV_PA,DSV_PR,DSV_PRMHV2,DSV_PRWS,DSV_RK,DSV_RKA,DSV_RKS,DSV_RKSMHV2,DSV_RKSWS,DSV_SRK,DSV_VT",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "81",
+      "id": "2019601486279991298",
+      "method": "DSL_GEN",
+      "methodDict": "DSL_GEN,DSL_IF97,DSL_PA,DSL_PR,DSL_PRMHV2,DSL_PRWS,DSL_RKA,DSL_RKS,DSL_RKSMHV2,DSL_RKSWS,DSL_SRK,DSL_VT",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "83",
+      "id": "2019601486284185601",
+      "method": "DSVMX_IDEAL",
+      "methodDict": "DSVMX_IDEAL,DSVMX_IF97,DSVMX_PA,DSVMX_PR,DSVMX_PRMHV2,DSVMX_PRWS,DSVMX_RK,DSVMX_RKA,DSVMX_RKS,DSVMX_RKSMHV2,DSVMX_RKSWS,DSVMX_SRK,DSVMX_VT",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "84",
+      "id": "2019601486284185602",
+      "method": "DSLMX_IF97",
+      "methodDict": "DSLMX_IF97,DSLMX_NRTL,DSLMX_PA,DSLMX_PR,DSLMX_PRMHV2,DSLMX_PRWS,DSLMX_RKA,DSLMX_RKS,DSLMX_RKSMHV2,DSLMX_RKSWS,DSLMX_SRK,DSLMX_UNIFAC,DSLMX_UNIQUAC,DSLMX_VANLAAR,DSLMX_VT,DSLMX_WILSON",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "86",
+      "id": "2019601486288379906",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "87",
+      "id": "2019601486292574209",
+      "method": "DHL_GEN",
+      "methodDict": "DHL_GEN,DHL_IDEAL,DHL_IF97,DHL_PA,DHL_PR,DHL_PRMHV2,DHL_PRWS,DHL_RKA,DHL_RKS,DHL_RKSMHV2,DHL_RKSWS,DHL_SRK,DHL_VT",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "88",
+      "id": "2019601486296768514",
+      "method": "DHV_IDEAL",
+      "methodDict": "DHV_IDEAL,DHV_SRK,DHV_RKA,DHV_PR,DHV_RKS,DHV_PRMHV2,DHV_RKSMHV2,DHV_PRWS,DHV_RKSWS,DHV_VT,DHV_RK,DHV_IF97,DHV_PA",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "90",
+      "id": "2019601486296768515",
+      "method": "DHVMX_SRK",
+      "methodDict": "DHVMX_SRK,DHVMX_PR,DHVMX_RKS,DHVMX_VT,DHVMX_PR,DHVMX_IDEAL,DHVMX_RKA,DHVMX_IF97,DHVMX_PA,DHVMX_PRMHV2,DHVMX_RKSMHV2,DHVMX_PRWS,DHVMX_RKSWS,DHVMX_IDEAL,DHVMX_RK",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "91",
+      "id": "2019601486300962818",
+      "method": "DHLMX_SRK",
+      "methodDict": "DHLMX_SRK,DHLMX_PR,DHLMX_RKS,DHLMX_VT,DHLMX_PR,DHLMX_IDEAL,DHLMX_RKA,DHLMX_IF97,DHLMX_PA,DHLMX_PRMHV2,DHLMX_RKSMHV2,DHLMX_PRWS,DHLMX_RKSWS,DHLMX_NRTL,DHLMX_WILSON,DHLMX_UNIQUAC,DHLMX_UNIFAC,DHLMX_VANLARR",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "92",
+      "id": "2019601486300962819",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "93",
+      "id": "2019601486305157121",
+      "method": "DGV_IDEAL",
+      "methodDict": "DGV_IDEAL,DGV_IF97,DGV_PA,DGV_PR,DGV_PRMHV2,DGV_PRWS,DGV_RK,DGV_RKA,DGV_RKS,DGV_RKSMHV2,DGV_SRK,DGV_VT",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "94",
+      "id": "2019601486309351425",
+      "method": "DGL_ANT",
+      "methodDict": "DGL_ANT,DGL_GEN,DGL_IDEAL,DGL_IF97,DGL_PA,DGL_PR,DGL_PRMHV2,DGL_PRWS,DGL_RKA,DGL_RKS,DGL_RKSMHV2,DGL_RKSWS,DGL_SRK,DGL_VT",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "96",
+      "id": "2019601486313545729",
+      "method": "DGVMX_SRK",
+      "methodDict": "DGVMX_SRK,DGVMX_PR,DGVMX_RKS,DGVMX_VT,DGVMX_PR,DGVMX_RKA,DGVMX_IF97,DGVMX_PA,DGVMX_IDEAL,DGVMX_PRMHV2,DGVMX_RKSMHV2,DGVMX_PRWS,DGVMX_RKSWS,DGVMX_RK",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "82",
+      "id": "2019601486313545730",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "89",
+      "id": "2019601486317740034",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "54",
+      "id": "2019601486321934338",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "65",
+      "id": "2019601486321934339",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "97",
+      "id": "2019601486326128641",
+      "method": "DGLMX_SRK",
+      "methodDict": "DGLMX_SRK,DGLMX_PR,DGLMX_RKS,DGLMX_VT,DGLMX_PR,DGLMX_RKA,DGLMX_IF97,DGLMX_PA,DGLMX_IDEAL,DGLMX_PRMHV2,DGLMX_RKSMHV2,DGLMX_PRWS,DGLMX_RKSWS,DGLMX_UNIFAC,DGLMX_VANLAAR,DGLMX_NRTL,DGLMX_WILSON,DGLMX_UNIQUAC",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "98",
+      "id": "2019601486330322946",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "99",
+      "id": "2019601486330322947",
+      "method": "HNRY_HEN",
+      "methodDict": "HNRY_HEN,HNRY_GEN",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "100",
+      "id": "2019601486334517250",
+      "method": "HNRYPC_BOC",
+      "methodDict": "HNRYPC_BOC,HNRYPC_GEN",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "102",
+      "id": "2019601486338711553",
+      "method": "HSXS_IDEAL",
+      "methodDict": "HSXS_IDEAL",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "104",
+      "id": "2019601486338711554",
+      "method": "GSXS_IDEAL",
+      "methodDict": "GSXS_IDEAL",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "105",
+      "id": "2019601486342905857",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "106",
+      "id": "2019601486351294465",
+      "method": "MUVLP_CEB",
+      "methodDict": "MUVLP_CEB,MUVLP_CLS",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "108",
+      "id": "2019601486351294466",
+      "method": "MUVMXLP_CEB",
+      "methodDict": "MUVMXLP_CEB,MUVMXLP_CLS",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "109",
+      "id": "2019601486351294467",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "110",
+      "id": "2019601486355488769",
+      "method": "KVLP_GEN",
+      "methodDict": "KVLP_GEN",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "112",
+      "id": "2019601486359683073",
+      "method": "KVMXLP_GEN",
+      "methodDict": "KVMXLP_GEN",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "114",
+      "id": "2019601486359683074",
+      "method": "MUVMXPC_GEN",
+      "methodDict": "MUVMXPC_GEN",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "116",
+      "id": "2019601486363877377",
+      "method": "DHLPC_GEN",
+      "methodDict": "DHLPC_GEN,DHLPC_IDEAL",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "117",
+      "id": "2019601486368071682",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "118",
+      "id": "2019601486368071683",
+      "method": "KVPC_GEN",
+      "methodDict": "KVPC_GEN,KVPC_RK",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "120",
+      "id": "2019601486372265985",
+      "method": "KVMXPC_GEN",
+      "methodDict": "KVMXPC_GEN,KVMXPC_RK",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "21",
+      "id": "2019601486376460289",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "45",
+      "id": "2019601486380654593",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "101",
+      "id": "2019601486380654594",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "103",
+      "id": "2019601486384848897",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "113",
+      "id": "2019601486384848898",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "115",
+      "id": "2019601486389043201",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "107",
+      "id": "2019601486389043202",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "111",
+      "id": "2019601486393237506",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "119",
+      "id": "2019601486393237507",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    },
+    {
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:38:11",
+      "freewaterConfigId": "95",
+      "id": "2019601486397431810",
+      "method": "",
+      "methodId": "2019601286622732289",
+      "updateTime": "2026-02-06 02:38:11"
+    }
+  ],
+  "methodParamsPrivateList": [],
+  "methodPrivateList": [
+    {
+      "baseAlgo": "SRK",
+      "createBy": "admin",
+      "createTime": "2026-02-06 02:37:23",
+      "description": "默认物性包",
+      "freeWater": "IF97",
+      "id": "2019601286622732289",
+      "isDefault": true,
+      "methodGroupName": "物性包",
+      "methodGroupSort": 1,
+      "projectId": "8e045e9d",
+      "updateBy": "admin",
+      "updateTime": "2026-02-06 02:38:07"
+    }
+  ],
+  "omProcessArchive": {
+    "createTime": "2026-02-06 02:37:23",
+    "currentFlag": 1,
+    "id": "2019601286668869634",
+    "processId": "d6a3d7a5",
+    "projectId": "8e045e9d",
+    "syncGraphVersion": 55,
+    "syncParamVersion": 7,
+    "updateTime": "2026-02-06 02:37:23",
+    "uuid": "",
+    "versionNo": "latest"
+  },
+  "omProcessGraph": {
+    "createBy": "admin",
+    "delFlag": "0",
+    "graphType": 1,
+    "id": "d6a3d7a5",
+    "processEdges": "[{\"attrs\":{\"data\":{\"labeldata\":\"\",\"status\":\"\"},\"label\":\"s-7\"},\"id\":\"a5638844-dc42-4ed0-95d9-685216f143ad_s-7\",\"source\":{\"cell\":\"3988f609_946c2d8a_Pump1\",\"port\":\"outlet_0\"},\"target\":{\"cell\":\"8c7245c0_fb997020_Compressor1\",\"port\":\"inlet_0\"}},{\"attrs\":{\"data\":{\"labeldata\":\"\",\"status\":\"\"},\"label\":\"s-12\"},\"id\":\"ffff7dbc-431c-46d9-913a-82e682930d6a_s-12\",\"source\":{\"cell\":\"03f69f8d_85dc6ec9_Splitter1\",\"port\":\"outlet_1\"},\"target\":{\"cell\":\"ff1924d5_ee9ef504_Sink3\",\"port\":\"inlet_0\"}},{\"attrs\":{\"data\":{\"labeldata\":\"\",\"status\":\"\"},\"label\":\"s-9\"},\"id\":\"28fbbc1b-acad-4254-8347-46b6a3679514_s-9\",\"source\":{\"cell\":\"54a52706_641a2fc1_Source3\",\"port\":\"outlet_0\"},\"target\":{\"cell\":\"851a7777_6d5e0412_Mixer1\",\"port\":\"inlet_1\"}},{\"attrs\":{\"data\":{\"labeldata\":\"\",\"status\":\"\"},\"label\":\"s-5\"},\"id\":\"b82edbe6-79d4-4850-9260-53abeec970dc_s-5\",\"source\":{\"cell\":\"795f07b5_a1d3b296_HeatExchanger1\",\"port\":\"hot_stream_outlet_0\"},\"target\":{\"cell\":\"ff1924d5_2db8b545_Sink1\",\"port\":\"inlet_0\"}},{\"attrs\":{\"data\":{\"labeldata\":\"\",\"status\":\"\"},\"label\":\"s-8\"},\"id\":\"68926282-2607-4faf-976d-e4af6ecea368_s-8\",\"source\":{\"cell\":\"8c7245c0_fb997020_Compressor1\",\"port\":\"outlet_0\"},\"target\":{\"cell\":\"851a7777_6d5e0412_Mixer1\",\"port\":\"inlet_0\"}},{\"attrs\":{\"data\":{\"labeldata\":\"\",\"status\":\"\"},\"label\":\"s-1\"},\"id\":\"2472d3e1-890e-4e27-9a0b-d9fca1f0d096_s-1\",\"source\":{\"cell\":\"54a52706_4f85efc5_Source1\",\"port\":\"outlet_0\"},\"target\":{\"cell\":\"c4cecd0c_40f3e754_Heater1\",\"port\":\"inlet_0\"}},{\"attrs\":{\"data\":{\"labeldata\":\"\",\"status\":\"\"},\"label\":\"s-6\"},\"id\":\"ad809cce-317a-4771-80b7-7e93bef995b8_s-6\",\"source\":{\"cell\":\"795f07b5_a1d3b296_HeatExchanger1\",\"port\":\"cold_stream_outlet_0\"},\"target\":{\"cell\":\"3988f609_946c2d8a_Pump1\",\"port\":\"inlet_0\"}},{\"attrs\":{\"data\":{\"labeldata\":\"\",\"status\":\"\"},\"label\":\"s-10\"},\"id\":\"4c1f1aa8-032b-4c5f-8bab-3143027498f5_s-10\",\"source\":{\"cell\":\"851a7777_6d5e0412_Mixer1\",\"port\":\"outlet_0\"},\"target\":{\"cell\":\"03f69f8d_85dc6ec9_Splitter1\",\"port\":\"inlet_0\"}},{\"attrs\":{\"data\":{\"labeldata\":\"\",\"status\":\"\"},\"label\":\"s-3\"},\"id\":\"a28a3b8d-5070-41bd-80c6-dffeb9f3c258_s-3\",\"source\":{\"cell\":\"df08bcf0_4937bc9a_Valve1\",\"port\":\"outlet_0\"},\"target\":{\"cell\":\"795f07b5_a1d3b296_HeatExchanger1\",\"port\":\"cold_stream_inlet_0\"}},{\"attrs\":{\"data\":{\"labeldata\":\"\",\"status\":\"\"},\"label\":\"s-4\"},\"id\":\"bd79d9ea-0bc0-4cc8-a2a4-5ca9b50197ff_s-4\",\"source\":{\"cell\":\"54a52706_c46c0299_Source2\",\"port\":\"outlet_0\"},\"target\":{\"cell\":\"795f07b5_a1d3b296_HeatExchanger1\",\"port\":\"hot_stream_inlet_0\"}},{\"attrs\":{\"data\":{\"labeldata\":\"\",\"status\":\"\"},\"label\":\"s-11\"},\"id\":\"2d2ede5a-77c4-4b10-a501-a42ed417a3a0_s-11\",\"source\":{\"cell\":\"03f69f8d_85dc6ec9_Splitter1\",\"port\":\"outlet_0\"},\"target\":{\"cell\":\"ff1924d5_a0206db7_Sink2\",\"port\":\"inlet_0\"}},{\"attrs\":{\"data\":{\"labeldata\":\"\",\"status\":\"\"},\"label\":\"s-2\"},\"id\":\"1d089cb8-117d-4e3e-a5ac-47177a73bff4_s-2\",\"source\":{\"cell\":\"c4cecd0c_40f3e754_Heater1\",\"port\":\"outlet_0\"},\"target\":{\"cell\":\"df08bcf0_4937bc9a_Valve1\",\"port\":\"inlet_0\"}}]",
+    "processNodes": "[{\"data\":{\"label\":\"汇_3\",\"status\":\"\"},\"hasDebuggerPoint\":false,\"height\":25,\"id\":\"ff1924d5_ee9ef504_Sink3\",\"name\":\"Sink\",\"nodeLabel\":\"汇\",\"nodeProperties\":\"{\\\"calculation_back_end\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"NATIVE\\\"},\\\"component_cluster\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"GLOBAL\\\"},\\\"property_package\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"物性包\\\"},\\\"comp_num\\\":{\\\"isKeyword\\\":true}}\",\"paramUncomplete\":false,\"portChange\":false,\"ports\":[{\"id\":\"ac35e72a-8581-4445-83bb-9f50dca5e19b\",\"name\":\"inlet\",\"relateVirtualPortList\":[{\"id\":\"inlet_0\",\"name\":\"inlet\",\"relatedEntityId\":\"ac35e72a-8581-4445-83bb-9f50dca5e19b\",\"relatedEntityName\":\"inlet\"}]}],\"scale\":1,\"type\":\"Sink\",\"width\":50,\"x\":1750,\"y\":130},{\"componentChange\":false,\"data\":{\"label\":\"压缩机_1\",\"status\":\"\"},\"hasDebuggerPoint\":false,\"height\":50,\"id\":\"8c7245c0_fb997020_Compressor1\",\"name\":\"Compressor\",\"nodeLabel\":\"压缩机\",\"nodeProperties\":\"{\\\"calculation_back_end\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"NATIVE\\\"},\\\"component_cluster\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"GLOBAL\\\"},\\\"property_package\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"物性包\\\"},\\\"comp_num\\\":{\\\"isKeyword\\\":true,\\\"value\\\":2},\\\"outlet_specification\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"no_type\\\",\\\"unit\\\":\\\"-\\\",\\\"value\\\":\\\"0\\\",\\\"realValue\\\":\\\"0\\\"},\\\"outlet_stream_pressure\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"pressure\\\",\\\"value\\\":1000000,\\\"unit\\\":\\\"Pa\\\"},\\\"pressure_increase\\\":{\\\"isKeyword\\\":true,\\\"unitType\\\":\\\"pressure\\\"},\\\"pressure_ratio\\\":{\\\"isKeyword\\\":true,\\\"unitType\\\":\\\"no_type_gtzero\\\"},\\\"total_power\\\":{\\\"isKeyword\\\":true,\\\"unitType\\\":\\\"power\\\"},\\\"isentropic_efficiency\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"no_type_percentage\\\",\\\"value\\\":0.72},\\\"mechanical_efficiency\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"no_type_percentage\\\",\\\"value\\\":0.72}}\",\"paramUncomplete\":false,\"portChange\":false,\"ports\":[{\"id\":\"bd06e1f4-38b6-49b0-9109-f37180494fca\",\"name\":\"inlet\",\"relateVirtualPortList\":[{\"id\":\"inlet_0\",\"name\":\"inlet\",\"relatedEntityId\":\"bd06e1f4-38b6-49b0-9109-f37180494fca\",\"relatedEntityName\":\"inlet\"}]},{\"id\":\"58516541-b693-4729-9eff-f969d7e34c5b\",\"name\":\"outlet\",\"relateVirtualPortList\":[{\"id\":\"outlet_0\",\"name\":\"outlet\",\"relatedEntityId\":\"58516541-b693-4729-9eff-f969d7e34c5b\",\"relatedEntityName\":\"outlet\"}]}],\"scale\":1,\"type\":\"Compressor\",\"width\":58,\"x\":1207,\"y\":265},{\"data\":{\"label\":\"汇_1\",\"status\":\"\"},\"hasDebuggerPoint\":false,\"height\":25,\"id\":\"ff1924d5_2db8b545_Sink1\",\"name\":\"Sink\",\"nodeLabel\":\"汇\",\"nodeProperties\":\"{\\\"calculation_back_end\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"NATIVE\\\"},\\\"component_cluster\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"GLOBAL\\\"},\\\"property_package\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"物性包\\\"},\\\"comp_num\\\":{\\\"isKeyword\\\":true}}\",\"paramUncomplete\":false,\"portChange\":false,\"ports\":[{\"id\":\"ac35e72a-8581-4445-83bb-9f50dca5e19b\",\"name\":\"inlet\",\"relateVirtualPortList\":[{\"id\":\"inlet_0\",\"name\":\"inlet\",\"relatedEntityId\":\"ac35e72a-8581-4445-83bb-9f50dca5e19b\",\"relatedEntityName\":\"inlet\"}]}],\"scale\":1,\"type\":\"Sink\",\"width\":50,\"x\":950,\"y\":60},{\"componentChange\":false,\"data\":{\"label\":\"混合器_1\",\"status\":\"\"},\"hasDebuggerPoint\":false,\"height\":72,\"id\":\"851a7777_6d5e0412_Mixer1\",\"name\":\"Mixer\",\"nodeLabel\":\"混合器\",\"nodeProperties\":\"{\\\"calculation_back_end\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"NATIVE\\\"},\\\"component_cluster\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"GLOBAL\\\"},\\\"property_package\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"物性包\\\"},\\\"comp_num\\\":{\\\"isKeyword\\\":true,\\\"value\\\":2},\\\"no_inlets\\\":{\\\"isKeyword\\\":true,\\\"value\\\":2},\\\"outlet_pressure\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"pressure\\\",\\\"unit\\\":\\\"Pa\\\",\\\"value\\\":1000}}\",\"paramUncomplete\":false,\"portChange\":false,\"ports\":[{\"id\":\"23cf3301-ecbe-4438-840d-ddf4539e6586\",\"name\":\"inlet\",\"relateVirtualPortList\":[{\"id\":\"inlet_0\",\"name\":\"inlet\",\"relatedEntityId\":\"23cf3301-ecbe-4438-840d-ddf4539e6586\",\"relatedEntityName\":\"inlet\"},{\"id\":\"inlet_1\",\"name\":\"虚拟桩\",\"relatedEntityId\":\"23cf3301-ecbe-4438-840d-ddf4539e6586\",\"relatedEntityName\":\"inlet\"},{\"id\":\"inlet_2\",\"name\":\"虚拟桩\",\"relatedEntityId\":\"23cf3301-ecbe-4438-840d-ddf4539e6586\",\"relatedEntityName\":\"inlet\"}]},{\"id\":\"0aad3643-5b54-4662-a3fe-e5bf1d5c1ece\",\"name\":\"outlet\",\"relateVirtualPortList\":[{\"id\":\"outlet_0\",\"name\":\"outlet\",\"relatedEntityId\":\"0aad3643-5b54-4662-a3fe-e5bf1d5c1ece\",\"relatedEntityName\":\"outlet\"}]}],\"scale\":1,\"type\":\"Mixer\",\"width\":40,\"x\":1459,\"y\":231},{\"data\":{\"label\":\"阀门_1\",\"status\":\"\"},\"hasDebuggerPoint\":false,\"height\":50,\"id\":\"df08bcf0_4937bc9a_Valve1\",\"name\":\"Valve\",\"nodeLabel\":\"阀门\",\"nodeProperties\":\"{\\\"calculation_back_end\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"NATIVE\\\"},\\\"component_cluster\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"GLOBAL\\\"},\\\"property_package\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"物性包\\\"}}\",\"paramUncomplete\":false,\"portChange\":false,\"ports\":[{\"id\":\"8718c6c1-dc23-4cca-a7c9-c1ff7b85378a\",\"name\":\"inlet\",\"relateVirtualPortList\":[{\"id\":\"inlet_0\",\"name\":\"inlet\",\"relatedEntityId\":\"8718c6c1-dc23-4cca-a7c9-c1ff7b85378a\",\"relatedEntityName\":\"inlet\"}]},{\"id\":\"0d39b7d1-969c-498e-b73a-684e85f41438\",\"name\":\"outlet\",\"relateVirtualPortList\":[{\"id\":\"outlet_0\",\"name\":\"outlet\",\"relatedEntityId\":\"0d39b7d1-969c-498e-b73a-684e85f41438\",\"relatedEntityName\":\"outlet\"}]}],\"scale\":1,\"type\":\"Valve\",\"width\":60,\"x\":590,\"y\":190},{\"componentChange\":false,\"data\":{\"label\":\"泵_1\",\"status\":\"\"},\"hasDebuggerPoint\":false,\"height\":50,\"id\":\"3988f609_946c2d8a_Pump1\",\"name\":\"Pump\",\"nodeLabel\":\"泵\",\"nodeProperties\":\"{\\\"calculation_back_end\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"NATIVE\\\"},\\\"component_cluster\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"GLOBAL\\\"},\\\"property_package\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"物性包\\\"},\\\"comp_num\\\":{\\\"isKeyword\\\":true,\\\"value\\\":2},\\\"outlet_specification\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"no_type\\\",\\\"unit\\\":\\\"-\\\",\\\"value\\\":\\\"0\\\",\\\"realValue\\\":\\\"0\\\"},\\\"outlet_stream_pressure\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"pressure\\\",\\\"value\\\":50000,\\\"unit\\\":\\\"Pa\\\"},\\\"pressure_increase\\\":{\\\"isKeyword\\\":true,\\\"unitType\\\":\\\"pressure\\\"},\\\"pressure_ratio\\\":{\\\"isKeyword\\\":true,\\\"unitType\\\":\\\"no_type_gtzero\\\"},\\\"total_power\\\":{\\\"isKeyword\\\":true,\\\"unitType\\\":\\\"power\\\"},\\\"pumping_efficiency\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"efficiency\\\",\\\"value\\\":0.75}}\",\"paramUncomplete\":false,\"portChange\":false,\"ports\":[{\"id\":\"6544c15b-9046-41cd-b629-8f41c77ae661\",\"name\":\"inlet\",\"relateVirtualPortList\":[{\"id\":\"inlet_0\",\"name\":\"inlet\",\"relatedEntityId\":\"6544c15b-9046-41cd-b629-8f41c77ae661\",\"relatedEntityName\":\"inlet\"}]},{\"id\":\"0abfa135-5a31-4e33-819e-28d4bbad5919\",\"name\":\"outlet\",\"relateVirtualPortList\":[{\"id\":\"outlet_0\",\"name\":\"outlet\",\"relatedEntityId\":\"0abfa135-5a31-4e33-819e-28d4bbad5919\",\"relatedEntityName\":\"outlet\"}]}],\"scale\":1,\"type\":\"Pump\",\"width\":58,\"x\":1048,\"y\":220},{\"componentChange\":false,\"data\":{\"label\":\"源_2\",\"status\":\"\"},\"hasDebuggerPoint\":false,\"height\":25,\"id\":\"54a52706_c46c0299_Source2\",\"name\":\"Source\",\"nodeLabel\":\"源\",\"nodeProperties\":\"{\\\"calculation_back_end\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"NATIVE\\\"},\\\"component_cluster\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"GLOBAL\\\"},\\\"property_package\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"物性包\\\"},\\\"comp_num\\\":{\\\"isKeyword\\\":true,\\\"value\\\":2},\\\"Thermal_specification\\\":{\\\"value\\\":\\\"0\\\",\\\"realValue\\\":\\\"0\\\"},\\\"pressure\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"pressure\\\",\\\"unit\\\":\\\"Pa\\\",\\\"value\\\":100},\\\"temperature\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"temperature\\\",\\\"value\\\":500,\\\"unit\\\":\\\"K\\\"},\\\"vapor_molar_fraction\\\":{\\\"isKeyword\\\":true,\\\"unitType\\\":\\\"molar_fraction\\\"},\\\"molar_compositions\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"molar_fraction\\\",\\\"unit\\\":\\\"mol/mol\\\",\\\"value\\\":[0.5,0.5],\\\"rowHeaderType\\\":\\\"component\\\",\\\"rowHeader\\\":[\\\"METHANE\\\",\\\"ACETYLENE\\\"],\\\"rows\\\":[\\\"METHANE\\\",\\\"ACETYLENE\\\"],\\\"cols\\\":[\\\"组分\\\"],\\\"rowType\\\":\\\"component\\\",\\\"rowSize\\\":\\\"GLOBAL\\\",\\\"cloumnSize\\\":1},\\\"molar_flowrate\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"molar_flowrate\\\",\\\"unit\\\":\\\"mol/s\\\",\\\"value\\\":100},\\\"mass_compositions\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":false,\\\"unitType\\\":\\\"mass_fraction\\\",\\\"unit\\\":\\\"kg/kg\\\"},\\\"mass_flowrate\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":false,\\\"unitType\\\":\\\"mass_flowrate\\\",\\\"unit\\\":\\\"kg/s\\\"},\\\"valid_phase\\\":{\\\"isKeyword\\\":true}}\",\"paramUncomplete\":false,\"portChange\":false,\"ports\":[{\"id\":\"ed67bfc6-4754-4c06-ae25-457615e3fb5f\",\"name\":\"outlet\",\"relateVirtualPortList\":[{\"id\":\"outlet_0\",\"name\":\"outlet\",\"relatedEntityId\":\"ed67bfc6-4754-4c06-ae25-457615e3fb5f\",\"relatedEntityName\":\"outlet\"}]}],\"scale\":1,\"type\":\"Source\",\"width\":50,\"x\":756,\"y\":369},{\"componentChange\":false,\"data\":{\"label\":\"源_1\",\"status\":\"\"},\"hasDebuggerPoint\":false,\"height\":25,\"id\":\"54a52706_4f85efc5_Source1\",\"name\":\"Source\",\"nodeLabel\":\"源\",\"nodeProperties\":\"{\\\"calculation_back_end\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"NATIVE\\\"},\\\"component_cluster\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"GLOBAL\\\"},\\\"property_package\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"物性包\\\"},\\\"comp_num\\\":{\\\"isKeyword\\\":true,\\\"value\\\":2},\\\"Thermal_specification\\\":{\\\"value\\\":\\\"0\\\",\\\"realValue\\\":\\\"0\\\"},\\\"pressure\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"pressure\\\",\\\"unit\\\":\\\"Pa\\\",\\\"value\\\":1000},\\\"temperature\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"temperature\\\",\\\"value\\\":380,\\\"unit\\\":\\\"K\\\"},\\\"vapor_molar_fraction\\\":{\\\"isKeyword\\\":true,\\\"unitType\\\":\\\"molar_fraction\\\"},\\\"molar_compositions\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"molar_fraction\\\",\\\"unit\\\":\\\"mol/mol\\\",\\\"value\\\":[0.5,0.5],\\\"rowHeaderType\\\":\\\"component\\\",\\\"rowHeader\\\":[\\\"METHANE\\\",\\\"ACETYLENE\\\"],\\\"rows\\\":[\\\"METHANE\\\",\\\"ACETYLENE\\\"],\\\"cols\\\":[\\\"组分\\\"],\\\"rowType\\\":\\\"component\\\",\\\"rowSize\\\":\\\"GLOBAL\\\",\\\"cloumnSize\\\":1},\\\"molar_flowrate\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"molar_flowrate\\\",\\\"unit\\\":\\\"mol/s\\\",\\\"value\\\":100},\\\"mass_compositions\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":false,\\\"unitType\\\":\\\"mass_fraction\\\",\\\"unit\\\":\\\"kg/kg\\\"},\\\"mass_flowrate\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":false,\\\"unitType\\\":\\\"mass_flowrate\\\",\\\"unit\\\":\\\"kg/s\\\"},\\\"valid_phase\\\":{\\\"isKeyword\\\":true}}\",\"paramUncomplete\":false,\"portChange\":false,\"ports\":[{\"id\":\"ed67bfc6-4754-4c06-ae25-457615e3fb5f\",\"name\":\"outlet\",\"relateVirtualPortList\":[{\"id\":\"outlet_0\",\"name\":\"outlet\",\"relatedEntityId\":\"ed67bfc6-4754-4c06-ae25-457615e3fb5f\",\"relatedEntityName\":\"outlet\"}]}],\"scale\":1,\"type\":\"Source\",\"width\":50,\"x\":226,\"y\":208},{\"componentChange\":false,\"data\":{\"label\":\"分流器_1\",\"status\":\"\"},\"hasDebuggerPoint\":false,\"height\":72,\"id\":\"03f69f8d_85dc6ec9_Splitter1\",\"name\":\"Splitter\",\"nodeLabel\":\"分流器\",\"nodeProperties\":\"{\\\"calculation_back_end\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"NATIVE\\\"},\\\"component_cluster\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"GLOBAL\\\"},\\\"property_package\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"物性包\\\"},\\\"comp_num\\\":{\\\"isKeyword\\\":true,\\\"value\\\":2},\\\"no_outlets\\\":{\\\"isKeyword\\\":true,\\\"value\\\":2},\\\"outlet_pressure\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"pressure\\\",\\\"unit\\\":\\\"Pa\\\",\\\"value\\\":1000},\\\"split_fraction\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"no_type_percentage\\\",\\\"value\\\":[0.5,0.5],\\\"rowHeaderType\\\":\\\"port\\\",\\\"rowHeader\\\":[\\\"outlet_0\\\",\\\"outlet_1\\\"],\\\"rows\\\":[\\\"s-11\\\",\\\"s-12\\\"],\\\"cols\\\":[\\\"分流分率\\\"],\\\"rowType\\\":\\\"port\\\",\\\"rowSize\\\":2,\\\"cloumnSize\\\":1}}\",\"paramUncomplete\":false,\"portChange\":false,\"ports\":[{\"id\":\"8e75e7da-0bbd-41a2-bc93-22ef26726db1\",\"name\":\"inlet\",\"relateVirtualPortList\":[{\"id\":\"inlet_0\",\"name\":\"inlet\",\"relatedEntityId\":\"8e75e7da-0bbd-41a2-bc93-22ef26726db1\",\"relatedEntityName\":\"inlet\"}]},{\"id\":\"e1fc9da2-489a-4c7e-8bc2-9dc82e1a5490\",\"name\":\"outlet\",\"relateVirtualPortList\":[{\"id\":\"outlet_0\",\"name\":\"outlet\",\"relatedEntityId\":\"e1fc9da2-489a-4c7e-8bc2-9dc82e1a5490\",\"relatedEntityName\":\"outlet\"},{\"id\":\"outlet_1\",\"name\":\"虚拟桩\",\"relatedEntityId\":\"e1fc9da2-489a-4c7e-8bc2-9dc82e1a5490\",\"relatedEntityName\":\"outlet\"},{\"id\":\"outlet_2\",\"name\":\"虚拟桩\",\"relatedEntityId\":\"e1fc9da2-489a-4c7e-8bc2-9dc82e1a5490\",\"relatedEntityName\":\"outlet\"}]}],\"scale\":1,\"type\":\"Splitter\",\"width\":40,\"x\":1633,\"y\":237},{\"componentChange\":false,\"data\":{\"label\":\"加热器_1\",\"status\":\"\"},\"hasDebuggerPoint\":false,\"height\":50,\"id\":\"c4cecd0c_40f3e754_Heater1\",\"name\":\"Heater\",\"nodeLabel\":\"加热器\",\"nodeProperties\":\"{\\\"calculation_back_end\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"NATIVE\\\"},\\\"component_cluster\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"GLOBAL\\\"},\\\"property_package\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"物性包\\\"},\\\"comp_num\\\":{\\\"isKeyword\\\":true,\\\"value\\\":2},\\\"thermal_specification\\\":{\\\"value\\\":\\\"1\\\",\\\"realValue\\\":\\\"1\\\"},\\\"duty_specification\\\":{},\\\"on\\\":{},\\\"heat_duty\\\":{\\\"isKeyword\\\":true,\\\"unitType\\\":\\\"energy_rate\\\"},\\\"outlet_stream_temperature\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"temperature\\\",\\\"value\\\":350,\\\"unit\\\":\\\"K\\\"},\\\"outlet_stream_molar_enthalpy\\\":{\\\"isKeyword\\\":true,\\\"unitType\\\":\\\"molar_specific_enthalpy\\\"},\\\"outlet_vapor_fraction\\\":{\\\"isKeyword\\\":true,\\\"unitType\\\":\\\"molar_fraction\\\"},\\\"pressure_specification\\\":{\\\"value\\\":\\\"0\\\",\\\"realValue\\\":\\\"0\\\"},\\\"outlet_pressure\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"pressure\\\",\\\"value\\\":1000,\\\"unit\\\":\\\"Pa\\\"}}\",\"paramUncomplete\":false,\"portChange\":false,\"ports\":[{\"id\":\"f52e00e9-269e-4e15-9d33-83572cca6dc6\",\"name\":\"inlet\",\"relateVirtualPortList\":[{\"id\":\"inlet_0\",\"name\":\"inlet\",\"relatedEntityId\":\"f52e00e9-269e-4e15-9d33-83572cca6dc6\",\"relatedEntityName\":\"inlet\"}]},{\"id\":\"665d0f57-3fdf-4dd5-b280-035767333fd7\",\"name\":\"outlet\",\"relateVirtualPortList\":[{\"id\":\"outlet_0\",\"name\":\"outlet\",\"relatedEntityId\":\"665d0f57-3fdf-4dd5-b280-035767333fd7\",\"relatedEntityName\":\"outlet\"}]}],\"scale\":1,\"type\":\"Heater\",\"width\":50,\"x\":410,\"y\":200},{\"componentChange\":false,\"data\":{\"label\":\"换热器_1\",\"status\":\"\"},\"hasDebuggerPoint\":false,\"height\":50,\"id\":\"795f07b5_a1d3b296_HeatExchanger1\",\"name\":\"HeatExchanger\",\"nodeLabel\":\"换热器\",\"nodeProperties\":\"{\\\"calculation_back_end\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"NATIVE\\\"},\\\"component_cluster\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"GLOBAL\\\"},\\\"property_package\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"物性包\\\"},\\\"comp_num\\\":{\\\"isKeyword\\\":true,\\\"value\\\":2},\\\"flow_type\\\":{\\\"isKeyword\\\":true,\\\"value\\\":\\\"0\\\",\\\"realValue\\\":\\\"0\\\"},\\\"calculation_mode\\\":{\\\"value\\\":\\\"0\\\",\\\"realValue\\\":\\\"0\\\"},\\\"u_overall\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"heat_transfer_coefficient\\\",\\\"unit\\\":\\\"W/sqm-K\\\",\\\"value\\\":1},\\\"area\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"area\\\",\\\"value\\\":10,\\\"unit\\\":\\\"sqm\\\"},\\\"thermal_specification\\\":{},\\\"hot_thermal_specification\\\":{},\\\"cold_thermal_specification\\\":{},\\\"hot_stream_outlet_temperature\\\":{\\\"isKeyword\\\":true,\\\"unitType\\\":\\\"temperature\\\"},\\\"cold_stream_outlet_temperature\\\":{\\\"isKeyword\\\":true,\\\"unitType\\\":\\\"temperature\\\"},\\\"heat_duty\\\":{\\\"isKeyword\\\":true,\\\"unitType\\\":\\\"energy_rate\\\"},\\\"hot_pressure_specification\\\":{\\\"value\\\":\\\"0\\\",\\\"realValue\\\":\\\"0\\\"},\\\"hot_outlet_pressure\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"pressure\\\",\\\"value\\\":199,\\\"unit\\\":\\\"Pa\\\"},\\\"cold_pressure_specification\\\":{\\\"value\\\":\\\"0\\\",\\\"realValue\\\":\\\"0\\\"},\\\"cold_outlet_pressure\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"pressure\\\",\\\"value\\\":199,\\\"unit\\\":\\\"Pa\\\"}}\",\"paramUncomplete\":false,\"portChange\":false,\"ports\":[{\"id\":\"09cd70f3-c2b6-42cc-9349-284bf5700b5b\",\"name\":\"cold_stream_inlet\",\"relateVirtualPortList\":[{\"id\":\"cold_stream_inlet_0\",\"name\":\"cold_stream_inlet\",\"relatedEntityId\":\"09cd70f3-c2b6-42cc-9349-284bf5700b5b\",\"relatedEntityName\":\"cold_stream_inlet\"}]},{\"id\":\"081fe2f9-c906-46ba-832a-25bebff3909a\",\"name\":\"hot_stream_outlet\",\"relateVirtualPortList\":[{\"id\":\"hot_stream_outlet_0\",\"name\":\"hot_stream_outlet\",\"relatedEntityId\":\"081fe2f9-c906-46ba-832a-25bebff3909a\",\"relatedEntityName\":\"hot_stream_outlet\"}]},{\"id\":\"d5101372-115a-46c4-b9ce-414af403268c\",\"name\":\"cold_stream_outlet\",\"relateVirtualPortList\":[{\"id\":\"cold_stream_outlet_0\",\"name\":\"cold_stream_outlet\",\"relatedEntityId\":\"d5101372-115a-46c4-b9ce-414af403268c\",\"relatedEntityName\":\"cold_stream_outlet\"}]},{\"id\":\"a974fc0e-203f-432f-9963-6cdd36c30ebc\",\"name\":\"hot_stream_inlet\",\"relateVirtualPortList\":[{\"id\":\"hot_stream_inlet_0\",\"name\":\"hot_stream_inlet\",\"relatedEntityId\":\"a974fc0e-203f-432f-9963-6cdd36c30ebc\",\"relatedEntityName\":\"hot_stream_inlet\"}]}],\"scale\":1,\"type\":\"HeatExchanger\",\"width\":50,\"x\":843,\"y\":201},{\"data\":{\"label\":\"汇_2\",\"status\":\"\"},\"hasDebuggerPoint\":false,\"height\":25,\"id\":\"ff1924d5_a0206db7_Sink2\",\"name\":\"Sink\",\"nodeLabel\":\"汇\",\"nodeProperties\":\"{\\\"calculation_back_end\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"NATIVE\\\"},\\\"component_cluster\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"GLOBAL\\\"},\\\"property_package\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"物性包\\\"},\\\"comp_num\\\":{\\\"isKeyword\\\":true}}\",\"paramUncomplete\":false,\"portChange\":false,\"ports\":[{\"id\":\"ac35e72a-8581-4445-83bb-9f50dca5e19b\",\"name\":\"inlet\",\"relateVirtualPortList\":[{\"id\":\"inlet_0\",\"name\":\"inlet\",\"relatedEntityId\":\"ac35e72a-8581-4445-83bb-9f50dca5e19b\",\"relatedEntityName\":\"inlet\"}]}],\"scale\":1,\"type\":\"Sink\",\"width\":50,\"x\":1799,\"y\":204},{\"componentChange\":false,\"data\":{\"label\":\"源_3\",\"status\":\"\"},\"hasDebuggerPoint\":false,\"height\":25,\"id\":\"54a52706_641a2fc1_Source3\",\"name\":\"Source\",\"nodeLabel\":\"源\",\"nodeProperties\":\"{\\\"calculation_back_end\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"NATIVE\\\"},\\\"component_cluster\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"GLOBAL\\\"},\\\"property_package\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"value\\\":\\\"物性包\\\"},\\\"comp_num\\\":{\\\"isKeyword\\\":true,\\\"value\\\":2},\\\"Thermal_specification\\\":{\\\"value\\\":\\\"0\\\",\\\"realValue\\\":\\\"0\\\"},\\\"pressure\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"pressure\\\",\\\"unit\\\":\\\"Pa\\\",\\\"value\\\":1000},\\\"temperature\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"temperature\\\",\\\"value\\\":280,\\\"unit\\\":\\\"K\\\"},\\\"vapor_molar_fraction\\\":{\\\"isKeyword\\\":true,\\\"unitType\\\":\\\"molar_fraction\\\"},\\\"molar_compositions\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"molar_fraction\\\",\\\"unit\\\":\\\"mol/mol\\\",\\\"value\\\":[0.5,0.5],\\\"rowHeaderType\\\":\\\"component\\\",\\\"rowHeader\\\":[\\\"METHANE\\\",\\\"ACETYLENE\\\"],\\\"rows\\\":[\\\"METHANE\\\",\\\"ACETYLENE\\\"],\\\"cols\\\":[\\\"组分\\\"],\\\"rowType\\\":\\\"component\\\",\\\"rowSize\\\":\\\"GLOBAL\\\",\\\"cloumnSize\\\":1},\\\"molar_flowrate\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":true,\\\"unitType\\\":\\\"molar_flowrate\\\",\\\"unit\\\":\\\"mol/s\\\",\\\"value\\\":100},\\\"mass_compositions\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":false,\\\"unitType\\\":\\\"mass_fraction\\\",\\\"unit\\\":\\\"kg/kg\\\"},\\\"mass_flowrate\\\":{\\\"isKeyword\\\":true,\\\"fixed\\\":false,\\\"unitType\\\":\\\"mass_flowrate\\\",\\\"unit\\\":\\\"kg/s\\\"},\\\"valid_phase\\\":{\\\"isKeyword\\\":true}}\",\"paramUncomplete\":false,\"portChange\":false,\"ports\":[{\"id\":\"ed67bfc6-4754-4c06-ae25-457615e3fb5f\",\"name\":\"outlet\",\"relateVirtualPortList\":[{\"id\":\"outlet_0\",\"name\":\"outlet\",\"relatedEntityId\":\"ed67bfc6-4754-4c06-ae25-457615e3fb5f\",\"relatedEntityName\":\"outlet\"}]}],\"scale\":1,\"type\":\"Source\",\"width\":50,\"x\":1273,\"y\":376}]",
+    "projectId": "8e045e9d",
+    "updateBy": "admin",
+    "updateTime": "2026-02-06 02:43:44"
+  },
+  "omProcessLogisticsResultsList": [],
+  "omProject": {
+    "coverPath": "",
+    "createBy": "admin",
+    "delFlag": "0",
+    "groupId": "44c467d8",
+    "id": "8e045e9d",
+    "orderNo": 0,
+    "projectName": "translate_all",
+    "publicFlag": "0",
+    "unitSetId": "default",
+    "updateTime": "2026-02-06 02:37:23"
+  },
+  "processCalResultsList": []
+}

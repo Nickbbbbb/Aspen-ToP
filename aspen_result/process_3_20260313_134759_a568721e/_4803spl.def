@@ -1,0 +1,10 @@
+SLAVE:
+INPUT: _4803spl.inm
+MODNAME: apmain
+RUNID: _4803spl
+NEW_RUNID: _4803spl
+OLD_RUNID: _4803spl
+PDF: _4803spl.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+DBCONN: _4803spl.ads

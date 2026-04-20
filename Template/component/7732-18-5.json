@@ -1,0 +1,22 @@
+{
+      "alias": "WATER",
+      "bioJson": "{\"hydrogen\":2,\"oxygen\":1}",
+      "boilingPoint": "373.15",
+      "cas": "7732-18-5",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "H2O",
+      "id": "2019269501758070786",
+      "indexNew": 7,
+      "indexOld": 6,
+      "label": "WATER",
+      "molarMass": "18.015280000000001",
+      "name": "WATER",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "1921",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

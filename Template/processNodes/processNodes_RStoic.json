@@ -1,0 +1,46 @@
+{
+      "componentChange": false,
+      "data": {
+        "label": "转化率反应器_1",
+        "status": ""
+      },
+      "hasDebuggerPoint": false,
+      "height": 90,
+      "id": "b0bd232c_81999559_ReactorConversion1",
+      "name": "ReactorConversion",
+      "nodeLabel": "转化率反应器",
+      "nodeProperties": {},
+      "paramUncomplete": false,
+      "portChange": false,
+      "ports": [
+        {
+          "id": "abce8bd9-a30e-40ba-9171-b72175450299",
+          "name": "inlet",
+          "relateVirtualPortList": [
+            {
+              "id": "inlet_0",
+              "name": "inlet",
+              "relatedEntityId": "abce8bd9-a30e-40ba-9171-b72175450299",
+              "relatedEntityName": "inlet"
+            }
+          ]
+        },
+        {
+          "id": "2444a8b7-28a9-49f7-a14e-62a97b69c5e2",
+          "name": "outlet",
+          "relateVirtualPortList": [
+            {
+              "id": "outlet_0",
+              "name": "outlet",
+              "relatedEntityId": "2444a8b7-28a9-49f7-a14e-62a97b69c5e2",
+              "relatedEntityName": "outlet"
+            }
+          ]
+        }
+      ],
+      "scale": 1,
+      "type": "ReactorConversion",
+      "width": 38,
+      "x": 600,
+      "y": 240
+    }

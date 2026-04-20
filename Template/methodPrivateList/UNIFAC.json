@@ -1,0 +1,14 @@
+{
+      "baseAlgo": "UNIFAC",
+      "createBy": "admin",
+      "createTime": "2026-03-26 07:19:40",
+      "description": "默认物性包",
+      "freeWater": "IF97",
+      "id": "bde78643",
+      "isDefault": true,
+      "methodGroupName": "物性包",
+      "methodGroupSort": 1,
+      "projectId": "fcd99a22",
+      "updateBy": "admin",
+      "updateTime": "2026-03-26 09:23:21"
+    }

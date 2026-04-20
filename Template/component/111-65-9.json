@@ -1,0 +1,22 @@
+{
+      "alias": "n-OCTANE",
+      "bioJson": "{\"carbon\":8,\"hydrogen\":18}",
+      "boilingPoint": "398.83",
+      "cas": "111-65-9",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C8H18",
+      "id": "2019269501871316993",
+      "indexNew": 33,
+      "indexOld": 32,
+      "label": "n-OCTANE",
+      "molarMass": "114.22852",
+      "name": "n-OCTANE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "27",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

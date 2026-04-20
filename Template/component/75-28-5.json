@@ -1,0 +1,22 @@
+{
+      "alias": "ISOBUTANE",
+      "bioJson": "{\"carbon\":4,\"hydrogen\":10}",
+      "boilingPoint": "261.43",
+      "cas": "75-28-5",
+      "createBy": "admin",
+      "createTime": "2026-03-26 09:16:51",
+      "dataSource": "PURE",
+      "formula": "C4H10",
+      "id": "2037096433409187841",
+      "indexNew": 6,
+      "indexOld": 5,
+      "label": "ISOBUTANE",
+      "molarMass": "58.122199999999999",
+      "name": "ISOBUTANE",
+      "oilFlag": 0,
+      "projectId": "fcd99a22",
+      "realId": "4",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-03-26 09:16:51"
+    }

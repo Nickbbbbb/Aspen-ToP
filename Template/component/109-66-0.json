@@ -1,0 +1,22 @@
+{
+      "alias": "n-PENTANE",
+      "bioJson": "{\"carbon\":5,\"hydrogen\":12}",
+      "boilingPoint": "309.22",
+      "cas": "109-66-0",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C5H12",
+      "id": "2019269501829373954",
+      "indexNew": 22,
+      "indexOld": 21,
+      "label": "n-PENTANE",
+      "molarMass": "72.148780000000002",
+      "name": "n-PENTANE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "7",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

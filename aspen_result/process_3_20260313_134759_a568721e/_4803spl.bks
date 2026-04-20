@@ -1,0 +1,10 @@
+ ? SETUP UNITS-SET SET1 ? \ UNITSET BASESET = SI (1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  
+ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  
+ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  
+ 1 1 1 1 1 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1) \                               
+ ? %M FLOWSHEET GLOBAL ? ; SET1 ; \ BLOCK BLKID = MIXER IN = (FEED X RECYCLE X) 
+ OUT = (S1 X) \ \ BLOCK BLKID = FLASH IN = (S1 X) OUT = (SINKV X S2 X) \ \      
+ BLOCK BLKID = SPLITTER IN = (S2 X) OUT = (SINKL X S3 X) \ \ BLOCK BLKID = PUMP 
+ IN = (S3 X) OUT = (RECYCLE X) \ ? BLOCK SSPLIT SPLITTER ? ; SET1 ; \ PARAM SID 
+ = SINKL SUBSTREAM = MIXED FRAC = .50 <0> <0> \ "\@"                            

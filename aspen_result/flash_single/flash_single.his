@@ -1,0 +1,145 @@
+
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + +                                                                         + +
+ + +                      ASPEN PLUS CALCULATION HISTORY                     + +
+ + +                                                                         + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+ ASPEN PLUS IS A TRADEMARK OF           HOTLINE:
+ ASPEN TECHNOLOGY, INC.                 U.S.A. 888/996-7100
+ 781/221-6400                           EUROPE (44) 1189-226555
+
+ PLATFORM: WIN-X64                                       FEBRUARY 3, 2026    
+ VERSION: 40.0   Build 359                               TUESDAY     
+ INSTALLATION:                                           3:09:54 P.M.        
+
+ THIS COPY OF ASPEN PLUS LICENSED TO                                 
+
+
+      ASPEN PLUS (R) IS A PROPRIETARY PRODUCT OF ASPEN TECHNOLOGY, INC.
+      (ASPENTECH), AND MAY BE USED ONLY UNDER AGREEMENT WITH ASPENTECH.
+      RESTRICTED RIGHTS LEGEND:  USE, REPRODUCTION, OR DISCLOSURE BY THE
+      U.S. GOVERNMENT IS SUBJECT TO RESTRICTIONS SET FORTH IN 
+      (i) FAR 52.227-14, Alt. III, (ii) FAR 52.227-19, (iii) DFARS 
+      252.227-7013(c)(1)(ii), or (iv) THE ACCOMPANYING LICENSE AGREEMENT,
+      AS APPLICABLE. FOR PURPOSES OF THE FAR, THIS SOFTWARE SHALL BE DEEMED
+      TO BE "UNPUBLISHED" AND LICENSED WITH DISCLOSURE PROHIBITIONS.
+      CONTRACTOR/SUBCONTRACTOR: ASPEN TECHNOLOGY, INC. 20 CROSBY DRIVE,
+      BEDFORD, MA 01730.
+ *** INPUT SUMMARY ***
+
+ >>CURRENT RUN
+
+   ORIGINAL RUN                           FEBRUARY 3, 2026    
+   3:09:54 P.M.                           TUESDAY     
+   INPUT FILE: _0945lzi.inm
+   RUN ID : _0945lzi
+          1    ;
+          2    ;输入文件创建由Aspen Plus Rel. 40.0 at 15:09:53 Tue Feb 3, 2026
+          3    ;Directory C:\Users\Administrator\Downloads\export-test\aspen_result\flash_single  Runid FLASH_SINGLE
+          4    ;
+          5
+          6
+          7    DYNAMICS
+          8        DYNAMICS RESULTS=ON
+          9
+         10    IN-UNITS SI SHORT-LENGTH=mm
+         11
+         12    DEF-STREAMS CONVEN ALL
+         13
+         14    DATABANKS 'APV140 PURE40' / 'APV140 AQUEOUS' / 'APV140 SOLIDS' &
+         15             / 'APV140 INORGANIC' / NOASPENPCD
+         16
+         17    PROP-SOURCES 'APV140 PURE40' / 'APV140 AQUEOUS' /  &
+         18            'APV140 SOLIDS' / 'APV140 INORGANIC'
+         19
+         20    COMPONENTS
+         21        METHA-01 CH4 /
+         22        PROPA-01 C3H8
+         23
+         24    SOLVE
+         25        RUN-MODE MODE=SIM
+         26
+         27    FLOWSHEET
+         28        BLOCK FLASH1 IN=FEED OUT=SINKV SINKL
+         29
+         30    PROPERTIES SRK
+         31
+         32    STREAM FEED
+         33        SUBSTREAM MIXED TEMP=300.0 PRES=1013250.0 MOLE-FLOW=0.1
+         34        MOLE-FRAC METHA-01 .50 / PROPA-01 .50
+         35
+         36    BLOCK FLASH1 FLASH2
+         37        PARAM TEMP=280.0 PRES=506625.0
+         38
+         39    EO-CONV-OPTI
+         40
+         41    STREAM-REPOR MOLEFLOW
+         42    ;
+         43    ;
+         44    ;
+         45    ;
+         46    ;
+ *** INPUT TRANSLATOR MESSAGES ***
+
+  *** THIS RUN USES THE PROPERTIES ENTERPRISE DATABASE ***
+      SQLLOCALDB.APESV140 : (DATAVERSION - 40.0.0.13)                         
+      SQLLOCALDB.APV140 : (DATAVERSION - 40.0.0.13)                           
+      SQLLOCALDB.FACTV140 : (DATAVERSION - 40.0.0.12)                         
+      SQLLOCALDB.NISTV140 : (DATAVERSION - 40.0.0.12)                         
+
+  *   WARNING IN THE "PROPERTIES" PARAGRAPH WHICH BEGINS ON LINE 30             
+                                                               (SECPO.4)        
+      FREE-WATER METHOD SHOULD BE STEAMNBS WHEN THE MAIN                        
+      PROPERTY METHOD IS SRK. DEFAULT FREE-WATER METHOD IS STEAM-TA             
+      PLEASE SPECIFY THE RECOMMENDED FREE-WATER METHOD AND RUN AGAIN.           
+ 
+ 
+
+ PDF updated                                                                      TIME =      3.25
+
+ *** CALCULATION TRACE ***
+
+
+ *** FLOWSHEET ANALYSIS MESSAGES ***
+
+ FLOWSHEET CONNECTIVITY BY STREAMS       
+
+   STREAM     SOURCE     DEST           STREAM     SOURCE     DEST
+   FEED       ----       FLASH1         SINKV      FLASH1     ----    
+   SINKL      FLASH1     ----                                         
+
+ FLOWSHEET CONNECTIVITY BY BLOCKS        
+
+   BLOCK        INLETS                         OUTLETS
+   FLASH1       FEED                           SINKV SINKL                 
+
+      COMPUTATION ORDER FOR THE FLOWSHEET IS:
+      FLASH1 
+
+Calculations begin                                                              time      2.36
+
+
+ SIMULATION CALCULATIONS BEGIN                                                    TIME =      2.36
+
+      ENTHALPY CALCULATION FOR INLET STREAM FEED OF BLOCK FLASH1                  TIME =      2.36
+      KODE = 2  NTRIAL =   3  T = 300.0000  P = 1.013250E+06  V =  1.00000      Q =  0.00000    
+
+      UOS BLOCK FLASH1   MODEL: FLASH2                                            TIME =      2.37
+      KODE = 2  NTRIAL =   3  T = 280.0000  P =  506625.      V =  1.00000      Q = -82132.8    
+
+ Report Writer entered                                                            Time =      2.66
+
+ Results generated                                                                Time =      2.68
+
+ Report Writer entered                                                            Time =      2.75
+
+ Results generated                                                                Time =      2.76
+
+RUN SAVED
+
+
+
+ NO ERRORS OR WARNINGS GENERATED

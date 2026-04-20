@@ -1,0 +1,18 @@
+{
+    "attrs": {
+      "data": {
+        "labeldata": "",
+        "status": ""
+      },
+      "label": "s-1"
+    },
+    "id": "17f2024d-295c-499f-b453-c2f31505207a_s-1",
+    "source": {
+      "cell": "54a52706_000cb682_Source1",
+      "port": "outlet_0"
+    },
+    "target": {
+      "cell": "598fddf9_28232c3f_Flash1",
+      "port": "inlet_0"
+    }
+  }

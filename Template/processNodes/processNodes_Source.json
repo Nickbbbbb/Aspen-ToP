@@ -1,0 +1,34 @@
+{
+    "componentChange": false,
+    "data": {
+      "label": "Source1",
+      "status": ""
+    },
+    "hasDebuggerPoint": false,
+    "height": 25,
+    "id": "54a52706_000cb682_Source1",
+    "name": "Source",
+    "nodeLabel": "源",
+    "nodeProperties": "{\"calculation_back_end\":{\"isKeyword\":true,\"fixed\":true,\"value\":\"NATIVE\"},\"component_cluster\":{\"isKeyword\":true,\"fixed\":true,\"value\":\"GLOBAL\"},\"property_package\":{\"isKeyword\":true,\"fixed\":true,\"value\":\"物性包\"},\"comp_num\":{\"isKeyword\":true,\"value\":2},\"Thermal_specification\":{\"value\":\"0\",\"realValue\":\"0\"},\"pressure\":{\"isKeyword\":true,\"fixed\":true,\"unitType\":\"pressure\",\"unit\":\"Pa\",\"value\":1013250},\"temperature\":{\"isKeyword\":true,\"fixed\":true,\"unitType\":\"temperature\",\"value\":300,\"unit\":\"K\"},\"vapor_molar_fraction\":{\"isKeyword\":true,\"unitType\":\"molar_fraction\"},\"molar_compositions\":{\"isKeyword\":true,\"fixed\":true,\"unitType\":\"molar_fraction\",\"unit\":\"mol/mol\",\"value\":[0.5,0.5],\"rowHeaderType\":\"component\",\"rowHeader\":[\"PROPANE\",\"METHANE\"],\"rows\":[\"PROPANE\",\"METHANE\"],\"cols\":[\"组分\"],\"rowType\":\"component\",\"rowSize\":\"GLOBAL\",\"cloumnSize\":1},\"molar_flowrate\":{\"isKeyword\":true,\"fixed\":true,\"unitType\":\"molar_flowrate\",\"unit\":\"mol/s\",\"value\":100},\"mass_compositions\":{\"isKeyword\":true,\"fixed\":false,\"unitType\":\"mass_fraction\",\"unit\":\"kg/kg\"},\"mass_flowrate\":{\"isKeyword\":true,\"fixed\":false,\"unitType\":\"mass_flowrate\",\"unit\":\"kg/s\"},\"valid_phase\":{\"isKeyword\":true}}",
+    "paramUncomplete": false,
+    "portChange": false,
+    "ports": [
+      {
+        "id": "ed67bfc6-4754-4c06-ae25-457615e3fb5f",
+        "name": "outlet",
+        "relateVirtualPortList": [
+          {
+            "id": "outlet_0",
+            "name": "outlet",
+            "relatedEntityId": "ed67bfc6-4754-4c06-ae25-457615e3fb5f",
+            "relatedEntityName": "outlet"
+          }
+        ]
+      }
+    ],
+    "scale": 1,
+    "type": "Source",
+    "width": 50,
+    "x": 273,
+    "y": 248
+  }

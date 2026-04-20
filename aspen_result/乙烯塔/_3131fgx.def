@@ -1,0 +1,10 @@
+SLAVE:
+INPUT: _3131fgx.inm
+MODNAME: apmain
+RUNID: _3131fgx
+NEW_RUNID: _3131fgx
+OLD_RUNID: _3131fgx
+PDF: _3131fgx.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:

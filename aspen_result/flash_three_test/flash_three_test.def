@@ -1,0 +1,10 @@
+INPUT: flash_three_test.inm
+MODNAME: apmain
+RUNID: flash_three_test
+NEW_RUNID: flash_three_test
+OLD_RUNID: flash_three_test
+PDF: flash_three_test.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:
+DBCONN: _3221uef.ads

@@ -1,0 +1,148 @@
+{
+      "componentChange": false,
+      "data": {
+        "label": "精馏塔2_2",
+        "status": ""
+      },
+      "hasDebuggerPoint": false,
+      "height": 170,
+      "id": "deb7b0aa_506396f0_DistillationColumn22",
+      "name": "DistillationColumn2",
+      "nodeLabel": "精馏塔2",
+      "nodeProperties": {},
+      "paramUncomplete": false,
+      "portChange": false,
+      "ports": [
+        {
+          "id": "8224b29c-499c-49cf-80ef-b1d3c6038a36",
+          "name": "feed_in",
+          "relateVirtualPortList": [
+            {
+              "id": "feed_in_1",
+              "name": "虚拟桩",
+              "relatedEntityId": "8224b29c-499c-49cf-80ef-b1d3c6038a36",
+              "relatedEntityName": "feed_in"
+            },
+            {
+              "id": "feed_in_2",
+              "name": "虚拟桩",
+              "relatedEntityId": "8224b29c-499c-49cf-80ef-b1d3c6038a36",
+              "relatedEntityName": "feed_in"
+            }
+          ]
+        },
+        {
+          "id": "b0a5bbea-a841-48fb-b72d-89abed1064ee",
+          "name": "top_liquid_out",
+          "relateVirtualPortList": [
+            {
+              "id": "top_liquid_out_0",
+              "name": "top_liquid_out",
+              "relatedEntityId": "b0a5bbea-a841-48fb-b72d-89abed1064ee",
+              "relatedEntityName": "top_liquid_out"
+            }
+          ]
+        },
+        {
+          "id": "f89e67c8-d9dc-40e1-adbb-877b43a41fe1",
+          "name": "top_vapor_out",
+          "relateVirtualPortList": [
+            {
+              "id": "top_vapor_out_0",
+              "name": "top_vapor_out",
+              "relatedEntityId": "f89e67c8-d9dc-40e1-adbb-877b43a41fe1",
+              "relatedEntityName": "top_vapor_out"
+            }
+          ]
+        },
+        {
+          "id": "0da38f57-ef40-42e8-a973-d7ed73f5099b",
+          "name": "bottom_liquid_out",
+          "relateVirtualPortList": [
+            {
+              "id": "bottom_liquid_out_0",
+              "name": "bottom_liquid_out",
+              "relatedEntityId": "0da38f57-ef40-42e8-a973-d7ed73f5099b",
+              "relatedEntityName": "bottom_liquid_out"
+            }
+          ]
+        },
+        {
+          "id": "1323f78d-6949-400b-a456-1ee3241e8133",
+          "name": "vapor_side_draw",
+          "relateVirtualPortList": [
+            {
+              "id": "vapor_side_draw_0",
+              "name": "vapor_side_draw",
+              "relatedEntityId": "1323f78d-6949-400b-a456-1ee3241e8133",
+              "relatedEntityName": "vapor_side_draw"
+            },
+            {
+              "id": "vapor_side_draw_1",
+              "name": "虚拟桩",
+              "relatedEntityId": "1323f78d-6949-400b-a456-1ee3241e8133",
+              "relatedEntityName": "vapor_side_draw"
+            }
+          ]
+        },
+        {
+          "id": "126461b6-f46d-4a6e-ad30-9d6da0a749a9",
+          "name": "liquid_side_draw",
+          "relateVirtualPortList": [
+            {
+              "id": "liquid_side_draw_0",
+              "name": "liquid_side_draw",
+              "relatedEntityId": "126461b6-f46d-4a6e-ad30-9d6da0a749a9",
+              "relatedEntityName": "liquid_side_draw"
+            },
+            {
+              "id": "liquid_side_draw_1",
+              "name": "虚拟桩",
+              "relatedEntityId": "126461b6-f46d-4a6e-ad30-9d6da0a749a9",
+              "relatedEntityName": "liquid_side_draw"
+            }
+          ]
+        },
+        {
+          "id": "f8529c81-b524-403b-a44e-8ef0c4d3b2fe",
+          "name": "side_stripper_outlet",
+          "relateVirtualPortList": [
+            {
+              "id": "side_stripper_outlet_0",
+              "name": "side_stripper_outlet",
+              "relatedEntityId": "f8529c81-b524-403b-a44e-8ef0c4d3b2fe",
+              "relatedEntityName": "side_stripper_outlet"
+            }
+          ]
+        },
+        {
+          "id": "6d1fd8c4-b873-4fbe-b54c-27ebcc99f9e0",
+          "name": "side_stripper_inlet",
+          "relateVirtualPortList": [
+            {
+              "id": "side_stripper_inlet_0",
+              "name": "side_stripper_inlet",
+              "relatedEntityId": "6d1fd8c4-b873-4fbe-b54c-27ebcc99f9e0",
+              "relatedEntityName": "side_stripper_inlet"
+            }
+          ]
+        },
+        {
+          "id": "873003d5-70cf-45d6-8661-0b8f49770211",
+          "name": "free_water_out",
+          "relateVirtualPortList": [
+            {
+              "id": "free_water_out_0",
+              "name": "free_water_out",
+              "relatedEntityId": "873003d5-70cf-45d6-8661-0b8f49770211",
+              "relatedEntityName": "free_water_out"
+            }
+          ]
+        }
+      ],
+      "scale": 1,
+      "type": "DistillationColumn",
+      "width": 66,
+      "x": -170,
+      "y": 310
+    }

@@ -1,0 +1,10 @@
+INPUT: mixer_test.inm
+MODNAME: apmain
+RUNID: mixer_test
+NEW_RUNID: mixer_test
+OLD_RUNID: mixer_test
+PDF: mixer_test.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:
+DBCONN: _1503hhb.ads

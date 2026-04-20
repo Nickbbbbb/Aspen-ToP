@@ -1,0 +1,10 @@
+SLAVE:
+INPUT: _5603psq.inm
+MODNAME: apmain
+RUNID: _5603psq
+NEW_RUNID: _5603psq
+OLD_RUNID: _5603psq
+PDF: _5603psq.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+DBCONN: _5603psq.ads

@@ -1,0 +1,381 @@
+
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + +                                                                         + +
+ + +                      ASPEN PLUS CALCULATION HISTORY                     + +
+ + +                                                                         + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+ ASPEN PLUS IS A TRADEMARK OF           HOTLINE:
+ ASPEN TECHNOLOGY, INC.                 U.S.A. 888/996-7100
+ 781/221-6400                           EUROPE (44) 1189-226555
+
+ PLATFORM: WIN-X64                                       FEBRUARY 9, 2026    
+ VERSION: 40.0   Build 359                               MONDAY      
+ INSTALLATION:                                           3:24:31 P.M.        
+
+ THIS COPY OF ASPEN PLUS LICENSED TO                                 
+
+
+      ASPEN PLUS (R) IS A PROPRIETARY PRODUCT OF ASPEN TECHNOLOGY, INC.
+      (ASPENTECH), AND MAY BE USED ONLY UNDER AGREEMENT WITH ASPENTECH.
+      RESTRICTED RIGHTS LEGEND:  USE, REPRODUCTION, OR DISCLOSURE BY THE
+      U.S. GOVERNMENT IS SUBJECT TO RESTRICTIONS SET FORTH IN 
+      (i) FAR 52.227-14, Alt. III, (ii) FAR 52.227-19, (iii) DFARS 
+      252.227-7013(c)(1)(ii), or (iv) THE ACCOMPANYING LICENSE AGREEMENT,
+      AS APPLICABLE. FOR PURPOSES OF THE FAR, THIS SOFTWARE SHALL BE DEEMED
+      TO BE "UNPUBLISHED" AND LICENSED WITH DISCLOSURE PROHIBITIONS.
+      CONTRACTOR/SUBCONTRACTOR: ASPEN TECHNOLOGY, INC. 20 CROSBY DRIVE,
+      BEDFORD, MA 01730.
+ *** INPUT SUMMARY ***
+
+ >>CURRENT RUN
+
+   ORIGINAL RUN                           FEBRUARY 9, 2026    
+   3:24:31 P.M.                           MONDAY      
+   INPUT FILE: _2347baq.inm
+   RUN ID : _2347baq
+          1    ;
+          2    ;输入文件创建由Aspen Plus Rel. 40.0 at 15:24:30 Mon Feb 9, 2026
+          3    ;Directory   Runid COMPONENTSPLITTER_TEST
+          4    ;
+          5
+          6
+          7    DYNAMICS
+          8        DYNAMICS RESULTS=ON
+          9
+         10    IN-UNITS MET PRESSURE=bar TEMPERATURE=C DELTA-T=C PDROP=bar  &
+         11            INVERSE-PRES='1/bar' SHORT-LENGTH=mm
+         12
+         13    DEF-STREAMS CONVEN ALL
+         14
+         15    MODEL-OPTION
+         16
+         17    DATABANKS 'APV140 PURE40' / 'APV140 AQUEOUS' / 'APV140 SOLIDS' &
+         18             / 'APV140 INORGANIC' / 'APESV140 AP-EOS' /  &
+         19            'NISTV140 NIST-TRC' / NOASPENPCD
+         20
+         21    PROP-SOURCES 'APV140 PURE40' / 'APV140 AQUEOUS' /  &
+         22            'APV140 SOLIDS' / 'APV140 INORGANIC' / 'APESV140 AP-EOS' &
+         23             / 'NISTV140 NIST-TRC'
+         24
+         25    COMPONENTS
+         26        METHA-01 CH4 /
+         27        ETHYL-01 C2H4 /
+         28        PROPA-01 C3H8
+         29
+         30    SOLVE
+         31        RUN-MODE MODE=SIM
+         32
+         33    FLOWSHEET
+         34        BLOCK SPLIT IN=S1 OUT=OUT PRDUCT
+         35
+         36    PROPERTIES SRK
+         37
+         38    PROP-DATA SRKKIJ-1
+         39        IN-UNITS MET PRESSURE=bar TEMPERATURE=C DELTA-T=C PDROP=bar  &
+         40            INVERSE-PRES='1/bar' SHORT-LENGTH=mm
+         41        PROP-LIST SRKKIJ
+         42        BPVAL METHA-01 ETHYL-01 .0174052000 0.0 0.0 -273.1500000  &
+         43            726.8500000
+         44        BPVAL ETHYL-01 METHA-01 .0174052000 0.0 0.0 -273.1500000  &
+         45            726.8500000
+         46        BPVAL METHA-01 PROPA-01 .0241509000 0.0 0.0 -273.1500000  &
+         47            726.8500000
+         48        BPVAL PROPA-01 METHA-01 .0241509000 0.0 0.0 -273.1500000  &
+         49            726.8500000
+         50
+         51    STREAM S1
+         52        SUBSTREAM MIXED TEMP=280. <K> PRES=1000. <Pa> MOLE-FLOW=100.
+         53        MOLE-FRAC METHA-01 0.3 / ETHYL-01 0.3 / PROPA-01 0.4
+         54
+         55    BLOCK SPLIT SEP
+         56        PARAM
+         57        FRAC STREAM=OUT SUBSTREAM=MIXED COMPS=METHA-01 FRACS=1.
+         58
+         59    EO-CONV-OPTI
+         60
+         61    STREAM-REPOR MOLEFLOW
+         62    ;
+         63    ;
+         64    ;
+         65    ;
+         66    ;
+ *** INPUT TRANSLATOR MESSAGES ***
+
+  *** THIS RUN USES THE PROPERTIES ENTERPRISE DATABASE ***
+      SQLLOCALDB.APESV140 : (DATAVERSION - 40.0.0.13)                         
+      SQLLOCALDB.APV140 : (DATAVERSION - 40.0.0.13)                           
+      SQLLOCALDB.FACTV140 : (DATAVERSION - 40.0.0.12)                         
+      SQLLOCALDB.NISTV140 : (DATAVERSION - 40.0.0.12)                         
+
+  *   WARNING IN THE "PROPERTIES" PARAGRAPH WHICH BEGINS ON LINE 36             
+                                                               (SECPO.4)        
+      FREE-WATER METHOD SHOULD BE STEAMNBS WHEN THE MAIN                        
+      PROPERTY METHOD IS SRK. DEFAULT FREE-WATER METHOD IS STEAM-TA             
+      PLEASE SPECIFY THE RECOMMENDED FREE-WATER METHOD AND RUN AGAIN.           
+ 
+ 
+
+ PDF updated                                                                      TIME =      1.51
+
+ *** CALCULATION TRACE ***
+
+
+ *** FLOWSHEET ANALYSIS MESSAGES ***
+
+ FLOWSHEET CONNECTIVITY BY STREAMS       
+
+   STREAM     SOURCE     DEST           STREAM     SOURCE     DEST
+   S1         ----       SPLIT          OUT        SPLIT      ----    
+   PRDUCT     SPLIT      ----                                         
+
+ FLOWSHEET CONNECTIVITY BY BLOCKS        
+
+   BLOCK        INLETS                         OUTLETS
+   SPLIT        S1                             OUT PRDUCT                  
+
+      COMPUTATION ORDER FOR THE FLOWSHEET IS:
+      SPLIT 
+
+Calculations begin                                                              time      0.26
+
+
+ SIMULATION CALCULATIONS BEGIN                                                    TIME =      0.26
+
+      ENTHALPY CALCULATION FOR INLET STREAM S1 OF BLOCK SPLIT                     TIME =      0.26
+      KODE = 2  NTRIAL =   3  T = 280.0000  P =  1000.00      V =  1.00000      Q =  0.00000    
+
+      UOS BLOCK SPLIT    MODEL: SEP                                               TIME =      0.26
+      ---FLASH OUTLET STREAM OUT     :
+      KODE = 2  NTRIAL =   0  T = 280.0000  P =  1000.00      V =  1.00000      Q =  0.00000    
+      ---FLASH OUTLET STREAM PRDUCT  :
+      KODE = 2  NTRIAL =   2  T = 280.0000  P =  1000.00      V =  1.00000      Q =  0.00000    
+<reset scope>
+<reset scope>
+<reset scope>
+<reset scope>
+<reset scope>
+<reset scope>
+<reset scope>
+<reset scope>
+<reset scope>
+<reset scope>
+<reset scope>
+<reset scope>
+<reset scope>
+
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + +                                                                         + +
+ + +                      ASPEN PLUS CALCULATION HISTORY                     + +
+ + +                                                                         + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+ ASPEN PLUS IS A TRADEMARK OF           HOTLINE:
+ ASPEN TECHNOLOGY, INC.                 U.S.A. 888/996-7100
+ 781/221-6400                           EUROPE (44) 1189-226555
+
+ PLATFORM: WIN-X64                                       FEBRUARY 9, 2026    
+ VERSION: 40.0   Build 359                               MONDAY      
+ INSTALLATION:                                           3:35:24 P.M.        
+
+ THIS COPY OF ASPEN PLUS LICENSED TO                                 
+
+
+      ASPEN PLUS (R) IS A PROPRIETARY PRODUCT OF ASPEN TECHNOLOGY, INC.
+      (ASPENTECH), AND MAY BE USED ONLY UNDER AGREEMENT WITH ASPENTECH.
+      RESTRICTED RIGHTS LEGEND:  USE, REPRODUCTION, OR DISCLOSURE BY THE
+      U.S. GOVERNMENT IS SUBJECT TO RESTRICTIONS SET FORTH IN 
+      (i) FAR 52.227-14, Alt. III, (ii) FAR 52.227-19, (iii) DFARS 
+      252.227-7013(c)(1)(ii), or (iv) THE ACCOMPANYING LICENSE AGREEMENT,
+      AS APPLICABLE. FOR PURPOSES OF THE FAR, THIS SOFTWARE SHALL BE DEEMED
+      TO BE "UNPUBLISHED" AND LICENSED WITH DISCLOSURE PROHIBITIONS.
+      CONTRACTOR/SUBCONTRACTOR: ASPEN TECHNOLOGY, INC. 20 CROSBY DRIVE,
+      BEDFORD, MA 01730.
+ *** INPUT SUMMARY ***
+
+ >>CURRENT RUN
+
+   ORIGINAL RUN                           FEBRUARY 9, 2026    
+   3:35:24 P.M.                           MONDAY      
+   INPUT FILE: _2347baq.inm
+   RUN ID : _2347baq
+          1    ;
+          2    ;输入文件创建由Aspen Plus Rel. 40.0 at 15:35:24 Mon Feb 9, 2026
+          3    ;Directory   Runid COMPONENTSPLITTER_TEST
+          4    ;
+          5
+          6
+          7    DYNAMICS
+          8        DYNAMICS RESULTS=ON
+          9
+         10    IN-UNITS MET PRESSURE=bar TEMPERATURE=C DELTA-T=C PDROP=bar  &
+         11            INVERSE-PRES='1/bar' SHORT-LENGTH=mm
+         12
+         13    DEF-STREAMS CONVEN ALL
+         14
+         15    MODEL-OPTION
+         16
+         17    DATABANKS 'APV140 PURE40' / 'APV140 AQUEOUS' / 'APV140 SOLIDS' &
+         18             / 'APV140 INORGANIC' / 'APESV140 AP-EOS' /  &
+         19            'NISTV140 NIST-TRC' / NOASPENPCD
+         20
+         21    PROP-SOURCES 'APV140 PURE40' / 'APV140 AQUEOUS' /  &
+         22            'APV140 SOLIDS' / 'APV140 INORGANIC' / 'APESV140 AP-EOS' &
+         23             / 'NISTV140 NIST-TRC'
+         24
+         25    COMPONENTS
+         26        ETHAN-01 C2H6 /
+         27        ETHYL-01 C2H4 /
+         28        PROPY-01 C3H6-2 /
+         29        METHA-01 CH4 /
+         30        PROPA-01 C3H8
+         31
+         32    SOLVE
+         33        RUN-MODE MODE=SIM
+         34
+         35    FLOWSHEET
+         36        BLOCK SPLIT IN=S1 OUT=PRDUCT2 PRDUCT1 PRDUCT3 PRDUCT4
+         37
+         38    PROPERTIES SRK
+         39
+         40    PROP-DATA SRKKIJ-1
+         41        IN-UNITS MET PRESSURE=bar TEMPERATURE=C DELTA-T=C PDROP=bar  &
+         42            INVERSE-PRES='1/bar' SHORT-LENGTH=mm
+         43        PROP-LIST SRKKIJ
+         44        BPVAL ETHAN-01 ETHYL-01 3.21082000E-3 0.0 0.0 -273.1500000  &
+         45            726.8500000
+         46        BPVAL ETHYL-01 ETHAN-01 3.21082000E-3 0.0 0.0 -273.1500000  &
+         47            726.8500000
+         48        BPVAL ETHAN-01 PROPY-01 .0117991000 0.0 0.0 -273.1500000  &
+         49            726.8500000
+         50        BPVAL PROPY-01 ETHAN-01 .0117991000 0.0 0.0 -273.1500000  &
+         51            726.8500000
+         52        BPVAL ETHAN-01 METHA-01 4.21992000E-4 0.0 0.0 -273.1500000  &
+         53            726.8500000
+         54        BPVAL METHA-01 ETHAN-01 4.21992000E-4 0.0 0.0 -273.1500000  &
+         55            726.8500000
+         56        BPVAL ETHYL-01 METHA-01 .0174052000 0.0 0.0 -273.1500000  &
+         57            726.8500000
+         58        BPVAL METHA-01 ETHYL-01 .0174052000 0.0 0.0 -273.1500000  &
+         59            726.8500000
+         60        BPVAL ETHAN-01 PROPA-01 1.69511000E-3 0.0 0.0 -273.1500000  &
+         61            726.8500000
+         62        BPVAL PROPA-01 ETHAN-01 1.69511000E-3 0.0 0.0 -273.1500000  &
+         63            726.8500000
+         64        BPVAL PROPY-01 PROPA-01 3.00000000E-3 0.0 0.0 -273.1500000  &
+         65            726.8500000
+         66        BPVAL PROPA-01 PROPY-01 3.00000000E-3 0.0 0.0 -273.1500000  &
+         67            726.8500000
+         68        BPVAL METHA-01 PROPA-01 .0241509000 0.0 0.0 -273.1500000  &
+         69            726.8500000
+         70        BPVAL PROPA-01 METHA-01 .0241509000 0.0 0.0 -273.1500000  &
+         71            726.8500000
+         72
+         73    STREAM PRDUCT2
+         74        SUBSTREAM MIXED TEMP=150. <K> PRES=100000. <Pa>  &
+         75            MOLE-FLOW=100. <mol/sec>
+         76        MOLE-FRAC ETHAN-01 0.2 / ETHYL-01 0.3 / PROPY-01 0.2 /  &
+         77            METHA-01 0.2 / PROPA-01 0.1
+         78
+         79    STREAM S1
+         80        SUBSTREAM MIXED TEMP=280. <K> PRES=1000. <Pa> MOLE-FLOW=100.
+         81        MOLE-FRAC ETHAN-01 0.2 / ETHYL-01 0.3 / PROPY-01 0.2 /  &
+         82            METHA-01 0.2 / PROPA-01 0.1
+         83
+         84    BLOCK SPLIT SEP
+         85        PARAM
+         86        FRAC STREAM=PRDUCT2 SUBSTREAM=MIXED COMPS=ETHAN-01  &
+         87            ETHYL-01 PROPY-01 METHA-01 PROPA-01 FRACS=0.4 0.13 0.  &
+         88            0.01 0.24
+         89        FRAC STREAM=PRDUCT1 SUBSTREAM=MIXED COMPS=ETHAN-01  &
+         90            ETHYL-01 PROPY-01 METHA-01 PROPA-01 FRACS=0. 0.12 0.34  &
+         91            0.2 0.
+         92        FRAC STREAM=PRDUCT4 SUBSTREAM=MIXED COMPS=ETHAN-01  &
+         93            ETHYL-01 PROPY-01 METHA-01 PROPA-01 FRACS=0. 0.22 0.1  &
+         94            0.1 0.11
+         95
+         96    EO-CONV-OPTI
+         97
+         98    STREAM-REPOR MOLEFLOW
+         99    ;
+        100    ;
+        101    ;
+        102    ;
+        103    ;
+ *** INPUT TRANSLATOR MESSAGES ***
+
+  *** THIS RUN USES THE PROPERTIES ENTERPRISE DATABASE ***
+      SQLLOCALDB.APESV140 : (DATAVERSION - 40.0.0.13)                         
+      SQLLOCALDB.APV140 : (DATAVERSION - 40.0.0.13)                           
+      SQLLOCALDB.FACTV140 : (DATAVERSION - 40.0.0.12)                         
+      SQLLOCALDB.NISTV140 : (DATAVERSION - 40.0.0.12)                         
+
+  *   WARNING IN THE "PROPERTIES" PARAGRAPH WHICH BEGINS ON LINE 38             
+                                                               (SECPO.4)        
+      FREE-WATER METHOD SHOULD BE STEAMNBS WHEN THE MAIN                        
+      PROPERTY METHOD IS SRK. DEFAULT FREE-WATER METHOD IS STEAM-TA             
+      PLEASE SPECIFY THE RECOMMENDED FREE-WATER METHOD AND RUN AGAIN.           
+ 
+ 
+
+ PDF updated                                                                      TIME =      0.80
+
+ *** CALCULATION TRACE ***
+
+
+ *** FLOWSHEET ANALYSIS MESSAGES ***
+
+ FLOWSHEET CONNECTIVITY BY STREAMS       
+
+   STREAM     SOURCE     DEST           STREAM     SOURCE     DEST
+   S1         ----       SPLIT          PRDUCT2    SPLIT      ----    
+   PRDUCT1    SPLIT      ----           PRDUCT3    SPLIT      ----    
+   PRDUCT4    SPLIT      ----                                         
+
+ FLOWSHEET CONNECTIVITY BY BLOCKS        
+
+   BLOCK        INLETS                         OUTLETS
+   SPLIT        S1                             PRDUCT2 PRDUCT1 PRDUCT3     
+                                               PRDUCT4                     
+
+      COMPUTATION ORDER FOR THE FLOWSHEET IS:
+      SPLIT 
+
+Calculations begin                                                              time      0.02
+
+
+ SIMULATION CALCULATIONS BEGIN                                                    TIME =      0.02
+
+      ENTHALPY CALCULATION FOR INLET STREAM S1 OF BLOCK SPLIT                     TIME =      0.02
+      KODE = 2  NTRIAL =   3  T = 280.0000  P =  1000.00      V =  1.00000      Q =  0.00000    
+
+      ENTHALPY CALCULATION FOR OUTLET STREAM PRDUCT2 OF BLOCK SPLIT               TIME =      0.02
+      KODE = 2  NTRIAL =   3  T = 150.0000  P =  100000.      V = 0.163584      Q =  0.00000    
+
+      UOS BLOCK SPLIT    MODEL: SEP                                               TIME =      0.02
+      ---FLASH OUTLET STREAM PRDUCT2 :
+      KODE = 2  NTRIAL =   3  T = 280.0000  P =  1000.00      V =  1.00000      Q =  0.00000    
+      ---FLASH OUTLET STREAM PRDUCT1 :
+      KODE = 2  NTRIAL =   3  T = 280.0000  P =  1000.00      V =  1.00000      Q =  0.00000    
+      ---FLASH OUTLET STREAM PRDUCT3 :
+      KODE = 2  NTRIAL =   3  T = 280.0000  P =  1000.00      V =  1.00000      Q =  0.00000    
+      ---FLASH OUTLET STREAM PRDUCT4 :
+      KODE = 2  NTRIAL =   3  T = 280.0000  P =  1000.00      V =  1.00000      Q =  0.00000    
+
+ Report Writer entered                                                            Time =     26.87
+
+ Results generated                                                                Time =     26.87
+
+ Report Writer entered                                                            Time =     26.90
+
+ Results generated                                                                Time =     26.90
+
+RUN SAVED
+
+
+
+ NO ERRORS OR WARNINGS GENERATED

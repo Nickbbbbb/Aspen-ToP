@@ -1,0 +1,22 @@
+{
+      "alias": "CARBON MONOXIDE",
+      "bioJson": "{\"carbon\":1,\"oxygen\":1}",
+      "boilingPoint": "81.7",
+      "cas": "630-08-0",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "CO",
+      "id": "2019269501787430914",
+      "indexNew": 11,
+      "indexOld": 10,
+      "label": "CARBON MONOXIDE",
+      "molarMass": "28.010100000000001",
+      "name": "CARBON MONOXIDE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "908",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

@@ -1,0 +1,73 @@
+ >>ORIGINAL RUN                           MARCH 13, 2026      
+   1:48:48 P.M.                           FRIDAY      
+   INPUT FILE: _4803spl.inm
+   RUN ID : _4803spl
+          1    ;
+          2    ;输入文件创建由Aspen Plus Rel. 40.0 at 13:48:48 Fri Mar 13, 2026
+          3    ;Directory D:\soft\simona_project\aspen_result\process_3_20260313_134759_a568721e  Runid PROCESS_3_20260313_134759_A568721E
+          4    ;
+          5
+          6
+          7    DYNAMICS
+          8        DYNAMICS RESULTS=ON
+          9
+         10    IN-UNITS SI SHORT-LENGTH=mm
+         11
+         12    DEF-STREAMS CONVEN ALL
+         13
+         14    DATABANKS 'APV140 PURE40' / 'APV140 AQUEOUS' / 'APV140 SOLIDS' &
+         15             / 'APV140 INORGANIC' / NOASPENPCD
+         16
+         17    PROP-SOURCES 'APV140 PURE40' / 'APV140 AQUEOUS' /  &
+         18            'APV140 SOLIDS' / 'APV140 INORGANIC'
+         19
+         20    COMPONENTS
+         21        N-BUT-01 C4H10-1 /
+         22        WATER H2O
+         23
+         24    SOLVE
+         25        RUN-MODE MODE=SIM
+         26
+         27    FLOWSHEET
+         28        BLOCK MIXER IN=FEED RECYCLE OUT=S1
+         29        BLOCK FLASH IN=S1 OUT=SINKV S2
+         30        BLOCK SPLITTER IN=S2 OUT=SINKL S3
+         31        BLOCK PUMP IN=S3 OUT=RECYCLE
+         32
+         33    PROPERTIES SRK
+         34
+         35    STREAM FEED
+         36        SUBSTREAM MIXED TEMP=320.0 PRES=500000.0 MOLE-FLOW=0.1
+         37        MOLE-FRAC N-BUT-01 .80 / WATER .20
+         38
+         39    STREAM RECYCLE
+         40        SUBSTREAM MIXED TEMP=310.0 PRES=1000000.0 MOLE-FLOW=0.05
+         41        MOLE-FRAC N-BUT-01 .80 / WATER .20
+         42
+         43    BLOCK MIXER MIXER
+         44        PARAM PRES=500000.0
+         45
+         46    BLOCK FLASH FLASH2
+         47        PARAM TEMP=310.0 PRES=300000.0
+         48
+         49    BLOCK PUMP PUMP
+         50        PARAM PRES=1000000.0 EFF=.75
+         51
+         52    BLOCK SPLITTER SSPLIT
+         53        FRAC MIXED SINKL 0.5 / S3 0.5
+         54
+         55    EO-CONV-OPTI
+         56
+         57    TEAR
+         58        TEAR RECYCLE
+         59
+         60    STREAM-REPOR MOLEFLOW
+         61    ;
+         62    ;
+         63    ;
+         64    ;
+         65    ;
+         66    ;
+
+   SIMULATION STARTED     MODULE USED: apmain  
+   LOCATED IN:D:\aspen\aspen\Aspen Plus V14.0\Engine\\xeq

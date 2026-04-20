@@ -1,0 +1,22 @@
+{
+      "alias": "2,2,4-TRIMETHYLPENTANE",
+      "bioJson": "{\"carbon\":8,\"hydrogen\":18}",
+      "boilingPoint": "372.388",
+      "cas": "540-84-1",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C8H18",
+      "id": "2019269501875511298",
+      "indexNew": 34,
+      "indexOld": 33,
+      "label": "2,2,4-TRIMETHYLPENTANE",
+      "molarMass": "114.22852",
+      "name": "2,2,4-TRIMETHYLPENTANE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "41",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

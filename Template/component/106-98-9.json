@@ -1,0 +1,22 @@
+{
+      "alias": "1-BUTENE",
+      "bioJson": "{\"carbon\":4,\"hydrogen\":8}",
+      "boilingPoint": "266.91",
+      "cas": "106-98-9",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C4H8",
+      "id": "2019269501820985345",
+      "indexNew": 20,
+      "indexOld": 19,
+      "label": "1-BUTENE",
+      "molarMass": "56.106319999999997",
+      "name": "1-BUTENE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "204",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

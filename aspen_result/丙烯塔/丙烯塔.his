@@ -1,0 +1,223 @@
+
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + +                                                                         + +
+ + +                      ASPEN PLUS CALCULATION HISTORY                     + +
+ + +                                                                         + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+ ASPEN PLUS IS A TRADEMARK OF           HOTLINE:
+ ASPEN TECHNOLOGY, INC.                 U.S.A. 888/996-7100
+ 781/221-6400                           EUROPE (44) 1189-226555
+
+ PLATFORM: WIN-X64                                       MARCH 12, 2026      
+ VERSION: 40.0   Build 359                               THURSDAY    
+ INSTALLATION:                                           3:58:18 P.M.        
+
+ THIS COPY OF ASPEN PLUS LICENSED TO                                 
+
+
+      ASPEN PLUS (R) IS A PROPRIETARY PRODUCT OF ASPEN TECHNOLOGY, INC.
+      (ASPENTECH), AND MAY BE USED ONLY UNDER AGREEMENT WITH ASPENTECH.
+      RESTRICTED RIGHTS LEGEND:  USE, REPRODUCTION, OR DISCLOSURE BY THE
+      U.S. GOVERNMENT IS SUBJECT TO RESTRICTIONS SET FORTH IN 
+      (i) FAR 52.227-14, Alt. III, (ii) FAR 52.227-19, (iii) DFARS 
+      252.227-7013(c)(1)(ii), or (iv) THE ACCOMPANYING LICENSE AGREEMENT,
+      AS APPLICABLE. FOR PURPOSES OF THE FAR, THIS SOFTWARE SHALL BE DEEMED
+      TO BE "UNPUBLISHED" AND LICENSED WITH DISCLOSURE PROHIBITIONS.
+      CONTRACTOR/SUBCONTRACTOR: ASPEN TECHNOLOGY, INC. 20 CROSBY DRIVE,
+      BEDFORD, MA 01730.
+ *** INPUT SUMMARY ***
+
+ >>CURRENT RUN
+
+   ORIGINAL RUN                           MARCH 12, 2026      
+   3:58:18 P.M.                           THURSDAY    
+   INPUT FILE: _0704jyf.inm
+   RUN ID : _0704jyf
+          1    ;
+          2    ;输入文件创建由Aspen Plus Rel. 40.0 at 15:58:18 Thu Mar 12, 2026
+          3    ;Directory C:\Users\Administrator\Downloads\export-test\aspen_result\丙烯塔  Runid 丙烯塔
+          4    ;
+          5
+          6
+          7    DYNAMICS
+          8        DYNAMICS RESULTS=ON
+          9
+         10    IN-UNITS MET PRESSURE=bar TEMPERATURE=C DELTA-T=C PDROP=bar  &
+         11            INVERSE-PRES='1/bar' SHORT-LENGTH=mm
+         12
+         13    DEF-STREAMS CONVEN ALL
+         14
+         15    MODEL-OPTION
+         16
+         17    DATABANKS 'APV140 PURE40' / 'APV140 AQUEOUS' / 'APV140 SOLIDS' &
+         18             / 'APV140 INORGANIC' / 'APESV140 AP-EOS' /  &
+         19            'NISTV140 NIST-TRC' / NOASPENPCD
+         20
+         21    PROP-SOURCES 'APV140 PURE40' / 'APV140 AQUEOUS' /  &
+         22            'APV140 SOLIDS' / 'APV140 INORGANIC' / 'APESV140 AP-EOS' &
+         23             / 'NISTV140 NIST-TRC'
+         24
+         25    COMPONENTS
+         26        HYDRO-01 H2 /
+         27        METHA-01 CH4 /
+         28        PROPA-01 C3H8 /
+         29        PROPY-01 C3H6-2
+         30
+         31    SOLVE
+         32        RUN-MODE MODE=SIM
+         33
+         34    FLOWSHEET
+         35        BLOCK B1 IN=4029 OUT=4073 4051 4041
+         36
+         37    PROPERTIES SRK FREE-WATER=STEAMNBS
+         38
+         39    PROP-DATA SRKKIJ-1
+         40        IN-UNITS MET PRESSURE=bar TEMPERATURE=C DELTA-T=C PDROP=bar  &
+         41            INVERSE-PRES='1/bar' SHORT-LENGTH=mm
+         42        PROP-LIST SRKKIJ
+         43        BPVAL PROPY-01 PROPA-01 3.00000000E-3 0.0 0.0 -273.1500000  &
+         44            726.8500000
+         45        BPVAL PROPA-01 PROPY-01 3.00000000E-3 0.0 0.0 -273.1500000  &
+         46            726.8500000
+         47        BPVAL PROPY-01 HYDRO-01 .1067960000 0.0 0.0 -273.1500000  &
+         48            726.8500000
+         49        BPVAL HYDRO-01 PROPY-01 .1067960000 0.0 0.0 -273.1500000  &
+         50            726.8500000
+         51        BPVAL PROPA-01 HYDRO-01 .1014650000 0.0 0.0 -273.1500000  &
+         52            726.8500000
+         53        BPVAL HYDRO-01 PROPA-01 .1014650000 0.0 0.0 -273.1500000  &
+         54            726.8500000
+         55        BPVAL PROPA-01 METHA-01 .0241509000 0.0 0.0 -273.1500000  &
+         56            726.8500000
+         57        BPVAL METHA-01 PROPA-01 .0241509000 0.0 0.0 -273.1500000  &
+         58            726.8500000
+         59        BPVAL HYDRO-01 METHA-01 -.0244851000 0.0 0.0 -273.1500000  &
+         60            726.8500000
+         61        BPVAL METHA-01 HYDRO-01 -.0244851000 0.0 0.0 -273.1500000  &
+         62            726.8500000
+         63
+         64    STREAM 4029
+         65        SUBSTREAM MIXED TEMP=325.15 <K> PRES=2490000. <Pa>  &
+         66            MOLE-FLOW=542.65 <mol/sec>
+         67        MOLE-FRAC HYDRO-01 0.022 / METHA-01 0.004 / PROPA-01  &
+         68            0.144 / PROPY-01 0.825
+         69
+         70    BLOCK B1 RADFRAC
+         71        PARAM NSTAGE=277 ALGORITHM=SUM-RATES INIT-OPTION=STANDARD  &
+         72            HYDRAULIC=NO MAXOL=125 DAMPING=NONE
+         73        PARAM2 STATIC-DP=YES
+         74        COL-CONFIG CONDENSER=PARTIAL-V CA-CONFIG=INT-1
+         75        FEEDS 4029 159
+         76        PRODUCTS 4073 1 V / 4041 11 L MOLE-FLOW=450. <mol/sec> /  &
+         77            4051 277 L
+         78        P-SPEC 1 1765000. <Pa> / 2 1817000. <Pa>
+         79        COL-SPECS DP-STAGE=992.7 <Pa> MOLE-D=15. <mol/sec>  &
+         80            MOLE-RR=206.
+         81        HEATERS 177 46220. <kW>
+         82        SPEC 1 MOLE-FRAC 0.004 COMPS=PROPA-01 STREAMS=4041  &
+         83            SPEC-ACTIVE=YES SPEC-DESCRIP="Mole purity, 0.004, PRODUCT"
+         84        SPEC 2 MOLE-FRAC 0.01 COMPS=PROPY-01 STREAMS=4051  &
+         85            SPEC-ACTIVE=YES SPEC-DESCRIP="Mole purity, 0.01, PRODUCT"
+         86        VARY 1 MOLE-D VARY-ACTIVE=YES
+         87        VARY 2 MOLE-RR VARY-ACTIVE=YES
+         88        REPORT NOHYDRAULIC
+         89
+         90    EO-CONV-OPTI
+         91
+         92    STREAM-REPOR MOLEFLOW
+         93    ;
+         94    ;
+         95    ;
+         96    ;
+         97    ;
+ *** INPUT TRANSLATOR MESSAGES ***
+
+  *** THIS RUN USES THE PROPERTIES ENTERPRISE DATABASE ***
+      SQLLOCALDB.APESV140 : (DATAVERSION - 40.0.0.13)                         
+      SQLLOCALDB.APV140 : (DATAVERSION - 40.0.0.13)                           
+      SQLLOCALDB.FACTV140 : (DATAVERSION - 40.0.0.12)                         
+      SQLLOCALDB.NISTV140 : (DATAVERSION - 40.0.0.12)                         
+
+  *   WARNING IN THE "STREAM" PARAGRAPH WHICH BEGINS ON LINE 64                 
+      STREAM NAME: 4029                                        (SDSMPR.11)      
+      COMPONENT MOLE FRACTIONS ARE NORMALIZED TO UNITY.                         
+ 
+ 
+
+ PDF updated                                                                      TIME =      1.04
+
+ *** CALCULATION TRACE ***
+
+
+ *** FLOWSHEET ANALYSIS MESSAGES ***
+
+ FLOWSHEET CONNECTIVITY BY STREAMS       
+
+   STREAM     SOURCE     DEST           STREAM     SOURCE     DEST
+   4029       ----       B1             4073       B1         ----    
+   4051       B1         ----           4041       B1         ----    
+
+ FLOWSHEET CONNECTIVITY BY BLOCKS        
+
+   BLOCK        INLETS                         OUTLETS
+   B1           4029                           4073 4051 4041              
+
+      COMPUTATION ORDER FOR THE FLOWSHEET IS:
+      B1 
+
+Calculations begin                                                              time      0.02
+
+
+ SIMULATION CALCULATIONS BEGIN                                                    TIME =      0.02
+
+      ENTHALPY CALCULATION FOR INLET STREAM 4029 OF BLOCK B1                      TIME =      0.03
+      KODE = 2  NTRIAL =   6  T = 325.1500  P = 2.490000E+06  V = 0.204076      Q =  0.00000    
+
+      UOS BLOCK B1       MODEL: RADFRAC                                           TIME =      0.03
+
+      Convergence iterations:
+         OL   IL     Err/Tol
+          1   10      190.38    
+          2   10      200.89    
+          3   10      574.96    
+          4   10      127.10    
+          5   10      181.69    
+          6   10      25.260    
+          7   10      90.220    
+          8   10      220.17    
+          9   10      624.51    
+         10   10      262.29    
+         11   10      268.57    
+         12   10      112.73    
+         13   10      207.42    
+         14   10      200.67    
+         15    9      143.33    
+         16   10      209.97    
+         17    8      327.38    
+         18   10      273.37    
+         19   10      353.34    
+         20    8      136.77    
+         21    6      46.035    
+         22    4      4.6653    
+         23    5     0.80126    
+
+      CHECKING PHASE EQUILIBRIUM RESULTS                                          TIME =      1.02
+
+      CHECKING PHASE EQUILIBRIUM RESULTS                                          TIME =      1.02
+
+ Report Writer entered                                                            Time =   4046.89
+
+ Results generated                                                                Time =   4046.93
+
+ Report Writer entered                                                            Time =   4047.37
+
+ Results generated                                                                Time =   4047.41
+
+RUN SAVED
+
+
+
+ NO ERRORS OR WARNINGS GENERATED

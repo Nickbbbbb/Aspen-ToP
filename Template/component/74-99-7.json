@@ -1,0 +1,22 @@
+{
+      "alias": "METHYLACETYLENE",
+      "bioJson": "{\"carbon\":3,\"hydrogen\":4}",
+      "boilingPoint": "249.94",
+      "cas": "74-99-7",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C3H4",
+      "id": "2019269501800013827",
+      "indexNew": 15,
+      "indexOld": 14,
+      "label": "METHYLACETYLENE",
+      "molarMass": "40.063859999999998",
+      "name": "METHYLACETYLENE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "402",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

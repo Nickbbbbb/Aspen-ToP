@@ -1,0 +1,22 @@
+{
+      "alias": "ETHYLACETYLENE",
+      "bioJson": "{\"carbon\":4,\"hydrogen\":6}",
+      "boilingPoint": "281.22",
+      "cas": "107-00-6",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C4H6",
+      "id": "2019269501816791042",
+      "indexNew": 19,
+      "indexOld": 18,
+      "label": "ETHYLACETYLENE",
+      "molarMass": "54.090440000000001",
+      "name": "ETHYLACETYLENE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "403",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }

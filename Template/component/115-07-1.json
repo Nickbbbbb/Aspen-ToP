@@ -1,0 +1,22 @@
+{
+      "alias": "PROPYLENE",
+      "bioJson": "{\"carbon\":3,\"hydrogen\":6}",
+      "boilingPoint": "225.45",
+      "cas": "115-07-1",
+      "createBy": "admin",
+      "createTime": "2026-02-05 04:39:00",
+      "dataSource": "PURE",
+      "formula": "C3H6",
+      "id": "2019269501808402434",
+      "indexNew": 17,
+      "indexOld": 16,
+      "label": "PROPYLENE",
+      "molarMass": "42.079740000000001",
+      "name": "PROPYLENE",
+      "oilFlag": 0,
+      "projectId": "85b7aaee",
+      "realId": "202",
+      "substanceType": "CONVENTIONAL",
+      "substanceTypeName": "CONVENTIONAL",
+      "updateTime": "2026-02-05 04:39:00"
+    }
