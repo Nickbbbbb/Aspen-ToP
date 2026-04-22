@@ -1,0 +1,541 @@
+{
+    "components": {
+        "fenzi": [
+            "CH4",
+            "C2H4",
+            "C2H6",
+            "C3H8"
+        ],
+        "label": [
+            "METHA-01",
+            "ETHYL-01",
+            "ETHAN-01",
+            "PROPA-01"
+        ],
+        "cas": [
+            "74-82-8",
+            "74-85-1",
+            "74-84-0",
+            "74-98-6"
+        ],
+        "aspen_name": [
+            "METHANE",
+            "ETHYLENE",
+            "ETHANE",
+            "PROPANE"
+        ],
+        "top_name": [
+            "METHANE",
+            "ETHYLENE",
+            "ETHANE",
+            "PROPANE"
+        ]
+    },
+    "blocks": {
+        "FENLV": {
+            "type": "Flash2",
+            "in_streams": [
+                {
+                    "inlet_0": "S9"
+                }
+            ],
+            "out_streams": [
+                {
+                    "vapor_out_0": "S4"
+                },
+                {
+                    "liquid_out_0": "S2"
+                }
+            ],
+            "params": {
+                "SPEC_OPT": {
+                    "value": "PV",
+                    "unit": ""
+                },
+                "system_pressure": {
+                    "value": 100.0,
+                    "unit": "bar"
+                },
+                "comp_nums": 4,
+                "system_temperature": {
+                    "value": 0.0,
+                    "unit": "C"
+                },
+                "system_vapor_molar_fraction": {
+                    "value": 0.88,
+                    "unit": ""
+                },
+                "system_heat_duty": {
+                    "value": 0.0,
+                    "unit": "cal/sec"
+                }
+            }
+        },
+        "HOT": {
+            "type": "Flash2",
+            "in_streams": [
+                {
+                    "inlet_0": "S10"
+                }
+            ],
+            "out_streams": [
+                {
+                    "vapor_out_0": "S6"
+                },
+                {
+                    "liquid_out_0": "S7"
+                }
+            ],
+            "params": {
+                "SPEC_OPT": {
+                    "value": "PD",
+                    "unit": ""
+                },
+                "system_pressure": {
+                    "value": 100.0,
+                    "unit": "bar"
+                },
+                "comp_nums": 4,
+                "system_temperature": {
+                    "value": 0.0,
+                    "unit": "C"
+                },
+                "system_vapor_molar_fraction": {
+                    "value": 0.0,
+                    "unit": ""
+                },
+                "system_heat_duty": {
+                    "value": 123.0,
+                    "unit": "cal/sec"
+                }
+            }
+        },
+        "TEMP": {
+            "type": "Flash2",
+            "in_streams": [
+                {
+                    "inlet_0": "S1"
+                }
+            ],
+            "out_streams": [
+                {
+                    "vapor_out_0": "S9"
+                },
+                {
+                    "liquid_out_0": "S10"
+                }
+            ],
+            "params": {
+                "SPEC_OPT": {
+                    "value": "TP",
+                    "unit": ""
+                },
+                "system_pressure": {
+                    "value": 100.0,
+                    "unit": "bar"
+                },
+                "comp_nums": 4,
+                "system_temperature": {
+                    "value": 3456.0,
+                    "unit": "C"
+                },
+                "system_vapor_molar_fraction": {
+                    "value": 0.0,
+                    "unit": ""
+                },
+                "system_heat_duty": {
+                    "value": 0.0,
+                    "unit": "cal/sec"
+                }
+            }
+        }
+    },
+    "streams": {
+        "S1": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 100.0,
+                    "unit": "C"
+                },
+                "pressure": {
+                    "value": 100.0,
+                    "unit": "bar"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 1.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "CH4": 0.0,
+                "C2H4": 0.0,
+                "C2H6": 0.0,
+                "C3H8": 0.0
+            }
+        },
+        "S2": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "C"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "bar"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "CH4": 0.0,
+                "C2H4": 0.0,
+                "C2H6": 0.0,
+                "C3H8": 0.0
+            }
+        },
+        "S4": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "C"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "bar"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "CH4": 0.0,
+                "C2H4": 0.0,
+                "C2H6": 0.0,
+                "C3H8": 0.0
+            }
+        },
+        "S6": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "C"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "bar"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "CH4": 0.0,
+                "C2H4": 0.0,
+                "C2H6": 0.0,
+                "C3H8": 0.0
+            }
+        },
+        "S7": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "C"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "bar"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "CH4": 0.0,
+                "C2H4": 0.0,
+                "C2H6": 0.0,
+                "C3H8": 0.0
+            }
+        },
+        "S9": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "C"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "bar"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "CH4": 0.0,
+                "C2H4": 0.0,
+                "C2H6": 0.0,
+                "C3H8": 0.0
+            }
+        },
+        "S10": {
+            "connection": {
+                "from": null,
+                "to": null
+            },
+            "properties": {
+                "temperature": {
+                    "value": 0.0,
+                    "unit": "C"
+                },
+                "pressure": {
+                    "value": 0.0,
+                    "unit": "bar"
+                },
+                "vapor_frac": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mass_flow": {
+                    "value": null,
+                    "unit": ""
+                },
+                "mole_flow": {
+                    "value": 0.0,
+                    "unit": "kmol/hr"
+                }
+            },
+            "composition_mole_frac": {
+                "CH4": 0.0,
+                "C2H4": 0.0,
+                "C2H6": 0.0,
+                "C3H8": 0.0
+            }
+        }
+    },
+    "params": {},
+    "methad": "SRK",
+    "stream_topology_map": {
+        "S9": {
+            "source": "TEMP",
+            "dest": "FENLV"
+        },
+        "S4": {
+            "source": "FENLV",
+            "dest": null
+        },
+        "S2": {
+            "source": "FENLV",
+            "dest": null
+        },
+        "S10": {
+            "source": "TEMP",
+            "dest": "HOT"
+        },
+        "S6": {
+            "source": "HOT",
+            "dest": null
+        },
+        "S7": {
+            "source": "HOT",
+            "dest": null
+        },
+        "S1": {
+            "source": null,
+            "dest": "TEMP"
+        }
+    },
+    "processGraph": {
+        "nodes": [
+            {
+                "id": "FENLV",
+                "type": "Flash2",
+                "data": {
+                    "label": "FENLV",
+                    "aspentype": "Flash2"
+                },
+                "x": 180.0,
+                "y": -130.0
+            },
+            {
+                "id": "HOT",
+                "type": "Flash2",
+                "data": {
+                    "label": "HOT",
+                    "aspentype": "Flash2"
+                },
+                "x": 80.0,
+                "y": 40.0
+            },
+            {
+                "id": "TEMP",
+                "type": "Flash2",
+                "data": {
+                    "label": "TEMP",
+                    "aspentype": "Flash2"
+                },
+                "x": -180.0,
+                "y": -100.0
+            },
+            {
+                "id": "S1",
+                "type": "Source",
+                "data": {
+                    "label": "S1"
+                },
+                "x": 0,
+                "y": 0
+            },
+            {
+                "id": "S2",
+                "type": "Sink",
+                "data": {
+                    "label": "S2"
+                },
+                "x": 0,
+                "y": 0
+            },
+            {
+                "id": "S4",
+                "type": "Sink",
+                "data": {
+                    "label": "S4"
+                },
+                "x": 0,
+                "y": 0
+            },
+            {
+                "id": "S6",
+                "type": "Sink",
+                "data": {
+                    "label": "S6"
+                },
+                "x": 0,
+                "y": 0
+            },
+            {
+                "id": "S7",
+                "type": "Sink",
+                "data": {
+                    "label": "S7"
+                },
+                "x": 0,
+                "y": 0
+            }
+        ],
+        "edges": [
+            {
+                "source": "S1",
+                "target": "TEMP",
+                "label": "S1"
+            },
+            {
+                "source": "FENLV",
+                "target": "S2",
+                "label": "S2"
+            },
+            {
+                "source": "FENLV",
+                "target": "S4",
+                "label": "S4"
+            },
+            {
+                "source": "HOT",
+                "target": "S6",
+                "label": "S6"
+            },
+            {
+                "source": "HOT",
+                "target": "S7",
+                "label": "S7"
+            },
+            {
+                "source": "TEMP",
+                "target": "FENLV",
+                "label": "S9"
+            },
+            {
+                "source": "TEMP",
+                "target": "HOT",
+                "label": "S10"
+            }
+        ]
+    }
+}

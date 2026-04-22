@@ -1,0 +1,2528 @@
+{
+    "componentEquationPrivateList": [],
+    "componentGroupDetailPrivateList": [
+        {
+            "componentGroupId": "7089146910054382405",
+            "componentId": "2020041490760327170",
+            "createBy": "admin",
+            "createTime": "2026-02-03 02:14:57",
+            "formula": "CH4",
+            "id": "2018508477455429633",
+            "index": 1,
+            "oilFlag": 0,
+            "substanceType": "CONVENTIONAL",
+            "updateTime": "2026-02-03 02:14:57"
+        },
+        {
+            "componentGroupId": "7089146910054382405",
+            "componentId": "2020041490768715778",
+            "createBy": "admin",
+            "createTime": "2026-02-05 04:39:00",
+            "formula": "C2H4",
+            "id": "2019269503888777217",
+            "index": 2,
+            "oilFlag": 0,
+            "substanceType": "CONVENTIONAL",
+            "updateTime": "2026-02-05 04:39:00"
+        },
+        {
+            "componentGroupId": "7089146910054382405",
+            "componentId": "2020063412311154689",
+            "createBy": "admin",
+            "createTime": "2026-02-05 04:39:00",
+            "formula": "C2H6",
+            "id": "2019269503863611393",
+            "index": 3,
+            "oilFlag": 0,
+            "substanceType": "CONVENTIONAL",
+            "updateTime": "2026-02-05 04:39:00"
+        },
+        {
+            "componentGroupId": "7089146910054382405",
+            "componentId": "2020063412323737601",
+            "createBy": "admin",
+            "createTime": "2026-02-03 02:14:57",
+            "formula": "C3H8",
+            "id": "2018508477451235330",
+            "index": 4,
+            "oilFlag": 0,
+            "substanceType": "CONVENTIONAL",
+            "updateTime": "2026-02-03 02:14:57"
+        }
+    ],
+    "componentGroupPrivateList": [
+        {
+            "componentGroupName": "GLOBAL",
+            "componentGroupSort": 1,
+            "createBy": "admin",
+            "createTime": "2026-02-03 02:13:54",
+            "id": "7089146910054382405",
+            "isDefault": true,
+            "projectId": "8e2e4dd9",
+            "updateTime": "2026-02-03 02:13:54"
+        }
+    ],
+    "componentList": [
+        {
+            "alias": "METHANE",
+            "bioJson": "{\"carbon\":1,\"hydrogen\":4}",
+            "boilingPoint": "111.66",
+            "cas": "74-82-8",
+            "createBy": "admin",
+            "createTime": "2026-02-03 02:14:57",
+            "dataSource": "PURE",
+            "formula": "CH4",
+            "id": "2020041490760327170",
+            "indexNew": 2,
+            "indexOld": 1,
+            "label": "METHANE",
+            "molarMass": "16.042459999999998",
+            "name": "METHANE",
+            "oilFlag": 0,
+            "projectId": "8e2e4dd9",
+            "realId": "1",
+            "substanceType": "CONVENTIONAL",
+            "substanceTypeName": "CONVENTIONAL",
+            "updateTime": "2026-02-03 02:14:57"
+        },
+        {
+            "alias": "ETHYLENE",
+            "bioJson": "{\"carbon\":2,\"hydrogen\":4}",
+            "boilingPoint": "169.41",
+            "cas": "74-85-1",
+            "createBy": "admin",
+            "createTime": "2026-02-05 04:39:00",
+            "dataSource": "PURE",
+            "formula": "C2H4",
+            "id": "2020041490768715778",
+            "indexNew": 3,
+            "indexOld": 2,
+            "label": "ETHYLENE",
+            "molarMass": "28.053159999999998",
+            "name": "ETHYLENE",
+            "oilFlag": 0,
+            "projectId": "8e2e4dd9",
+            "realId": "201",
+            "substanceType": "CONVENTIONAL",
+            "substanceTypeName": "CONVENTIONAL",
+            "updateTime": "2026-02-05 04:39:00"
+        },
+        {
+            "alias": "ETHANE",
+            "bioJson": "{\"carbon\":2,\"hydrogen\":6}",
+            "boilingPoint": "184.55",
+            "cas": "74-84-0",
+            "createBy": "admin",
+            "createTime": "2026-02-05 04:39:00",
+            "dataSource": "PURE",
+            "formula": "C2H6",
+            "id": "2020063412311154689",
+            "indexNew": 4,
+            "indexOld": 3,
+            "label": "ETHANE",
+            "molarMass": "30.069040000000001",
+            "name": "ETHANE",
+            "oilFlag": 0,
+            "projectId": "8e2e4dd9",
+            "realId": "2",
+            "substanceType": "CONVENTIONAL",
+            "substanceTypeName": "CONVENTIONAL",
+            "updateTime": "2026-02-05 04:39:00"
+        },
+        {
+            "alias": "PROPANE",
+            "bioJson": "{\"carbon\":3,\"hydrogen\":8}",
+            "boilingPoint": "231.11",
+            "cas": "74-98-6",
+            "createBy": "admin",
+            "createTime": "2026-02-03 02:14:57",
+            "dataSource": "PURE",
+            "formula": "C3H8",
+            "id": "2020063412323737601",
+            "indexNew": 5,
+            "indexOld": 4,
+            "label": "PROPANE",
+            "molarMass": "44.095619999999997",
+            "name": "PROPANE",
+            "oilFlag": 0,
+            "projectId": "8e2e4dd9",
+            "realId": "3",
+            "substanceType": "CONVENTIONAL",
+            "substanceTypeName": "CONVENTIONAL",
+            "updateTime": "2026-02-03 02:14:57"
+        }
+    ],
+    "componentPropertyPrivateList": [],
+    "componentStructureList": [],
+    "methodAlgoList": [
+        {
+            "algoConfigId": "32",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9170,
+            "id": "2020041527242383361",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "33",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527246577665",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "34",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9243,
+            "id": "2020041527246577666",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "35",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9199,
+            "id": "2020041527250771970",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "36",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9218,
+            "id": "2020041527254966274",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "37",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527254966275",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "1",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527259160577",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "2",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 8978,
+            "id": "2020041527259160578",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "3",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9220,
+            "id": "2020041527263354881",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "4",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 8996,
+            "id": "2020041527267549185",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "5",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527267549186",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "6",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9018,
+            "id": "2020041527271743490",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "7",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9090,
+            "id": "2020041527275937793",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "8",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9329,
+            "id": "2020041527275937794",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "9",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527280132097",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "10",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9052,
+            "id": "2020041527284326401",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "11",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 8988,
+            "id": "2020041527288520706",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "12",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9011,
+            "id": "2020041527288520707",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "13",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527292715010",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "14",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9091,
+            "id": "2020041527292715011",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "15",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9028,
+            "id": "2020041527296909313",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "16",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9344,
+            "id": "2020041527301103618",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "17",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527301103619",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "18",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9461,
+            "id": "2020041527305297922",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "19",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9402,
+            "id": "2020041527309492226",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "20",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9432,
+            "id": "2020041527309492227",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "21",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527313686530",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "22",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9509,
+            "id": "2020041527317880833",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "23",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9479,
+            "id": "2020041527317880834",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "24",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9200,
+            "id": "2020041527322075138",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "25",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527322075139",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "26",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9394,
+            "id": "2020041527326269441",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "27",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9358,
+            "id": "2020041527330463745",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "28",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9363,
+            "id": "2020041527330463746",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "29",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527334658050",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "30",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9419,
+            "id": "2020041527338852353",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "31",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9379,
+            "id": "2020041527338852354",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "38",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9281,
+            "id": "2020041527343046657",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "39",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9284,
+            "id": "2020041527343046658",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "40",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 8968,
+            "id": "2020041527347240962",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "41",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527347240963",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "42",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9174,
+            "id": "2020041527351435266",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "43",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9134,
+            "id": "2020041527355629570",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "45",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527355629571",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "46",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9216,
+            "id": "2020041527359823873",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "47",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9165,
+            "id": "2020041527364018177",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "49",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527364018178",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "50",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9427,
+            "id": "2020041527368212481",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "52",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9365,
+            "id": "2020041527372406786",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "53",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9412,
+            "id": "2020041527372406787",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "54",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527376601090",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "55",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9487,
+            "id": "2020041527380795394",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "57",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9465,
+            "id": "2020041527380795395",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "58",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9176,
+            "id": "2020041527384989698",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "63",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527384989699",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "64",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9116,
+            "id": "2020041527389184002",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "65",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527393378306",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "66",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9449,
+            "id": "2020041527397572609",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "67",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527397572610",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "68",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9469,
+            "id": "2020041527401766914",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "69",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9188,
+            "id": "2020041527405961217",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "70",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527405961218",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "71",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9056,
+            "id": "2020041527410155521",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "72",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9008,
+            "id": "2020041527414349826",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "73",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527418544129",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "74",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9114,
+            "id": "2020041527418544130",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "75",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9073,
+            "id": "2020041527422738434",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "76",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527426932738",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "77",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527426932739",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "78",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527431127041",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "79",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527431127042",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "80",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9144,
+            "id": "2020041527435321346",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "81",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9112,
+            "id": "2020041527439515649",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "82",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527439515650",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "83",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9508,
+            "id": "2020041527443709953",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "84",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9438,
+            "id": "2020041527447904257",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "86",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527447904258",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "87",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9301,
+            "id": "2020041527452098562",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "88",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9333,
+            "id": "2020041527456292865",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "89",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527456292866",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "90",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9123,
+            "id": "2020041527460487169",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "91",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9061,
+            "id": "2020041527464681473",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "92",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527468875777",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "93",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9185,
+            "id": "2020041527473070082",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "94",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9157,
+            "id": "2020041527473070083",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "95",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527477264386",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "96",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9259,
+            "id": "2020041527481458690",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "97",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9308,
+            "id": "2020041527485652994",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "98",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527485652995",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "99",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527489847298",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "100",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527489847299",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "101",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527494041601",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "102",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527494041602",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "103",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527498235905",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "104",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527498235906",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "105",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527502430210",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "106",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527506624514",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "107",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527506624515",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "108",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527510818818",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "109",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527510818819",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "110",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527515013122",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "111",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527515013123",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "112",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527519207425",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "113",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527519207426",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "114",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527523401729",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "115",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527523401730",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "116",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527527596033",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "117",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527527596034",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "118",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527531790337",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "119",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527531790338",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "120",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527535984642",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "121",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527535984643",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "122",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9132,
+            "id": "2020041527540178945",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "123",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9237,
+            "id": "2020041527540178946",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "124",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527544373250",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "125",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9492,
+            "id": "2020041527548567554",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "126",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9522,
+            "id": "2020041527552761857",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "127",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527552761858",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "128",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9004,
+            "id": "2020041527556956162",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "129",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9536,
+            "id": "2020041527561150466",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "130",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527561150467",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "131",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9266,
+            "id": "2020041527565344770",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "132",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "customizeMethodId": 9210,
+            "id": "2020041527569539074",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "9537",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527573733377",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "9538",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527573733378",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "9548",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527577927681",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "9549",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527577927682",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "9555",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527582121985",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "9557",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527582121986",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "algoConfigId": "9558",
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "id": "2020041527586316289",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        }
+    ],
+    "methodFreewaterList": [
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "10",
+            "id": "2020041529985458178",
+            "method": "HV_IDEAL",
+            "methodDict": "HV_IDEAL,HV_SRK,HV_RKA,HV_PR,HV_RKS,HV_PRMHV2,HV_RKSMHV2,HV_PRWS,HV_RLSWS,HV_VT,HV_RK,HV_IF97,HV_PA",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "11",
+            "id": "2020041529989652482",
+            "method": "HL_IDEAL",
+            "methodDict": "HL_IDEAL,HL_SRK,HL_RKA,HL_PR,HL_RKS,HL_PRMHV2,HL_RKSMHV2,HL_PRWS,HL_RKSWS,HL_VT,HL_RK,HL_IF97,HL_PA",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "12",
+            "id": "2020041529993846786",
+            "method": "HS_CP",
+            "methodDict": "HS_CP,HS_GEN,HS_VK",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "14",
+            "id": "2020041529993846787",
+            "method": "HVMX_IDEAL",
+            "methodDict": "HVMX_IDEAL,HVMX_SRK,HVMX_PR,HVMX_RKS,HVMX_VT,HVMX_RKA,HVMX_PA,HVMX_PRMHV2,HVMX_RKSMHV2,HVMX_PRWS,HVMX_RKSWS,HVMX_RK,HVMX_IF97",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "15",
+            "id": "2020041529998041090",
+            "method": "HLMX_VT",
+            "methodDict": "HLMX_VT,HLMX_RKS,HLMX_PA,HLMX_PRMHV2,HLMX_RKSMHV2,HLMX_PRWS,HLMX_RKSWS,HLMX_NRTL,HLMX_WILSON,HLMX_UNIQUAC,HLMX_UNIFAC,HLMX_VANLAAR,HLMX_IF97,HLMX_IDEAL,HLMX_SRK,HLMX_PR,HLMX_RKS",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "16",
+            "id": "2020041529998041091",
+            "method": "HSMX_CPM",
+            "methodDict": "HSMX_CPM,HSMX_VK,",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "17",
+            "id": "2020041530002235394",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "18",
+            "id": "2020041530002235395",
+            "method": "GV_IDEAL",
+            "methodDict": "GV_IDEAL,GV_SRK,GV_RKA,GV_PR,GV_RKS,GV_PRMHV2,GV_RKSMHV2,GV_PRWS,GV_RKSWS,GV_VT,GV_RK,GV_IF97,GV_PA",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "19",
+            "id": "2020041530006429697",
+            "method": "GL_IDEAL",
+            "methodDict": "GL_IDEAL,GL_SRK,GL_RKA,GL_PR,GL_RKS,GL_PRMHV2,GL_RKSMHV2,GL_PRWS,GL_RKSWS,GL_VT,GL_ANT,GL_IF97,GL_PA",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "20",
+            "id": "2020041530010624001",
+            "method": "GS_CPM",
+            "methodDict": "GS_CPM,GS_VK",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "22",
+            "id": "2020041530010624002",
+            "method": "GVMX_IDEAL",
+            "methodDict": "GVMX_IDEAL,GVMX_SRK,GVMX_PR,GVMX_RKS,GVMX_VT,GVMX_RKA,GVMX_PA,GVMX_PRMHV2,GVMX_RKSMHV2,GVMX_PRWS,GVMX_RKSWS,GVMX_RK,GVMX_IF97",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "23",
+            "id": "2020041530014818306",
+            "method": "GLMX_IDEAL",
+            "methodDict": "GLMX_IDEAL,GLMX_SRK,GLMX_PR,GLMX_RKS,GLMX_VT,GLMX_RKA,GLMX_PA,GLMX_PRMHV2,GLMX_RKSMHV2,GLMX_PRWS,GLMX_RKSWS,GLMX_NRTL,GLMX_WILSON,GLMX_UNIQUAC,GLMX_UNIFAC,GLMX_VANLAAR,GLMX_IF97",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "24",
+            "id": "2020041530014818307",
+            "method": "GSMX_CPM",
+            "methodDict": "GSMX_CPM,",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "25",
+            "id": "2020041530019012609",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "26",
+            "id": "2020041530019012610",
+            "method": "SV_IDEAL",
+            "methodDict": "SV_IDEAL,SV_SRK,SV_RKA,SV_PR,SV_RKS,SV_PRMHV2,SV_RKSMHV2,SV_PRWS,SV_RKSWS,SV_VT,SV_RK,SV_IF97,SV_PA",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "27",
+            "id": "2020041530023206913",
+            "method": "SL_GEN",
+            "methodDict": "SL_GEN,SL_SRK,SL_RKA,SL_PR,SL_RKS,SL_PRMHV2,SL_RKSMHV2,SL_PRWS,SL_RKSWS,SL_VT,SL_IDEAL,SL_IF97,SL_PA",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "28",
+            "id": "2020041530027401217",
+            "method": "SS_CPM",
+            "methodDict": "SS_CPM,SS_GEN,SS_VK",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "30",
+            "id": "2020041530027401218",
+            "method": "SVMX_IDEAL",
+            "methodDict": "SVMX_IDEAL,SVMX_SRK,SVMX_PR,SVMX_RKS,SVMX_VT,SVMX_RKA,SVMX_PA,SVMX_PRMHV2,SVMX_RKSMHV2,SVMX_PRWS,SVMX_RKSWS,SVMX_RK,SVMX_IF97",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "31",
+            "id": "2020041530031595521",
+            "method": "SLMX_IDEAL",
+            "methodDict": "SLMX_IDEAL,SLMX_SRK,SLMX_PR,SLMX_RKS,SLMX_VT,SLMX_RKA,SLMX_PA,SLMX_PRMHV2,SLMX_RKSMHV2,SLMX_PRWS,SLMX_RKSWS,SLMX_IF97,SLMX_NRTL,SLMX_WILSON,SLMX_UNIQUAC,SLMX_UNIFAC,SLMX_VANLAAR,",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "32",
+            "id": "2020041530031595522",
+            "method": "SSMX_CPM",
+            "methodDict": "SSMX_CPM,SSMX_VK",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "33",
+            "id": "2020041530035789826",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "34",
+            "id": "2020041530039984130",
+            "method": "VV_IDEAL",
+            "methodDict": "VV_IDEAL,VV_SRK,VV_RKA,VV_PR,VV_RKS,VV_PRMHV2,VV_RKSMHV2,VV_PRWS,VV_RKSWS,VV_VT,VV_RK,VV_IF97,VV_PA,VV_BLS",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "35",
+            "id": "2020041530039984131",
+            "method": "VL_GEN",
+            "methodDict": "VL_GEN,VL_SRK,VL_RKA,VL_PR,VL_RKS,VL_PRMHV2,VL_RKSMHV2,VL_PRWS,VL_RKSWS,VL_VT,VL_RAC,VL_IF97,VL_PA,VL_BLS",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "36",
+            "id": "2020041530044178434",
+            "method": "VS_GEN",
+            "methodDict": "VS_GEN,VS_VK",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "38",
+            "id": "2020041530044178435",
+            "method": "VVMX_IDEAL",
+            "methodDict": "VVMX_IDEAL,VVMX_SRK,VVMX_PR,VVMX_RKS,VVMX_VT,VVMX_RKA,VVMX_PA,VVMX_PRMHV2,VVMX_RKSMHV2,VVMX_PRWS,VVMX_RKSWS,VVMX_RK,VVMX_IF97,VVMX_BLS",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "39",
+            "id": "2020041530048372737",
+            "method": "VLMX_RAC",
+            "methodDict": "VLMX_RAC,VLMX_SRK,VLMX_PR,VLMX_RKS,VLMX_VT,VLMX_RKA,VLMX_PA,VLMX_PRMHV2,VLMX_RKSMHV2,VLMX_PRWS,VLMX_RKSWS,VLMX_RAC,VLMX_IF97,VLMX_BLS",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "40",
+            "id": "2020041530048372738",
+            "method": "VSMX_CPM",
+            "methodDict": "VSMX_CPM,VSMX_VK,VSMX_PM",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "41",
+            "id": "2020041530052567041",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "13",
+            "id": "2020041530056761346",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "29",
+            "id": "2020041530056761347",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "37",
+            "id": "2020041530060955649",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "5",
+            "id": "2020041530060955650",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "42",
+            "id": "2020041530065149954",
+            "method": "MUV_CLS",
+            "methodDict": "MUV_CLS,MUV_GEN,MUV_IF97,MUV_LUC,MUV_TRA,MUV_CEB,MUV_CLS",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "43",
+            "id": "2020041530069344258",
+            "method": "MUL_GEN",
+            "methodDict": "MUL_GEN,MUL_TRA,MUL_IF97,MUL_CLS,MUL_VK",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "46",
+            "id": "2020041530069344259",
+            "method": "MUVMX_CEB",
+            "methodDict": "MUVMX_CEB,MUVMX_CLS,MUVMX_GEN,MUVMX_IF97,MUVMX_LUC,MUVMX_TRA",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "47",
+            "id": "2020041530073538562",
+            "method": "MULMX_API.MULMX_TRA",
+            "methodDict": "MULMX_API.MULMX_TRA,MULMX_IF97,MULMX_CLS,MULMX_AND,MULMX_LS,MULMX_ASPEN",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "49",
+            "id": "2020041530073538563",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "50",
+            "id": "2020041530077732865",
+            "method": "KV_TRA",
+            "methodDict": "KV_TRA,KV_IF97,KV_GEN,KV_WMS,KV_CLS,",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "52",
+            "id": "2020041530081927170",
+            "method": "KL_TRA",
+            "methodDict": "KL_TRA,KL_GEN,KL_CLS,KL_IF97,KL_VK",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "53",
+            "id": "2020041530081927171",
+            "method": "KS_CPM",
+            "methodDict": "KS_CPM,KS_PM",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "55",
+            "id": "2020041530086121474",
+            "method": "KVMX_CLS",
+            "methodDict": "KVMX_CLS,KVMX_GEN,KVMX_IF97,KVMX_TRA,KVMX_WMS",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "57",
+            "id": "2020041530086121475",
+            "method": "KLMX_CLS",
+            "methodDict": "KLMX_CLS,KLMX_GEN,KLMX_IF97,KLMX_TRA,KLMX_VK,KLMX_VRE",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "58",
+            "id": "2020041530090315778",
+            "method": "KSMX_CPM",
+            "methodDict": "KSMX_CPM,KSMX_PM",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "63",
+            "id": "2020041530090315779",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "64",
+            "id": "2020041530094510082",
+            "method": "SIGL_GEN",
+            "methodDict": "SIGL_GEN,SIGL_IF97",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "66",
+            "id": "2020041530098704386",
+            "method": "SIGLMX_APR",
+            "methodDict": "SIGLMX_APR,SIGLMX_PMM",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "67",
+            "id": "2020041530102898689",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "68",
+            "id": "2020041530102898690",
+            "method": "WSL_WSC",
+            "methodDict": "WSL_WSC",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "69",
+            "id": "2020041530107092994",
+            "method": "HCSL_HSC",
+            "methodDict": "HCSL_HSC",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "70",
+            "id": "2020041530111287297",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "71",
+            "id": "2020041530111287298",
+            "method": "DV_DKK",
+            "methodDict": "DV_DKK,DV_GEN",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "72",
+            "id": "2020041530115481602",
+            "method": "DL_GEN",
+            "methodDict": "DL_GEN,",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "73",
+            "id": "2020041530119675905",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "74",
+            "id": "2020041530123870209",
+            "method": "DVMX_GEN",
+            "methodDict": "DVMX_GEN,DVMX_DKK",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "75",
+            "id": "2020041530123870210",
+            "method": "DLMX_WC",
+            "methodDict": "DLMX_WC,DLMX_GEN",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "76",
+            "id": "2020041530128064514",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "77",
+            "id": "2020041530132258818",
+            "method": "PHILPC_IDEAL",
+            "methodDict": "PHILPC_IDEAL,PHILPC_ANT",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "78",
+            "id": "2020041530136453121",
+            "method": "PHISPC_IDEAL",
+            "methodDict": "PHISPC_IDEAL,PHISPC_ANT,",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "79",
+            "id": "2020041530136453122",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "80",
+            "id": "2020041530140647425",
+            "method": "DSV_IDEAL",
+            "methodDict": "DSV_IDEAL,DSV_IF97,DSV_PA,DSV_PR,DSV_PRMHV2,DSV_PRWS,DSV_RK,DSV_RKA,DSV_RKS,DSV_RKSMHV2,DSV_RKSWS,DSV_SRK,DSV_VT",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "81",
+            "id": "2020041530144841730",
+            "method": "DSL_GEN",
+            "methodDict": "DSL_GEN,DSL_IF97,DSL_PA,DSL_PR,DSL_PRMHV2,DSL_PRWS,DSL_RKA,DSL_RKS,DSL_RKSMHV2,DSL_RKSWS,DSL_SRK,DSL_VT",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "83",
+            "id": "2020041530144841731",
+            "method": "DSVMX_IDEAL",
+            "methodDict": "DSVMX_IDEAL,DSVMX_IF97,DSVMX_PA,DSVMX_PR,DSVMX_PRMHV2,DSVMX_PRWS,DSVMX_RK,DSVMX_RKA,DSVMX_RKS,DSVMX_RKSMHV2,DSVMX_RKSWS,DSVMX_SRK,DSVMX_VT",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "84",
+            "id": "2020041530149036034",
+            "method": "DSLMX_IF97",
+            "methodDict": "DSLMX_IF97,DSLMX_NRTL,DSLMX_PA,DSLMX_PR,DSLMX_PRMHV2,DSLMX_PRWS,DSLMX_RKA,DSLMX_RKS,DSLMX_RKSMHV2,DSLMX_RKSWS,DSLMX_SRK,DSLMX_UNIFAC,DSLMX_UNIQUAC,DSLMX_VANLAAR,DSLMX_VT,DSLMX_WILSON",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "86",
+            "id": "2020041530149036035",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "87",
+            "id": "2020041530153230337",
+            "method": "DHL_GEN",
+            "methodDict": "DHL_GEN,DHL_IDEAL,DHL_IF97,DHL_PA,DHL_PR,DHL_PRMHV2,DHL_PRWS,DHL_RKA,DHL_RKS,DHL_RKSMHV2,DHL_RKSWS,DHL_SRK,DHL_VT",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "88",
+            "id": "2020041530157424641",
+            "method": "DHV_IDEAL",
+            "methodDict": "DHV_IDEAL,DHV_SRK,DHV_RKA,DHV_PR,DHV_RKS,DHV_PRMHV2,DHV_RKSMHV2,DHV_PRWS,DHV_RKSWS,DHV_VT,DHV_RK,DHV_IF97,DHV_PA",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "90",
+            "id": "2020041530157424642",
+            "method": "DHVMX_SRK",
+            "methodDict": "DHVMX_SRK,DHVMX_PR,DHVMX_RKS,DHVMX_VT,DHVMX_PR,DHVMX_IDEAL,DHVMX_RKA,DHVMX_IF97,DHVMX_PA,DHVMX_PRMHV2,DHVMX_RKSMHV2,DHVMX_PRWS,DHVMX_RKSWS,DHVMX_IDEAL,DHVMX_RK",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "91",
+            "id": "2020041530161618945",
+            "method": "DHLMX_SRK",
+            "methodDict": "DHLMX_SRK,DHLMX_PR,DHLMX_RKS,DHLMX_VT,DHLMX_PR,DHLMX_IDEAL,DHLMX_RKA,DHLMX_IF97,DHLMX_PA,DHLMX_PRMHV2,DHLMX_RKSMHV2,DHLMX_PRWS,DHLMX_RKSWS,DHLMX_NRTL,DHLMX_WILSON,DHLMX_UNIQUAC,DHLMX_UNIFAC,DHLMX_VANLARR",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "92",
+            "id": "2020041530161618946",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "93",
+            "id": "2020041530165813249",
+            "method": "DGV_IDEAL",
+            "methodDict": "DGV_IDEAL,DGV_IF97,DGV_PA,DGV_PR,DGV_PRMHV2,DGV_PRWS,DGV_RK,DGV_RKA,DGV_RKS,DGV_RKSMHV2,DGV_SRK,DGV_VT",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "94",
+            "id": "2020041530170007553",
+            "method": "DGL_ANT",
+            "methodDict": "DGL_ANT,DGL_GEN,DGL_IDEAL,DGL_IF97,DGL_PA,DGL_PR,DGL_PRMHV2,DGL_PRWS,DGL_RKA,DGL_RKS,DGL_RKSMHV2,DGL_RKSWS,DGL_SRK,DGL_VT",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "96",
+            "id": "2020041530174201858",
+            "method": "DGVMX_SRK",
+            "methodDict": "DGVMX_SRK,DGVMX_PR,DGVMX_RKS,DGVMX_VT,DGVMX_PR,DGVMX_RKA,DGVMX_IF97,DGVMX_PA,DGVMX_IDEAL,DGVMX_PRMHV2,DGVMX_RKSMHV2,DGVMX_PRWS,DGVMX_RKSWS,DGVMX_RK",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "82",
+            "id": "2020041530174201859",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "89",
+            "id": "2020041530178396162",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "54",
+            "id": "2020041530182590465",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "65",
+            "id": "2020041530182590466",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "97",
+            "id": "2020041530186784769",
+            "method": "DGLMX_SRK",
+            "methodDict": "DGLMX_SRK,DGLMX_PR,DGLMX_RKS,DGLMX_VT,DGLMX_PR,DGLMX_RKA,DGLMX_IF97,DGLMX_PA,DGLMX_IDEAL,DGLMX_PRMHV2,DGLMX_RKSMHV2,DGLMX_PRWS,DGLMX_RKSWS,DGLMX_UNIFAC,DGLMX_VANLAAR,DGLMX_NRTL,DGLMX_WILSON,DGLMX_UNIQUAC",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "98",
+            "id": "2020041530190979074",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "99",
+            "id": "2020041530190979075",
+            "method": "HNRY_HEN",
+            "methodDict": "HNRY_HEN,HNRY_GEN",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "100",
+            "id": "2020041530195173377",
+            "method": "HNRYPC_BOC",
+            "methodDict": "HNRYPC_BOC,HNRYPC_GEN",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "102",
+            "id": "2020041530199367682",
+            "method": "HSXS_IDEAL",
+            "methodDict": "HSXS_IDEAL",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "104",
+            "id": "2020041530199367683",
+            "method": "GSXS_IDEAL",
+            "methodDict": "GSXS_IDEAL",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "105",
+            "id": "2020041530203561986",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "106",
+            "id": "2020041530207756289",
+            "method": "MUVLP_CEB",
+            "methodDict": "MUVLP_CEB,MUVLP_CLS",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "108",
+            "id": "2020041530207756290",
+            "method": "MUVMXLP_CEB",
+            "methodDict": "MUVMXLP_CEB,MUVMXLP_CLS",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "109",
+            "id": "2020041530211950594",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "110",
+            "id": "2020041530216144897",
+            "method": "KVLP_GEN",
+            "methodDict": "KVLP_GEN",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "112",
+            "id": "2020041530220339202",
+            "method": "KVMXLP_GEN",
+            "methodDict": "KVMXLP_GEN",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "114",
+            "id": "2020041530220339203",
+            "method": "MUVMXPC_GEN",
+            "methodDict": "MUVMXPC_GEN",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "116",
+            "id": "2020041530224533505",
+            "method": "DHLPC_GEN",
+            "methodDict": "DHLPC_GEN,DHLPC_IDEAL",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "117",
+            "id": "2020041530224533506",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "118",
+            "id": "2020041530228727809",
+            "method": "KVPC_GEN",
+            "methodDict": "KVPC_GEN,KVPC_RK",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "120",
+            "id": "2020041530232922113",
+            "method": "KVMXPC_GEN",
+            "methodDict": "KVMXPC_GEN,KVMXPC_RK",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "21",
+            "id": "2020041530232922114",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "45",
+            "id": "2020041530237116418",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "101",
+            "id": "2020041530241310721",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "103",
+            "id": "2020041530245505026",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "113",
+            "id": "2020041530245505027",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "115",
+            "id": "2020041530249699330",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "107",
+            "id": "2020041530249699331",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "111",
+            "id": "2020041530253893634",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "119",
+            "id": "2020041530253893635",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:46",
+            "freewaterConfigId": "95",
+            "id": "2020041530258087937",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "1",
+            "id": "2020041529960292354",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "2",
+            "id": "2020041529964486658",
+            "method": "PHIV_IDEAL",
+            "methodDict": "PHIV_IDEAL,PHIV_SRK,PHIV_RKA,PHIV_PR,PHIV_RKS,PHIV_PRMHV2,PHIV_RKSMHV2,PHIV_PRWS,PHIV_RKSWS,PHIV_VT,PHIV_RK,PHIV_IF97,PHIV_PA",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "3",
+            "id": "2020041529972875265",
+            "method": "PHIL_IDEAL",
+            "methodDict": "PHIL_IDEAL,PHIL_SRK,PHIL_RKS,PHIL_PR,PHIL_RKS,PHIL_PRMHV2,PHIL_RKSMHV2,PHIL_PRWS,PHIL_RKSWS,PHIL_VT,PHIL_GEN,PHIL_IF97,PHIL_PA",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "4",
+            "id": "2020041529972875266",
+            "method": "PHIS_ANT",
+            "methodDict": "PHIS_ANT,PHIS_GEN",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "6",
+            "id": "2020041529977069570",
+            "method": "PHIVMX_IDEAL",
+            "methodDict": "PHIVMX_IDEAL,PHIVMX_SRK,PHIVMX_PR,PHIVMX_RKS,PHIVMX_VT,PHIVMX_RKA,PHIVMX_PA,PHIVMX_PRMHV2,PHIVMX_RKSMHV2,PHIVMX_PRWS,PHIVMX_RKSWS,PHIVMX_NRTL,PHIVMX_WILISON,PHIVMX_UNIQUAC,PHIVMX_UNIFAC,PHIVMX_GEN",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "7",
+            "id": "2020041529977069571",
+            "method": "PHILMX_IDEAL",
+            "methodDict": "PHILMX_IDEAL,PHILMX_SRK,PHILMX_PR,PHILMX_RKS,,PHILMX_VT,,PHILMX_RKA,,PHILMX_PA,,PHILMX_PRMHV2,,PHILMX_RKSMHV2,,PHILMX_PRWS,,PHILMX_RKSWS,,PHILMX_NRTL,,PHILMX_WILISON,,PHILMX_UNIQUAC,,PHILMX_UNIFAC,,PHILMX_GEN",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "8",
+            "id": "2020041529981263873",
+            "method": "PHISMX_IDEAL",
+            "methodDict": "PHISMX_IDEAL,PHISMX_ANT,PHISMX_GEN,",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2026-02-07 07:46:45",
+            "freewaterConfigId": "9",
+            "id": "2020041529981263874",
+            "method": "",
+            "methodId": "2020041427883515905",
+            "updateTime": "2026-02-07 07:46:45"
+        }
+    ],
+    "methodParamsPrivateList": [],
+    "methodPrivateList": [
+        {
+            "baseAlgo": "SRK",
+            "createBy": "admin",
+            "createTime": "2026-02-03 02:13:54",
+            "description": "默认物性包",
+            "freeWater": "IF97",
+            "id": "2020041427883515905",
+            "isDefault": true,
+            "methodGroupName": "物性包",
+            "methodGroupSort": 1,
+            "projectId": "8e2e4dd9",
+            "updateBy": "admin",
+            "updateTime": "2026-02-03 02:15:16"
+        }
+    ],
+    "omProcessArchive": {
+        "createTime": "2026-02-04 06:37:43",
+        "currentFlag": 1,
+        "id": "2018936993196044289",
+        "processId": "971b2794",
+        "projectId": "8e2e4dd9",
+        "runStatus": 0,
+        "syncGraphVersion": 23,
+        "syncParamVersion": 22,
+        "updateTime": "2026-02-04 06:37:43",
+        "uuid": "bca99a725ce046b3969a791683dd91f9",
+        "versionNo": "latest"
+    },
+    "omProcessGraph": {
+        "createBy": "admin",
+        "createTime": "2026-01-30 06:12:16",
+        "delFlag": "0",
+        "graphType": 1,
+        "id": "971b2794",
+        "processEdges": "[{\"attrs\": {\"data\": {\"labeldata\": \"\", \"status\": \"\"}, \"label\": \"S2\"}, \"id\": \"d8325d64-648a-4374-a4a0-1b1a043b17ef_s-1\", \"source\": {\"cell\": \"598fddf9_a1b3cf68_Flash1\", \"port\": \"liquid_out_0\"}, \"target\": {\"cell\": \"ff1924d5_bd875db9_Sink1\", \"port\": \"inlet_0\"}}, {\"attrs\": {\"data\": {\"labeldata\": \"\", \"status\": \"\"}, \"label\": \"S7\"}, \"id\": \"89283d27-5e0b-4d5a-ad8d-d1a48f3f5776_s-2\", \"source\": {\"cell\": \"598fddf9_fa1f9973_Flash2\", \"port\": \"liquid_out_0\"}, \"target\": {\"cell\": \"ff1924d5_b912ebe1_Sink4\", \"port\": \"inlet_0\"}}, {\"attrs\": {\"data\": {\"labeldata\": \"\", \"status\": \"\"}, \"label\": \"S10\"}, \"id\": \"5d12c22b-e563-4e94-9321-f93e6e9025a1_s-3\", \"source\": {\"cell\": \"598fddf9_186ac6e6_Flash3\", \"port\": \"liquid_out_0\"}, \"target\": {\"cell\": \"598fddf9_fa1f9973_Flash2\", \"port\": \"inlet_0\"}}, {\"attrs\": {\"data\": {\"labeldata\": \"\", \"status\": \"\"}, \"label\": \"S1\"}, \"id\": \"dedf5651-2aba-4343-a4db-9b9ab3e54123_s-4\", \"source\": {\"cell\": \"54a52706_1514a51b_Source1\", \"port\": \"outlet_0\"}, \"target\": {\"cell\": \"598fddf9_186ac6e6_Flash3\", \"port\": \"inlet_0\"}}, {\"attrs\": {\"data\": {\"labeldata\": \"\", \"status\": \"\"}, \"label\": \"S9\"}, \"id\": \"1dff611c-e6a4-4212-9a44-412a59664321_s-5\", \"source\": {\"cell\": \"598fddf9_186ac6e6_Flash3\", \"port\": \"vapor_out_0\"}, \"target\": {\"cell\": \"598fddf9_a1b3cf68_Flash1\", \"port\": \"inlet_0\"}}, {\"attrs\": {\"data\": {\"labeldata\": \"\", \"status\": \"\"}, \"label\": \"S4\"}, \"id\": \"b71fcbe1-95d9-4566-a527-43795db96628_s-6\", \"source\": {\"cell\": \"598fddf9_a1b3cf68_Flash1\", \"port\": \"vapor_out_0\"}, \"target\": {\"cell\": \"ff1924d5_b92a8230_Sink2\", \"port\": \"inlet_0\"}}, {\"attrs\": {\"data\": {\"labeldata\": \"\", \"status\": \"\"}, \"label\": \"S6\"}, \"id\": \"468d01e9-8856-4076-b209-e981b0246324_s-7\", \"source\": {\"cell\": \"598fddf9_fa1f9973_Flash2\", \"port\": \"vapor_out_0\"}, \"target\": {\"cell\": \"ff1924d5_9fc92fec_Sink3\", \"port\": \"inlet_0\"}}]",
+        "processNodes": "[{\"componentChange\": false, \"data\": {\"label\": \"FENLV\", \"status\": \"\"}, \"hasDebuggerPoint\": false, \"height\": 80, \"id\": \"598fddf9_a1b3cf68_Flash1\", \"name\": \"Flash\", \"nodeLabel\": \"闪蒸罐\", \"nodeProperties\": \"{\\\"calculation_back_end\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"NATIVE\\\"}, \\\"component_cluster\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"GLOBAL\\\"}, \\\"property_package\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"物性包\\\"}, \\\"comp_num\\\": {\\\"isKeyword\\\": true, \\\"value\\\": 4}, \\\"Thermal_specification\\\": {\\\"value\\\": \\\"1\\\", \\\"realValue\\\": \\\"0\\\"}, \\\"system_pressure\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"unitType\\\": \\\"pressure\\\", \\\"unit\\\": \\\"bar\\\", \\\"value\\\": 100.0}, \\\"system_temperature\\\": {\\\"isKeyword\\\": true, \\\"unitType\\\": \\\"temperature\\\", \\\"fixed\\\": true}, \\\"system_vapor_molar_fraction\\\": {\\\"isKeyword\\\": true, \\\"unitType\\\": \\\"molar_fraction\\\", \\\"value\\\": 0.88, \\\"unit\\\": \\\"mol/mol\\\"}, \\\"system_heat_duty\\\": {\\\"isKeyword\\\": true, \\\"unitType\\\": \\\"energy_rate\\\"}}\", \"paramUncomplete\": false, \"portChange\": false, \"ports\": [{\"id\": \"e79055ed-3993-44af-8a81-2755be94d80b\", \"name\": \"inlet\", \"relateVirtualPortList\": [{\"id\": \"inlet_0\", \"name\": \"inlet\", \"relatedEntityId\": \"e79055ed-3993-44af-8a81-2755be94d80b\", \"relatedEntityName\": \"inlet\"}]}, {\"id\": \"fbdb7937-f707-4872-a974-308409aa240a\", \"name\": \"liquid_out\", \"relateVirtualPortList\": [{\"id\": \"liquid_out_0\", \"name\": \"liquid_out\", \"relatedEntityId\": \"fbdb7937-f707-4872-a974-308409aa240a\", \"relatedEntityName\": \"liquid_out\"}]}, {\"id\": \"851d1eab-fd70-497b-9ffe-202346b6cd42\", \"name\": \"vapor_out\", \"relateVirtualPortList\": [{\"id\": \"vapor_out_0\", \"name\": \"vapor_out\", \"relatedEntityId\": \"851d1eab-fd70-497b-9ffe-202346b6cd42\", \"relatedEntityName\": \"vapor_out\"}]}], \"scale\": 1, \"type\": \"Flash\", \"width\": 42, \"x\": 180.0, \"y\": -130.0}, {\"componentChange\": false, \"data\": {\"label\": \"HOT\", \"status\": \"\"}, \"hasDebuggerPoint\": false, \"height\": 80, \"id\": \"598fddf9_fa1f9973_Flash2\", \"name\": \"Flash\", \"nodeLabel\": \"闪蒸罐\", \"nodeProperties\": \"{\\\"calculation_back_end\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"NATIVE\\\"}, \\\"component_cluster\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"GLOBAL\\\"}, \\\"property_package\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"物性包\\\"}, \\\"comp_num\\\": {\\\"isKeyword\\\": true, \\\"value\\\": 4}, \\\"Thermal_specification\\\": {\\\"value\\\": \\\"0\\\", \\\"realValue\\\": \\\"0\\\"}, \\\"system_pressure\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"unitType\\\": \\\"pressure\\\", \\\"unit\\\": \\\"bar\\\", \\\"value\\\": 100.0}, \\\"system_temperature\\\": {\\\"isKeyword\\\": true, \\\"unitType\\\": \\\"temperature\\\"}, \\\"system_vapor_molar_fraction\\\": {\\\"isKeyword\\\": true, \\\"unitType\\\": \\\"molar_fraction\\\"}, \\\"system_heat_duty\\\": {\\\"isKeyword\\\": true, \\\"unitType\\\": \\\"energy_rate\\\"}}\", \"paramUncomplete\": false, \"portChange\": false, \"ports\": [{\"id\": \"e79055ed-3993-44af-8a81-2755be94d80b\", \"name\": \"inlet\", \"relateVirtualPortList\": [{\"id\": \"inlet_0\", \"name\": \"inlet\", \"relatedEntityId\": \"e79055ed-3993-44af-8a81-2755be94d80b\", \"relatedEntityName\": \"inlet\"}]}, {\"id\": \"fbdb7937-f707-4872-a974-308409aa240a\", \"name\": \"liquid_out\", \"relateVirtualPortList\": [{\"id\": \"liquid_out_0\", \"name\": \"liquid_out\", \"relatedEntityId\": \"fbdb7937-f707-4872-a974-308409aa240a\", \"relatedEntityName\": \"liquid_out\"}]}, {\"id\": \"851d1eab-fd70-497b-9ffe-202346b6cd42\", \"name\": \"vapor_out\", \"relateVirtualPortList\": [{\"id\": \"vapor_out_0\", \"name\": \"vapor_out\", \"relatedEntityId\": \"851d1eab-fd70-497b-9ffe-202346b6cd42\", \"relatedEntityName\": \"vapor_out\"}]}], \"scale\": 1, \"type\": \"Flash\", \"width\": 42, \"x\": 80.0, \"y\": 40.0}, {\"componentChange\": false, \"data\": {\"label\": \"TEMP\", \"status\": \"\"}, \"hasDebuggerPoint\": false, \"height\": 80, \"id\": \"598fddf9_186ac6e6_Flash3\", \"name\": \"Flash\", \"nodeLabel\": \"闪蒸罐\", \"nodeProperties\": \"{\\\"calculation_back_end\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"NATIVE\\\"}, \\\"component_cluster\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"GLOBAL\\\"}, \\\"property_package\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"物性包\\\"}, \\\"comp_num\\\": {\\\"isKeyword\\\": true, \\\"value\\\": 4}, \\\"Thermal_specification\\\": {\\\"value\\\": \\\"0\\\", \\\"realValue\\\": \\\"0\\\"}, \\\"system_pressure\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"unitType\\\": \\\"pressure\\\", \\\"unit\\\": \\\"bar\\\", \\\"value\\\": 100.0}, \\\"system_temperature\\\": {\\\"isKeyword\\\": true, \\\"unitType\\\": \\\"temperature\\\", \\\"value\\\": 3456.0, \\\"unit\\\": \\\"C\\\", \\\"fixed\\\": true}, \\\"system_vapor_molar_fraction\\\": {\\\"isKeyword\\\": true, \\\"unitType\\\": \\\"molar_fraction\\\"}, \\\"system_heat_duty\\\": {\\\"isKeyword\\\": true, \\\"unitType\\\": \\\"energy_rate\\\"}}\", \"paramUncomplete\": false, \"portChange\": false, \"ports\": [{\"id\": \"e79055ed-3993-44af-8a81-2755be94d80b\", \"name\": \"inlet\", \"relateVirtualPortList\": [{\"id\": \"inlet_0\", \"name\": \"inlet\", \"relatedEntityId\": \"e79055ed-3993-44af-8a81-2755be94d80b\", \"relatedEntityName\": \"inlet\"}]}, {\"id\": \"fbdb7937-f707-4872-a974-308409aa240a\", \"name\": \"liquid_out\", \"relateVirtualPortList\": [{\"id\": \"liquid_out_0\", \"name\": \"liquid_out\", \"relatedEntityId\": \"fbdb7937-f707-4872-a974-308409aa240a\", \"relatedEntityName\": \"liquid_out\"}]}, {\"id\": \"851d1eab-fd70-497b-9ffe-202346b6cd42\", \"name\": \"vapor_out\", \"relateVirtualPortList\": [{\"id\": \"vapor_out_0\", \"name\": \"vapor_out\", \"relatedEntityId\": \"851d1eab-fd70-497b-9ffe-202346b6cd42\", \"relatedEntityName\": \"vapor_out\"}]}], \"scale\": 1, \"type\": \"Flash\", \"width\": 42, \"x\": -180.0, \"y\": -100.0}, {\"componentChange\": false, \"data\": {\"label\": \"S1\", \"status\": \"\"}, \"hasDebuggerPoint\": false, \"height\": 25, \"id\": \"54a52706_1514a51b_Source1\", \"name\": \"Source\", \"nodeLabel\": \"源\", \"nodeProperties\": \"{\\\"calculation_back_end\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"NATIVE\\\"}, \\\"component_cluster\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"GLOBAL\\\"}, \\\"property_package\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"物性包\\\"}, \\\"comp_num\\\": {\\\"isKeyword\\\": true, \\\"value\\\": 4}, \\\"Thermal_specification\\\": {\\\"value\\\": \\\"0\\\", \\\"realValue\\\": \\\"0\\\"}, \\\"pressure\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"unitType\\\": \\\"pressure\\\", \\\"unit\\\": \\\"bar\\\", \\\"value\\\": 100.0}, \\\"temperature\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"unitType\\\": \\\"temperature\\\", \\\"value\\\": 100.0, \\\"unit\\\": \\\"C\\\"}, \\\"vapor_molar_fraction\\\": {\\\"isKeyword\\\": true, \\\"unitType\\\": \\\"molar_fraction\\\"}, \\\"molar_compositions\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"unitType\\\": \\\"molar_fraction\\\", \\\"unit\\\": \\\"mol/mol\\\", \\\"value\\\": [0.0, 0.0, 0.0, 0.0], \\\"rowHeaderType\\\": \\\"component\\\", \\\"rowHeader\\\": [\\\"METHANE\\\", \\\"ETHYLENE\\\", \\\"ETHANE\\\", \\\"PROPANE\\\"], \\\"rows\\\": [\\\"METHANE\\\", \\\"ETHYLENE\\\", \\\"ETHANE\\\", \\\"PROPANE\\\"], \\\"cols\\\": [\\\"组分\\\"], \\\"rowType\\\": \\\"component\\\", \\\"rowSize\\\": \\\"GLOBAL\\\", \\\"cloumnSize\\\": 1}, \\\"molar_flowrate\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"unitType\\\": \\\"molar_flowrate\\\", \\\"unit\\\": \\\"kmol/hr\\\", \\\"value\\\": 1.0}, \\\"mass_compositions\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": false, \\\"unitType\\\": \\\"mass_fraction\\\", \\\"unit\\\": \\\"kg/kg\\\"}, \\\"mass_flowrate\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": false, \\\"unitType\\\": \\\"mass_flowrate\\\", \\\"unit\\\": \\\"kg/s\\\"}, \\\"valid_phase\\\": {\\\"isKeyword\\\": true}}\", \"paramUncomplete\": false, \"portChange\": false, \"ports\": [{\"id\": \"ed67bfc6-4754-4c06-ae25-457615e3fb5f\", \"name\": \"outlet\", \"relateVirtualPortList\": [{\"id\": \"outlet_0\", \"name\": \"outlet\", \"relatedEntityId\": \"ed67bfc6-4754-4c06-ae25-457615e3fb5f\", \"relatedEntityName\": \"outlet\"}]}], \"scale\": 1, \"type\": \"Source\", \"width\": 50, \"x\": -419.6193, \"y\": -99.67009999999999}, {\"data\": {\"label\": \"S2\", \"status\": \"\"}, \"hasDebuggerPoint\": false, \"height\": 25, \"id\": \"ff1924d5_bd875db9_Sink1\", \"name\": \"Sink\", \"nodeLabel\": \"汇\", \"nodeProperties\": \"{\\\"calculation_back_end\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"NATIVE\\\"}, \\\"component_cluster\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"GLOBAL\\\"}, \\\"property_package\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"物性包\\\"}, \\\"comp_num\\\": {\\\"isKeyword\\\": true}}\", \"paramUncomplete\": false, \"portChange\": false, \"ports\": [{\"id\": \"ac35e72a-8581-4445-83bb-9f50dca5e19b\", \"name\": \"inlet\", \"relateVirtualPortList\": [{\"id\": \"inlet_0\", \"name\": \"inlet\", \"relatedEntityId\": \"ac35e72a-8581-4445-83bb-9f50dca5e19b\", \"relatedEntityName\": \"inlet\"}]}], \"scale\": 1, \"type\": \"Sink\", \"width\": 50, \"x\": 340.0965, \"y\": -80.3952}, {\"data\": {\"label\": \"S4\", \"status\": \"\"}, \"hasDebuggerPoint\": false, \"height\": 25, \"id\": \"ff1924d5_b92a8230_Sink2\", \"name\": \"Sink\", \"nodeLabel\": \"汇\", \"nodeProperties\": \"{\\\"calculation_back_end\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"NATIVE\\\"}, \\\"component_cluster\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"GLOBAL\\\"}, \\\"property_package\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"物性包\\\"}, \\\"comp_num\\\": {\\\"isKeyword\\\": true}}\", \"paramUncomplete\": false, \"portChange\": false, \"ports\": [{\"id\": \"ac35e72a-8581-4445-83bb-9f50dca5e19b\", \"name\": \"inlet\", \"relateVirtualPortList\": [{\"id\": \"inlet_0\", \"name\": \"inlet\", \"relatedEntityId\": \"ac35e72a-8581-4445-83bb-9f50dca5e19b\", \"relatedEntityName\": \"inlet\"}]}], \"scale\": 1, \"type\": \"Sink\", \"width\": 50, \"x\": 309.8985, \"y\": -200.17770000000002}, {\"data\": {\"label\": \"S6\", \"status\": \"\"}, \"hasDebuggerPoint\": false, \"height\": 25, \"id\": \"ff1924d5_9fc92fec_Sink3\", \"name\": \"Sink\", \"nodeLabel\": \"汇\", \"nodeProperties\": \"{\\\"calculation_back_end\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"NATIVE\\\"}, \\\"component_cluster\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"GLOBAL\\\"}, \\\"property_package\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"物性包\\\"}, \\\"comp_num\\\": {\\\"isKeyword\\\": true}}\", \"paramUncomplete\": false, \"portChange\": false, \"ports\": [{\"id\": \"ac35e72a-8581-4445-83bb-9f50dca5e19b\", \"name\": \"inlet\", \"relateVirtualPortList\": [{\"id\": \"inlet_0\", \"name\": \"inlet\", \"relatedEntityId\": \"ac35e72a-8581-4445-83bb-9f50dca5e19b\", \"relatedEntityName\": \"inlet\"}]}], \"scale\": 1, \"type\": \"Sink\", \"width\": 50, \"x\": 230.3299, \"y\": -40.203100000000006}, {\"data\": {\"label\": \"S7\", \"status\": \"\"}, \"hasDebuggerPoint\": false, \"height\": 25, \"id\": \"ff1924d5_b912ebe1_Sink4\", \"name\": \"Sink\", \"nodeLabel\": \"汇\", \"nodeProperties\": \"{\\\"calculation_back_end\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"NATIVE\\\"}, \\\"component_cluster\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"GLOBAL\\\"}, \\\"property_package\\\": {\\\"isKeyword\\\": true, \\\"fixed\\\": true, \\\"value\\\": \\\"物性包\\\"}, \\\"comp_num\\\": {\\\"isKeyword\\\": true}}\", \"paramUncomplete\": false, \"portChange\": false, \"ports\": [{\"id\": \"ac35e72a-8581-4445-83bb-9f50dca5e19b\", \"name\": \"inlet\", \"relateVirtualPortList\": [{\"id\": \"inlet_0\", \"name\": \"inlet\", \"relatedEntityId\": \"ac35e72a-8581-4445-83bb-9f50dca5e19b\", \"relatedEntityName\": \"inlet\"}]}], \"scale\": 1, \"type\": \"Sink\", \"width\": 50, \"x\": 210.2284, \"y\": 129.82229999999998}]",
+        "projectId": "8e2e4dd9",
+        "updateBy": "admin",
+        "updateTime": "2026-01-30 06:12:16"
+    },
+    "omProcessLogisticsResultsList": [],
+    "omProject": {
+        "coverPath": "",
+        "createBy": "admin",
+        "delFlag": "0",
+        "groupId": "70c725e9",
+        "id": "8e2e4dd9",
+        "orderNo": 0,
+        "projectName": "nick11",
+        "publicFlag": "0",
+        "unitSetId": "default",
+        "updateTime": "2026-02-03 02:13:54"
+    },
+    "processCalResultsList": []
+}

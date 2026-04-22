@@ -1,12 +1,9 @@
-from aspen_run import run_and_export
-from json_create import create_json
-import os
+from aspen_to_top.main import main
 
-BKP = r"C:\Users\Administrator\Downloads\export-test\aspen_result\hda\hda.bkp"
-OUT = "aspen_fixed_data.json"
 
-# 运行 Aspen 导出
-run_and_export(BKP, OUT)
-
-create_json()
-
+if __name__ == "__main__":
+    try:
+        main()
+    except Exception as exc:
+        print(f"操作失败: {exc}")
+        raise SystemExit(1)
