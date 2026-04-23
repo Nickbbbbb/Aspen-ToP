@@ -1,8 +1,22 @@
+"""命令行和流程编排入口。
+
+这个文件不负责具体设备参数怎么读，也不负责 ToP JSON 每个字段怎么填。
+它只把完整流程按三个阶段串起来：
+
+1. _step1_extract: 通过 Aspen COM 从 .bkp 中读取标准化数据。
+2. _step2_build_json: 把标准化数据构建成 ToP JSON。
+3. _step3_encrypt: 调用外部加密工具把 ToP JSON 加密成 .hss。
+
+外部业务代码推荐使用 aspen_to_top.api 中的 convert_single_bkp/convert_bkp_folder。
+命令行用户则通过根目录 main.py 转发到本文件的 main()。
+"""
+
 import sys
 import json
 import argparse
 from pathlib import Path
 
+# 项目根目录。Template、export-test、output 等路径都以它为基准。
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
@@ -15,13 +29,24 @@ from aspen_to_top.utils.layout import LayoutFixer, extract_coords_from_bkp
 
 
 class AspenToTopConverter:
-    """Aspen BKP 到 ToP HSS 一键转换器"""
+    """Aspen BKP 到 ToP HSS 一键转换器。
+
+    这个类是内部编排器，保留较多调试能力：
+
+    - 完整转换 BKP -> HSS。
+    - 只提取 BKP 到 extracted JSON。
+    - 只构建 ToP JSON。
+    - 只加密 ToP JSON 到 HSS。
+
+    对外更推荐使用 api.py 中更窄的两个函数。
+    """
 
     def __init__(self, template_dir: str = None):
         if template_dir is None:
             template_dir = PROJECT_ROOT / "Template"
         self.template_dir = Path(template_dir)
-        self.default_output_dir = PROJECT_ROOT / "test_output"
+        # 默认输出目录固定为项目根目录 output，方便外部同学使用统一约定。
+        self.default_output_dir = PROJECT_ROOT / "output"
         self.default_extract_json = PROJECT_ROOT / "aspen_fixed_data.json"
 
     def convert(
@@ -34,7 +59,20 @@ class AspenToTopConverter:
         top_json: str = None,
         json_only: bool = False,
     ):
-        """一键转换 BKP -> ToP JSON/HSS"""
+        """一键转换 BKP -> ToP JSON/HSS。
+
+        参数：
+            bkp_path: Aspen .bkp 文件路径。
+            output_hss: HSS 输出路径；如果为空，使用 output_dir/<bkp同名>.hss。
+            save_intermediate: 是否保存 Aspen 读取后的标准化 JSON。
+            output_dir: 默认输出目录。
+            extract_json: 标准化 JSON 输出路径，仅调试时需要指定。
+            top_json: ToP JSON 输出路径，仅调试时需要指定。
+            json_only: 只生成 ToP JSON，不加密 HSS。
+
+        返回：
+            包含 extract_json/top_json/hss 三个输出路径的 dict。
+        """
         print("=" * 60)
         print("Aspen ToP 转换器启动")
         print("=" * 60)
@@ -47,6 +85,8 @@ class AspenToTopConverter:
         output_dir_path = Path(output_dir).resolve() if output_dir else self.default_output_dir
         output_dir_path.mkdir(parents=True, exist_ok=True)
 
+        # 以 HSS 路径为主路径推导同名 JSON：
+        # foo.hss -> foo.json -> foo.extracted.json。
         output_hss_path = Path(output_hss).resolve() if output_hss else output_dir_path / f"{bkp_name}.hss"
         output_json_path = Path(top_json).resolve() if top_json else output_hss_path.with_suffix(".json")
         extract_json_path = None
@@ -54,13 +94,16 @@ class AspenToTopConverter:
             extract_json_path = Path(extract_json).resolve() if extract_json else output_hss_path.with_suffix(".extracted.json")
 
         try:
+            # Step 1 输出的是“标准化 Aspen JSON 数据结构”，不是 ToP JSON。
             step1_data = self._step1_extract(bkp_path, extract_json_path)
             print("\n" + "=" * 60)
 
+            # Step 2 把 Aspen 数据映射到 ToP 模板字段，得到最终会被加密的 JSON。
             self._step2_build_json(step1_data, output_json_path)
             print("\n" + "=" * 60)
 
             if not json_only:
+                # Step 3 不改 JSON 内容，只调用外部工具进行 AES/Base64 加密封装。
                 self._step3_encrypt(output_json_path, output_hss_path)
                 print("\n" + "=" * 60)
 
@@ -81,7 +124,17 @@ class AspenToTopConverter:
             raise
 
     def _step1_extract(self, bkp_path: str, output_path: Path = None) -> dict:
-        """Step 1: 从 Aspen 提取数据"""
+        """Step 1: 从 Aspen 提取数据。
+
+        这里会启动 Aspen Plus COM，调用 InitFromArchive2 打开 .bkp 文件。
+        读取结果由 AspenExtractor 负责，包含：
+
+        - components: 组分信息。
+        - blocks: 设备类型、端口、设备参数。
+        - streams: 流股温度/压力/流量/组成。
+        - methad: Aspen 物性方法。
+        - processGraph: 节点、边、坐标。
+        """
         print("Step 1: 从 Aspen 提取数据")
         print("-" * 40)
 
@@ -89,9 +142,12 @@ class AspenToTopConverter:
         connector.connect()
 
         try:
+            # Aspen 的数据都挂在 COM Tree 上，Extractor 只接收 Tree，不直接关心 COM 文档对象。
             extractor = AspenExtractor(connector.get_tree(), bkp_path)
             data = extractor.extract_all()
 
+            # processGraph 是给 ToP 图结构使用的轻量拓扑信息；
+            # 这里会同时从 .bkp 原文中读取 block/stream 坐标。
             data["processGraph"] = self._build_process_graph(connector.get_tree(), bkp_path)
 
             if output_path:
@@ -112,14 +168,24 @@ class AspenToTopConverter:
             connector.disconnect()
 
     def _build_process_graph(self, tree, bkp_path: str) -> dict:
-        """构建流程图结构"""
+        """构建流程图结构。
+
+        Aspen Tree 中 Blocks 是天然设备节点；Streams 可能只是连线，也可能需要
+        转换成 ToP 的 Source/Sink 节点：
+
+        - 有来源 block 且有目标 block: stream 是一条边。
+        - 没有来源 block: stream 是 Source 节点到目标 block 的边。
+        - 没有目标 block: stream 是来源 block 到 Sink 节点的边。
+
+        坐标来自 .bkp 文件中的文本片段，Source/Sink 也按流股名读取坐标。
+        """
         print("构建流程图...")
 
         nodes = []
         edges = []
         node_lookup = {}
         
-        # 1. 添加 Blocks (必定是节点)
+        # 1. 添加 Aspen Blocks。Block 在 ToP 中一定是设备节点。
         blocks_root = tree.FindNode(r"\Data\Blocks")
         if blocks_root:
             for block in blocks_root.Elements:
@@ -135,13 +201,13 @@ class AspenToTopConverter:
                 nodes.append(node)
                 node_lookup[blk_name] = node
 
-        # 2. 分析流股，决定是"边"还是"节点"
+        # 2. 分析 Streams，决定它在 ToP 中是边，还是 Source/Sink 节点。
         streams_root = tree.FindNode(r"\Data\Streams")
         if streams_root:
             for strm in streams_root.Elements:
                 s_name = strm.Name
 
-                # 直接从 Block 的 Ports 中获取连接信息
+                # 直接从每个 Block 的 Ports 中反查当前 stream 连接到了谁。
                 src_blk = None
                 dst_blk = None
                 
@@ -151,14 +217,20 @@ class AspenToTopConverter:
                         blk_name = block.Name
                         ports = block.FindNode("Ports")
                         if ports:
-                            # 检查输入端口
+                            # F(IN) 表示该 stream 进入这个 block。
                             in_n = ports.FindNode("F(IN)")
                             if in_n:
                                 for p in in_n.Elements:
                                     if p.Value == s_name:
                                         dst_blk = blk_name
-                            # 检查各种输出端口
-                            out_ports = ["VD(OUT)", "B(OUT)", "LD(OUT)", "V(OUT)", "L(OUT)", "P(OUT)", "H(OUT)", "C(OUT)"]
+                            # 下列端口表示该 stream 从这个 block 流出。
+                            out_ports = [
+                                "VD(OUT)", "B(OUT)", "LD(OUT)",
+                                "V(OUT)", "L(OUT)", "P(OUT)",
+                                "H(OUT)", "C(OUT)",
+                                # RadFrac 侧线产品出口。漏掉它会把侧线产品误判成 Source。
+                                "SP(OUT)",
+                            ]
                             for port_name in out_ports:
                                 out_n = ports.FindNode(port_name)
                                 if out_n:
@@ -211,6 +283,7 @@ class AspenToTopConverter:
                         "label": s_name
                     })
 
+        # 3. 补坐标。extract_coords_from_bkp 会在 .bkp 原文中搜索 ID:<节点名> 后的 At x y。
         for node in nodes:
             coords = extract_coords_from_bkp(bkp_path, node["id"])
             node["x"] = coords["x"] * 100
@@ -222,7 +295,15 @@ class AspenToTopConverter:
         }
 
     def _step2_build_json(self, data: dict, output_json: Path):
-        """Step 2: 构建 ToP JSON"""
+        """Step 2: 构建 ToP JSON。
+
+        JsonBuilder 会加载 Template 下的 ToP 模板，并填充：
+
+        - omProject / omProcessArchive
+        - omProcessGraph.processNodes/processEdges
+        - componentList / componentGroup...
+        - methodPrivateList
+        """
         print("Step 2: 构建 ToP JSON")
         print("-" * 40)
 
@@ -234,7 +315,11 @@ class AspenToTopConverter:
         print(f"输出文件: {output_json}")
 
     def _step3_encrypt(self, input_json: Path, output_hss: Path):
-        """Step 3: 加密为 HSS"""
+        """Step 3: 加密为 HSS。
+
+        注意：加密算法不在本项目中实现。这里通过 HssTool 适配调用
+        export-test/hss_file_tool.py，保证不修改外部工具。
+        """
         print("Step 3: 加密为 HSS")
         print("-" * 40)
 
@@ -307,9 +392,9 @@ class AspenToTopConverter:
 
 def main():
     parser = argparse.ArgumentParser(description="Aspen BKP to ToP HSS 转换器")
-    parser.add_argument("bkp_file", nargs="*", help="BKP 文件路径，支持多个")
+    parser.add_argument("bkp_file", nargs="*", help="BKP 文件路径，支持多个；也可以传入一个文件夹批量转换")
     parser.add_argument("-o", "--output", help="输出 HSS 文件路径；批量转换时请使用 --output-dir")
-    parser.add_argument("-d", "--output-dir", help="输出目录，默认 test_output")
+    parser.add_argument("-d", "--output-dir", help="输出目录，默认 output")
     parser.add_argument("-i", "--intermediate", action="store_true", help="额外保存 Aspen 提取后的标准化 JSON")
     parser.add_argument("--extract-json", help="Aspen 提取 JSON 输出路径，仅单文件转换时有效")
     parser.add_argument("--top-json", help="ToP JSON 输出路径，仅单文件转换时有效")
@@ -346,16 +431,26 @@ def main():
     if not args.bkp_file:
         parser.print_help()
         print("\n示例:")
-        print("   python main.py flash.bkp                    # 一键转换为 test_output/flash.hss")
+        print("   python main.py flash.bkp                    # 一键转换为 output/flash.hss")
         print("   python main.py flash.bkp -o output.hss      # 指定 HSS 输出")
         print("   python main.py flash.bkp -i                 # 同时保存提取 JSON")
         print("   python main.py flash.bkp --json-only        # 只生成 ToP JSON")
+        print("   python main.py bkp_folder                   # 批量转换文件夹中的 BKP")
         print("   python main.py a.bkp b.bkp -d output        # 批量转换")
         print("   python main.py flash.bkp --extract-only data.json       # 仅提取")
         print("   python main.py --build-only data.json --top-json top.json # 仅构建 ToP JSON")
         print("   python main.py --encrypt-only final.json -o out.hss       # 仅加密")
         print("   python main.py --decrypt project.hss out.json  # 解密")
         return
+
+    if len(args.bkp_file) == 1 and Path(args.bkp_file[0]).is_dir():
+        if args.output or args.extract_json or args.top_json:
+            parser.error("文件夹批量转换不能同时使用 --output、--extract-json 或 --top-json，请使用 --output-dir")
+        folder = Path(args.bkp_file[0])
+        bkp_files = sorted(folder.glob("*.bkp"))
+        if not bkp_files:
+            parser.error(f"文件夹中没有 .bkp 文件: {folder}")
+        args.bkp_file = [str(path) for path in bkp_files]
 
     if len(args.bkp_file) > 1 and (args.output or args.extract_json or args.top_json):
         parser.error("批量转换不能同时使用 --output、--extract-json 或 --top-json，请使用 --output-dir")

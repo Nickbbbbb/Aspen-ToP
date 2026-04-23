@@ -5,7 +5,20 @@ from typing import Dict, Any
 
 
 class TemplateLoader:
-    """模板加载器"""
+    """ToP 模板加载器。
+
+    Template 目录中保存了 ToP 软件期望的 JSON 片段：
+
+    - final_template.json: 最外层项目 JSON 外壳。
+    - processNodes/*.json: 各类节点外观和端口定义。
+    - nodeProperties/*.json: 各类节点参数表。
+    - component/*.json: 组分公有信息模板。
+    - componentPrivate/*.json: 组分私有信息模板。
+    - methodPrivateList/*.json: 物性方法模板。
+
+    注意：load_template 必须返回 deep copy。因为构建多个同类型节点时，
+    如果复用同一个 dict，会导致节点 ID/label/属性互相覆盖。
+    """
 
     def __init__(self, template_dir: str = None):
         if template_dir is None:
@@ -15,6 +28,7 @@ class TemplateLoader:
         self._cache = {}
 
     def load_template(self, relative_path: str, use_cache: bool = True) -> Dict[str, Any]:
+        """加载模板并返回深拷贝。"""
         if use_cache and relative_path in self._cache:
             return copy.deepcopy(self._cache[relative_path])
 

@@ -7,7 +7,12 @@ PropertyFiller = Callable[[NodeProps, Dict[str, Any]], NodeProps]
 
 
 def fill_block_properties(block_name: str, block_info: BlockInfo, node_props: NodeProps) -> NodeProps:
-    """Fill ToP node properties for one Aspen block."""
+    """按 Aspen 设备类型把参数填入 ToP 节点属性模板。
+
+    参数来源是 aspen/blocks/*.py 读取出的标准化 params；node_props 是
+    Template/nodeProperties 下对应设备的模板。这里不读取 Aspen COM，也
+    不创建节点 ID，只做字段级映射。
+    """
     params = block_info.get("params", {})
     block_type = block_info["type"]
     filler = PROPERTY_FILLERS.get(block_type)
@@ -17,6 +22,11 @@ def fill_block_properties(block_name: str, block_info: BlockInfo, node_props: No
 
 
 def fill_flash(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
+    """填充 Flash2 闪蒸罐参数。
+
+    Aspen 的 SPEC_OPT 决定 ToP 的 Thermal_specification：
+    TP 表示温度压力规格；PV 表示压力和汽化率规格。
+    """
     node_props["system_pressure"]["value"] = params.get("system_pressure", {}).get("value")
     node_props["system_pressure"]["unit"] = params.get("system_pressure", {}).get("unit", "")
     spec_opt = params.get("SPEC_OPT", {}).get("value")
@@ -35,6 +45,7 @@ def fill_flash(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
 
 
 def fill_heater(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
+    """填充 Heater 加热器/冷却器参数。"""
     node_props["outlet_pressure"]["value"] = params.get("outlet_pressure", {}).get("value")
     node_props["outlet_pressure"]["unit"] = params.get("outlet_pressure", {}).get("unit", "")
     node_props["outlet_stream_temperature"]["value"] = params.get("outlet_stream_temperature", {}).get("value")
@@ -44,6 +55,10 @@ def fill_heater(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
 
 
 def fill_pump(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
+    """填充 Pump 参数。
+
+    Aspen 的 OPT_SPEC=PRES 表示直接指定出口压力；DELP 表示指定压升。
+    """
     opt_spec = params.get("OPT_SPEC", {}).get("value")
     if opt_spec == "PRES":
         node_props["outlet_specification"]["value"] = "0"
@@ -59,6 +74,7 @@ def fill_pump(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
 
 
 def fill_mixer(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
+    """填充 Mixer 参数，重点是出口压力和入口数量。"""
     node_props["outlet_pressure"]["value"] = params.get("outlet_pressure", {}).get("value")
     node_props["outlet_pressure"]["unit"] = params.get("outlet_pressure", {}).get("unit", "")
     node_props["no_inlets"]["value"] = params.get("no_inlets", 0)
@@ -67,6 +83,10 @@ def fill_mixer(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
 
 
 def fill_splitter(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
+    """填充普通 Splitter 参数。
+
+    SSplit 和 FSplit 目前共用该逻辑，差异由 Aspen 读取层整理到 params 中。
+    """
     node_props["outlet_pressure"]["value"] = params.get("outlet_pressure", {}).get("value")
     node_props["outlet_pressure"]["unit"] = params.get("outlet_pressure", {}).get("unit", "")
     node_props["no_outlets"]["value"] = params.get("no_outlets", 0)
@@ -77,6 +97,7 @@ def fill_splitter(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
 
 
 def fill_component_splitter(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
+    """填充 Sep/ComponentSplitter 逐组分分割参数。"""
     node_props["comp_num"]["value"] = params.get("comp_nums", 0)
     node_props["no_outlets"]["value"] = params.get("no_outlets", 0)
     node_props["split_fractions"]["value"] = params.get("split_fractions_value", [])
@@ -87,6 +108,10 @@ def fill_component_splitter(node_props: NodeProps, params: Dict[str, Any]) -> No
 
 
 def fill_heatx(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
+    """填充 HeatX 换热器参数。
+
+    ToP 单位字符串更偏向 W，Aspen 可能返回 Watt，因此这里做轻量替换。
+    """
     node_props["hot_outlet_pressure"]["value"] = params.get("hot_outlet_pressure", {}).get("value")
     node_props["hot_outlet_pressure"]["unit"] = params.get("hot_outlet_pressure", {}).get("unit", "")
     node_props["cold_outlet_pressure"]["value"] = params.get("cold_outlet_pressure", {}).get("value")
@@ -100,6 +125,7 @@ def fill_heatx(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
 
 
 def fill_compressor(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
+    """填充 Compressor 压缩机参数。"""
     node_props["outlet_stream_pressure"]["value"] = params.get("outlet_stream_pressure", {}).get("value")
     node_props["outlet_stream_pressure"]["unit"] = params.get("outlet_stream_pressure", {}).get("unit", "")
     node_props["isentropic_efficiency"]["value"] = params.get("isentropic_efficiency", {}).get("value")
@@ -109,12 +135,18 @@ def fill_compressor(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
 
 
 def fill_valve(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
+    """填充 Valve 阀门参数。"""
     node_props["comp_num"]["value"] = params.get("comp_nums", 0)
     node_props["outlet_pressure"]["value"] = params.get("outlet_pressure", {}).get("value")
     return node_props
 
 
 def fill_column(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
+    """填充 RadFrac 精馏塔参数。
+
+    精馏塔是当前最复杂的设备：除了塔板数、进料板、压力分布，还要处理
+    冷凝器类型、侧线采出数量、回流比和塔顶流量初值。
+    """
     node_props["comp_num"]["value"] = params.get("comp_nums", 0)
     node_props["no_trays"]["value"] = params.get("no_trays", {}).get("value")
     node_props["no_total_trays"]["value"] = params.get("no_trays", {}).get("value")
@@ -130,6 +162,39 @@ def fill_column(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
     liquid_draw = params.get("liquid_side_draw", {})
     node_props["no_vapor_side_draw"]["value"] = len(vapor_draw.get("stream_name", []))
     node_props["no_liquid_side_draw"]["value"] = len(liquid_draw.get("stream_name", []))
+    fill_side_draw_properties(node_props, "vapor", vapor_draw)
+    fill_side_draw_properties(node_props, "liquid", liquid_draw)
+
+    comp_spec = params.get("comp_spec", {})
+    comp_indexes = comp_spec.get("PEC_COMPS_index", [])
+    if len(comp_indexes) >= 1:
+        node_props["comp_spec_1_id"]["value"] = comp_indexes[0]
+        node_props["comp_spec_1_id"]["realValue"] = comp_spec.get("PEC_COMPS", [None])[0]
+        node_props["comp_spec_1_stage"]["value"] = comp_spec.get("SPEC_STREAMS", [None])[0]
+        spec_1_phase = comp_spec.get("SPEC_PHASE", [None])[0]
+        node_props["comp_spec_1_phase"]["realValue"] = "0" if spec_1_phase == "V" else "1"
+        node_props["comp_spec_1_phase"]["value"] = "0" if spec_1_phase == "V" else "1"
+        node_props["comp_spec_1_molar"]["value"] = comp_spec.get("SPEC_DESCRIP", [None])[0]
+
+        if len(comp_indexes) >= 2:
+            node_props["comp_spec_2_id"]["value"] = comp_indexes[1]
+            node_props["comp_spec_2_id"]["realValue"] = comp_spec.get("PEC_COMPS", [None, None])[1]
+            node_props["comp_spec_2_stage"]["value"] = comp_spec.get("SPEC_STREAMS", [None, None])[1]
+            spec_2_phase = comp_spec.get("SPEC_PHASE", [None, None])[1]
+            node_props["comp_spec_2_phase"]["realValue"] = "0" if spec_2_phase == "V" else "1"
+            node_props["comp_spec_2_phase"]["value"] = "0" if spec_2_phase == "V" else "1"
+            node_props["comp_spec_2_molar"]["value"] = comp_spec.get("SPEC_DESCRIP", [None, None])[1]
+        else:
+            node_props["comp_spec_2_id"] = {"isKeyword": True}
+            node_props["comp_spec_2_stage"] = {"isKeyword": True}
+            node_props["comp_spec_2_phase"] = {"isKeyword": True}
+            node_props["top_product_molar_flowrate"] = {
+                "isKeyword": True,
+                "fixed": True,
+                "unitType": "molar_flowrate",
+                "value": params.get("top_molar_flowrate_guess", {}).get("value", 0),
+                "unit": "mol/s",
+            }
 
     condenser_type = params.get("CONDENSER", {}).get("value", "")
     if condenser_type == "PARTIAL-V-L":
@@ -159,7 +224,43 @@ def fill_column(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
     return node_props
 
 
+def fill_side_draw_properties(node_props: NodeProps, phase: str, draw: Dict[str, Any]) -> None:
+    """填充或清空精馏塔侧线参数。
+
+    Column_properties.json 模板里可能带着历史示例侧线数据。当前 Aspen 塔没有
+    侧线时必须显式清空，否则 ToP 会误以为每个塔都有侧线端口和侧线参数。
+    """
+    prefix = f"{phase}_side_draw"
+    streams = draw.get("stream_name", [])
+    stages = draw.get("stages", [])
+    flows = draw.get("flow", [])
+
+    if not streams:
+        node_props[f"{prefix}_stages"] = {"isKeyword": True}
+        node_props[f"{prefix}_flowrate_basis"] = {"isKeyword": True}
+        node_props[f"{prefix}_molar_flowrate"] = {"isKeyword": True, "unitType": "molar_flowrate"}
+        return
+
+    row_headers = [f"{prefix}_{index}" for index in range(len(streams))]
+    stages_prop = node_props[f"{prefix}_stages"]
+    stages_prop["value"] = stages
+    stages_prop["rowHeader"] = row_headers
+    stages_prop["rows"] = streams
+    stages_prop["rowSize"] = len(streams)
+
+    flow_basis = node_props[f"{prefix}_flowrate_basis"]
+    flow_basis["value"] = "0"
+    flow_basis["realValue"] = "0"
+
+    flow_prop = node_props[f"{prefix}_molar_flowrate"]
+    flow_prop["value"] = flows
+    flow_prop["rowHeader"] = row_headers
+    flow_prop["rows"] = streams
+    flow_prop["rowSize"] = len(streams)
+
+
 PROPERTY_FILLERS: Dict[str, PropertyFiller] = {
+    # 新增设备时优先在这里注册填充函数，避免在 graph_builder 中堆 if-else。
     "Flash2": fill_flash,
     "Heater": fill_heater,
     "Pump": fill_pump,

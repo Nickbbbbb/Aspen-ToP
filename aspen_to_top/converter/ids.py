@@ -4,7 +4,16 @@ from typing import Dict
 
 
 class IdGenerator:
-    """ID 生成器"""
+    """ToP JSON ID 生成器。
+
+    ToP 节点 ID 的格式大致为：
+
+        <类型前缀>_<随机8位hex>_<ToP节点类型名><同类计数>
+
+    例如 Flash2 会生成类似 598fddf9_ab12cd34_Flash1。
+    processEdges 中的 source.cell/target.cell 必须引用这些节点 ID，因此
+    同一次构建内要由同一个 IdGenerator 维护计数和映射。
+    """
 
     TYPE_PREFIX_MAP = {
         "Flash2": "598fddf9",
@@ -43,17 +52,21 @@ class IdGenerator:
     }
 
     def __init__(self):
+        # _counters 统计设备节点编号，_stream_counters 统计 Source/Sink 编号。
         self._counters = {}
         self._stream_counters = {}
 
     def reset(self):
+        """重置计数器，保证一次新的转换从 1 开始编号。"""
         self._counters = {}
         self._stream_counters = {}
 
     def _generate_random_hex(self, length: int = 8) -> str:
+        """生成 ToP 节点 ID 中间段使用的短随机 hex。"""
         return ''.join(random.choices('0123456789abcdef', k=length))
 
     def _get_counter(self, block_type: str) -> int:
+        """获取某类设备的递增编号，例如 Flash1、Flash2。"""
         if block_type not in self._counters:
             self._counters[block_type] = 1
         else:
@@ -61,6 +74,7 @@ class IdGenerator:
         return self._counters[block_type]
 
     def generate_block_id(self, block_name: str, block_type: str) -> str:
+        """为 Aspen Block 生成 ToP 设备节点 ID。"""
         prefix = self.TYPE_PREFIX_MAP.get(block_type, "00000000")
         random_part = self._generate_random_hex(8)
         name = self.TYPE_NAME_MAP.get(block_type, block_type)
@@ -68,6 +82,7 @@ class IdGenerator:
         return f"{prefix}_{random_part}_{name}{counter}"
 
     def generate_stream_id(self, stream_name: str, stream_type: str) -> str:
+        """为 Aspen 外部流股生成 Source/Sink 节点 ID。"""
         if stream_type not in self._stream_counters:
             self._stream_counters[stream_type] = 1
         else:
@@ -80,10 +95,12 @@ class IdGenerator:
         return f"{prefix}_{random_part}_{name}{counter}"
 
     def generate_project_id(self, length: int = 8) -> str:
+        """生成工程相关的短随机 ID。"""
         random_bytes = secrets.randbits(length * 4)
         return format(random_bytes, f'0{length}x')
 
     def generate_secure_nineteen(self, length: int = 19) -> str:
+        """生成 19 位数字 ID，用于 ToP 模板中需要长数字字符串的字段。"""
         if length < 1:
             raise ValueError("长度必须大于0")
         digits = '0123456789'

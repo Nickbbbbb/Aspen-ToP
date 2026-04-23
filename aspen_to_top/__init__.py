@@ -8,6 +8,8 @@ from .utils.chemical_mapper import ChemicalMapper
 from .utils.layout import LayoutFixer, extract_coords_from_bkp
 from .main import AspenToTopConverter
 from .api import (
+    convert_single_bkp,
+    convert_bkp_folder,
     convert_bkp_to_hss,
     extract_bkp_data,
     build_top_json,
@@ -26,6 +28,8 @@ __all__ = [
     "LayoutFixer",
     "extract_coords_from_bkp",
     "AspenToTopConverter",
+    "convert_single_bkp",
+    "convert_bkp_folder",
     "convert_bkp_to_hss",
     "extract_bkp_data",
     "build_top_json",

@@ -5,12 +5,29 @@ from types import ModuleType
 
 
 class HssTool:
-    """Adapter for the external export-test HSS encryption tool."""
+    """外部 HSS 加密工具适配器。
+
+    本项目不直接实现 HSS 加密算法，也不修改外部工具。
+    真正的加密/解密函数来自：
+
+    export-test/hss_file_tool.py
+
+    这里做的事情只有三件：
+
+    1. 动态加载 export-test/hss_file_tool.py。
+    2. 在旧 Crypto 环境中补齐 Crypto.Util.Padding 兼容层。
+    3. 对外提供 HssTool.encrypt()/decrypt() 统一入口。
+    """
 
     _module = None
 
     @classmethod
     def _load_external_tool(cls) -> ModuleType:
+        """动态加载 export-test/hss_file_tool.py。
+
+        使用 importlib 动态加载，是因为 export-test 目录名中有短横线，
+        不能作为普通 Python 包名 import。
+        """
         if cls._module is not None:
             return cls._module
 
@@ -36,7 +53,12 @@ class HssTool:
 
     @staticmethod
     def _ensure_padding_compat() -> None:
-        """Provide Crypto.Util.Padding when the environment has an older Crypto package."""
+        """兼容旧 Crypto 包。
+
+        部分环境里能 import Crypto.Cipher.AES，但没有 Crypto.Util.Padding。
+        外部 hss_file_tool.py 会直接 import pad/unpad，所以这里在 sys.modules
+        中临时注册一个最小 PKCS#7 padding 实现，保证外部工具能正常加载。
+        """
         if "Crypto.Util.Padding" in sys.modules:
             return
 
@@ -72,7 +94,10 @@ class HssTool:
 
     @classmethod
     def encrypt(cls, input_file: str, output_file: str) -> bool:
-        """Encrypt a ToP JSON file into HSS using export-test/hss_file_tool.py."""
+        """把 ToP JSON 加密为 HSS。
+
+        input_file 必须是最终 ToP JSON，不是 extracted JSON。
+        """
         if not output_file:
             raise ValueError("未指定输出 HSS 文件")
 
@@ -82,7 +107,7 @@ class HssTool:
 
     @classmethod
     def decrypt(cls, input_file: str, output_file: str) -> bool:
-        """Decrypt an HSS file into JSON using export-test/hss_file_tool.py."""
+        """把 HSS 解密为 JSON，主要用于调试导入失败问题。"""
         if not output_file:
             raise ValueError("未指定输出 JSON 文件")
 
