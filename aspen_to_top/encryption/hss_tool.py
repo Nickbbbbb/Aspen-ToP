@@ -1,7 +1,8 @@
 import importlib.util
 import sys
-from pathlib import Path
 from types import ModuleType
+
+from ..utils.runtime_paths import EXPORT_TOOL_DIR
 
 
 class HssTool:
@@ -31,8 +32,7 @@ class HssTool:
         if cls._module is not None:
             return cls._module
 
-        project_root = Path(__file__).resolve().parents[2]
-        tool_path = project_root / "export-test" / "hss_file_tool.py"
+        tool_path = EXPORT_TOOL_DIR / "hss_file_tool.py"
         if not tool_path.exists():
             raise FileNotFoundError(f"HSS 工具不存在: {tool_path}")
 

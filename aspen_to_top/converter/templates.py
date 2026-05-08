@@ -3,6 +3,8 @@ import copy
 from pathlib import Path
 from typing import Dict, Any
 
+from ..utils.runtime_paths import TEMPLATE_DIR
+
 
 class TemplateLoader:
     """ToP 模板加载器。
@@ -22,8 +24,7 @@ class TemplateLoader:
 
     def __init__(self, template_dir: str = None):
         if template_dir is None:
-            current_dir = Path(__file__).parent.parent.parent
-            template_dir = current_dir / "Template"
+            template_dir = TEMPLATE_DIR
         self.template_dir = Path(template_dir)
         self._cache = {}
 

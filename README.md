@@ -24,12 +24,26 @@ output\case.extracted.json
 - `case.json`: 最终加密进 HSS 的 ToP JSON。
 - `case.extracted.json`: Aspen COM 提取后的标准化 JSON。
 
+## EXE 命令行使用
+
+项目支持打包为 `AspenToTop.exe` 后直接运行：
+
+```bat
+AspenToTop.exe "C:\path\demo.bkp" -i
+AspenToTop.exe "C:\path\bkp_folder" -d "C:\path\output"
+```
+
+打包说明见：
+
+- [可执行文件打包说明](docs/可执行文件打包说明.md)
+
 ## 文档
 
 - [项目总览](docs/项目总览.md)
 - [使用说明](docs/使用说明.md)
 - [转换链路开发详解](docs/转换链路开发详解.md)
 - [开发规范](docs/开发规范.md)
+- [可执行文件打包说明](docs/可执行文件打包说明.md)
 - [文件清理说明](docs/文件清理说明.md)
 - [ToP JSON 构建层说明](aspen_to_top/converter/构建层说明.md)
 - [示例说明](examples/示例说明.md)

@@ -16,8 +16,11 @@ import json
 import argparse
 from pathlib import Path
 
-# 项目根目录。Template、export-test、output 等路径都以它为基准。
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+# 项目根目录。源码运行时是仓库根目录，exe 运行时会退化为 exe 所在目录。
+from aspen_to_top.utils.runtime_paths import DEFAULT_OUTPUT_DIR, TEMPLATE_DIR, WORKSPACE_ROOT
+
+# 对外保留旧名字，避免 api.py 等调用方需要跟着改接口。
+PROJECT_ROOT = WORKSPACE_ROOT
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
@@ -43,11 +46,11 @@ class AspenToTopConverter:
 
     def __init__(self, template_dir: str = None):
         if template_dir is None:
-            template_dir = PROJECT_ROOT / "Template"
+            template_dir = TEMPLATE_DIR
         self.template_dir = Path(template_dir)
         # 默认输出目录固定为项目根目录 output，方便外部同学使用统一约定。
-        self.default_output_dir = PROJECT_ROOT / "output"
-        self.default_extract_json = PROJECT_ROOT / "aspen_fixed_data.json"
+        self.default_output_dir = DEFAULT_OUTPUT_DIR
+        self.default_extract_json = self.default_output_dir / "aspen_fixed_data.json"
 
     def convert(
         self,
@@ -392,6 +395,7 @@ class AspenToTopConverter:
 
 def main():
     parser = argparse.ArgumentParser(description="Aspen BKP to ToP HSS 转换器")
+    parser.add_argument("--version", action="version", version="Aspen-ToP 1.0.0")
     parser.add_argument("bkp_file", nargs="*", help="BKP 文件路径，支持多个；也可以传入一个文件夹批量转换")
     parser.add_argument("-o", "--output", help="输出 HSS 文件路径；批量转换时请使用 --output-dir")
     parser.add_argument("-d", "--output-dir", help="输出目录，默认 output")
