@@ -10,8 +10,12 @@ from aspen_to_top import convert_bkp_folder, convert_single_bkp
 
 
 EXAMPLES_DIR = Path(__file__).resolve().parent
+
+
 def run_single():
-    bkp_file = EXAMPLES_DIR / "single_bkp" / "镇海乙烯全流程.bkp"
+    # 单文件示例使用体量较小、转换速度更快的 alkane.bkp，
+    # 方便首次接触项目的同学直接运行和观察输出结果。
+    bkp_file = EXAMPLES_DIR / "single_bkp" / "alkane.bkp"
     result = convert_single_bkp(bkp_file)
     print("单文件转换完成:")
     print_result(result)
@@ -39,7 +43,7 @@ def main():
     elif mode == "batch":
         run_batch()
     elif mode == "all":
-        # run_single()
+        run_single()
         run_batch()
     else:
         print("用法: python examples\\demo_convert.py [single|batch|all]")
