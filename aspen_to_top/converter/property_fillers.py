@@ -218,6 +218,14 @@ def fill_column(node_props: NodeProps, params: Dict[str, Any]) -> NodeProps:
     node_props["tray_2_pressure"]["unit"] = params.get("tray_2_pressure", {}).get("unit", "")
     node_props["tray_pressure_drop"]["unit"] = params.get("tray_pressure_drop", {}).get("unit", "")
     node_props["tray_pressure"]["value"] = params.get("tray_pressure", [])
+    if "pressure_view" in params:
+        pressure_view = params.get("pressure_view", {}).get("value")
+        node_props["pressure_view"] = {
+            "isKeyword": True,
+            "fixed": True,
+            "value": pressure_view,
+            "realValue": pressure_view,
+        }
 
     node_props["reflux_ratio_guess"]["value"] = params.get("reflux_ratio_guess", {}).get("value")
     node_props["top_molar_flowrate_guess"]["value"] = params.get("top_molar_flowrate_guess", {}).get("value")
@@ -254,6 +262,7 @@ def fill_side_draw_properties(node_props: NodeProps, phase: str, draw: Dict[str,
 
     flow_prop = node_props[f"{prefix}_molar_flowrate"]
     flow_prop["value"] = flows
+    flow_prop["unit"] = flow_prop.get("unit") or "mol/s"
     flow_prop["rowHeader"] = row_headers
     flow_prop["rows"] = streams
     flow_prop["rowSize"] = len(streams)

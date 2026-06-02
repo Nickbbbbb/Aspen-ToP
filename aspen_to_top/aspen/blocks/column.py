@@ -96,6 +96,7 @@ class ColumnExtractor(BaseBlockExtractor):
         result["tray_1_pressure"] = ColumnExtractor.get_prop(tree, fr"{base}\PRES1")
         result["tray_2_pressure"] = ColumnExtractor.get_prop(tree, fr"{base}\PRES2")
         result["tray_pressure_drop"] = ColumnExtractor.get_prop(tree, fr"{base}\DP_STAGE")
+        result["pressure_view"] = ColumnExtractor.get_prop(tree, fr"{base}\VIEW_PRES")
 
         if result["tray_2_pressure"]["value"] == 0:
             # Aspen 有时只给第一块板压力；这里补齐 ToP 需要的第二块板压力和压降。

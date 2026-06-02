@@ -33,6 +33,7 @@ class ChemicalMapper:
         ["2,2,4-TRIMETHYLPENTANE", "2:2:4-01", "C8H18-13", "", 114.232, "2,2,4-TRIMETHYLPENTANE", "540-84-1"],
         ["1,2,3-TRIMETHYLBENZENE", "1:2:3-01", "C9H12-6", "", 120.195, "1,2,3-TRIMETHYLBENZENE", "526-73-8"],
         ["n-NONANE", "N-NON-01", "C9H20-1", "", 128.259, "N-NONANE", "111-84-2"],
+        ["NITROGEN", "NITROGEN", "N2", "", 28.013, "NITROGEN", "7727-37-9"],
         ["WATER", "WATER", "H2O", "", 18.015, "WATER", "7732-18-5"],
         ["ETHANOL", "ETHAN-02", "C2H6O-2", "", 341.44, "ETHANOL", "64-17-5"]
     ]

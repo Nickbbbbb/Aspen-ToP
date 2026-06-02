@@ -14,7 +14,13 @@ from .api import (
     extract_bkp_data,
     build_top_json,
     encrypt_to_hss,
-    decrypt_hss
+    decrypt_hss,
+    recover_extracted_from_top_json,
+    recover_extracted_from_hss,
+    build_bkp_from_extracted,
+    build_bkp_from_extracted_with_com,
+    convert_single_hss_to_bkp,
+    convert_hss_folder_to_bkp,
 )
 
 __all__ = [
@@ -35,6 +41,12 @@ __all__ = [
     "build_top_json",
     "encrypt_to_hss",
     "decrypt_hss",
+    "recover_extracted_from_top_json",
+    "recover_extracted_from_hss",
+    "build_bkp_from_extracted",
+    "build_bkp_from_extracted_with_com",
+    "convert_single_hss_to_bkp",
+    "convert_hss_folder_to_bkp",
 ]
 
 __version__ = "1.0.0"

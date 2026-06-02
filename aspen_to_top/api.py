@@ -15,9 +15,13 @@
 """
 
 from pathlib import Path
+import time
 from typing import Dict, List, Optional, Union
 
 from .main import AspenToTopConverter, PROJECT_ROOT
+from .reverse.bkp_builder import ExtractedJsonToBkpBuilder
+from .reverse.com_applier import ExtractedJsonComApplier
+from .reverse.top_json_to_aspen import TopJsonToAspenExtractor
 
 
 DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "output"
@@ -155,3 +159,121 @@ def decrypt_hss(
     target_json = str(output_json) if output_json else str(Path(hss_file).with_suffix(".json"))
     HssTool.decrypt(str(hss_file), target_json)
     return target_json
+
+
+def recover_extracted_from_top_json(
+    input_json: Union[str, Path],
+    output_json: Optional[Union[str, Path]] = None
+) -> str:
+    extractor = TopJsonToAspenExtractor()
+    target_json = str(output_json) if output_json else str(Path(input_json).with_suffix(".recovered.extracted.json"))
+    extractor.from_top_json(str(input_json), target_json)
+    return target_json
+
+
+def recover_extracted_from_hss(
+    hss_file: Union[str, Path],
+    output_json: Optional[Union[str, Path]] = None
+) -> str:
+    extractor = TopJsonToAspenExtractor()
+    target_json = str(output_json) if output_json else str(Path(hss_file).with_suffix(".recovered.extracted.json"))
+    extractor.from_hss(str(hss_file), target_json)
+    return target_json
+
+
+def build_bkp_from_extracted(
+    input_json: Union[str, Path],
+    output_bkp: Optional[Union[str, Path]] = None
+) -> str:
+    builder = ExtractedJsonToBkpBuilder()
+    return builder.build_file(str(input_json), str(output_bkp) if output_bkp else None)
+
+
+def build_bkp_from_extracted_with_com(
+    input_json: Union[str, Path],
+    output_bkp: Optional[Union[str, Path]] = None,
+    run_simulation: bool = False,
+) -> str:
+    builder = ExtractedJsonToBkpBuilder()
+    target_path = Path(output_bkp).resolve() if output_bkp else Path(input_json).with_suffix(".bkp").resolve()
+    skeleton_path = target_path.with_name(f"{target_path.stem}.skeleton{target_path.suffix}")
+    builder.build_file(str(input_json), str(skeleton_path))
+    applier = ExtractedJsonComApplier()
+    try:
+        result = applier.apply_file(
+            str(input_json),
+            str(skeleton_path),
+            str(target_path),
+            run_simulation=run_simulation,
+        )
+        builder.inject_source_stream_flow_units_file(str(input_json), result)
+        builder.inject_radfrac_mole_flow_units_file(str(input_json), result)
+        builder.inject_radfrac_design_specs_file(str(input_json), result)
+        _remove_aspen_sidecars(target_path)
+        return result
+    finally:
+        try:
+            skeleton_path.unlink()
+        except FileNotFoundError:
+            pass
+
+
+def convert_single_hss_to_bkp(
+    hss_file: Union[str, Path],
+    output_bkp: Optional[Union[str, Path]] = None,
+    output_dir: Optional[Union[str, Path]] = None,
+) -> str:
+    hss_path = Path(hss_file).resolve()
+    if not hss_path.exists():
+        raise FileNotFoundError(f"HSS 文件不存在: {hss_path}")
+    if hss_path.suffix.lower() != ".hss":
+        raise ValueError(f"输入文件不是 .hss: {hss_path}")
+
+    base_output_dir = Path(output_dir).resolve() if output_dir else DEFAULT_OUTPUT_DIR
+    base_output_dir.mkdir(parents=True, exist_ok=True)
+    target_bkp = Path(output_bkp).resolve() if output_bkp else base_output_dir / f"{hss_path.stem}.bkp"
+    recovered_json = target_bkp.with_suffix(".recovered.extracted.json")
+
+    try:
+        recover_extracted_from_hss(hss_path, recovered_json)
+        result = build_bkp_from_extracted_with_com(recovered_json, target_bkp)
+        _remove_aspen_sidecars(target_bkp)
+        return result
+    finally:
+        decrypted_json = recovered_json.with_name(f"{recovered_json.stem}.decrypted.json")
+        for temp_file in (recovered_json, decrypted_json):
+            try:
+                temp_file.unlink()
+            except FileNotFoundError:
+                pass
+
+
+def convert_hss_folder_to_bkp(
+    folder: Union[str, Path],
+    output_dir: Optional[Union[str, Path]] = None,
+) -> List[str]:
+    folder_path = Path(folder).resolve()
+    if not folder_path.exists():
+        raise FileNotFoundError(f"文件夹不存在: {folder_path}")
+    if not folder_path.is_dir():
+        raise NotADirectoryError(f"输入路径不是文件夹: {folder_path}")
+
+    hss_files = sorted(folder_path.glob("*.hss"))
+    if not hss_files:
+        raise FileNotFoundError(f"文件夹中没有 .hss 文件: {folder_path}")
+
+    return [convert_single_hss_to_bkp(hss_file, output_dir=output_dir) for hss_file in hss_files]
+
+
+def _remove_aspen_sidecars(bkp_path: Union[str, Path]) -> None:
+    path = Path(bkp_path)
+    for suffix in (".apw", ".def"):
+        sidecar = path.with_suffix(suffix)
+        for _ in range(8):
+            try:
+                sidecar.unlink()
+                break
+            except FileNotFoundError:
+                break
+            except PermissionError:
+                time.sleep(0.5)

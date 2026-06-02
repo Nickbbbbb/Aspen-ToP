@@ -14,6 +14,7 @@
 import sys
 import json
 import argparse
+import time
 from pathlib import Path
 
 # 项目根目录。源码运行时是仓库根目录，exe 运行时会退化为 exe 所在目录。
@@ -28,6 +29,9 @@ from aspen_to_top.aspen.connector import AspenConnector
 from aspen_to_top.aspen.extractor import AspenExtractor
 from aspen_to_top.converter.json_builder import JsonBuilder
 from aspen_to_top.encryption.hss_tool import HssTool
+from aspen_to_top.reverse.bkp_builder import ExtractedJsonToBkpBuilder
+from aspen_to_top.reverse.com_applier import ExtractedJsonComApplier
+from aspen_to_top.reverse.top_json_to_aspen import TopJsonToAspenExtractor
 from aspen_to_top.utils.layout import LayoutFixer, extract_coords_from_bkp
 
 
@@ -394,82 +398,132 @@ class AspenToTopConverter:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Aspen BKP to ToP HSS 转换器")
-    parser.add_argument("--version", action="version", version="Aspen-ToP 1.0.0")
-    parser.add_argument("bkp_file", nargs="*", help="BKP 文件路径，支持多个；也可以传入一个文件夹批量转换")
-    parser.add_argument("-o", "--output", help="输出 HSS 文件路径；批量转换时请使用 --output-dir")
-    parser.add_argument("-d", "--output-dir", help="输出目录，默认 output")
-    parser.add_argument("-i", "--intermediate", action="store_true", help="额外保存 Aspen 提取后的标准化 JSON")
-    parser.add_argument("--extract-json", help="Aspen 提取 JSON 输出路径，仅单文件转换时有效")
-    parser.add_argument("--top-json", help="ToP JSON 输出路径，仅单文件转换时有效")
-    parser.add_argument("--json-only", action="store_true", help="只生成 ToP JSON，不生成 HSS")
-    parser.add_argument("--extract-only", metavar="JSON", help="仅提取数据到 JSON")
-    parser.add_argument("--build-only", nargs="?", metavar="JSON", const="aspen_fixed_data.json", help="仅构建 JSON")
-    parser.add_argument("--encrypt-only", nargs="?", metavar="JSON", const="final_result.json", help="仅加密为 HSS")
-    parser.add_argument("--decrypt", nargs=2, metavar=("HSS", "JSON"), help="解密 HSS 文件")
+    parser = argparse.ArgumentParser(
+        description="Aspen/ToP 文件转换工具，仅提供四个用户功能：单个/批量 BKP 转 HSS，单个/批量 HSS 转 BKP。"
+    )
+    parser.add_argument("--version", action="version", version="Aspen-ToP 1.1.0")
+    subparsers = parser.add_subparsers(dest="command")
+
+    single_bkp = subparsers.add_parser("bkp-to-hss", help="1. 单个 .bkp 文件转 .hss")
+    single_bkp.add_argument("input", help="输入 .bkp 文件")
+    single_bkp.add_argument("-o", "--output", help="输出 .hss 文件，默认 output/<同名>.hss")
+
+    batch_bkp = subparsers.add_parser("batch-bkp-to-hss", help="2. 批量 .bkp 文件转 .hss")
+    batch_bkp.add_argument("input_dir", help="包含 .bkp 文件的输入文件夹")
+    batch_bkp.add_argument("-d", "--output-dir", default=str(DEFAULT_OUTPUT_DIR), help="输出文件夹，默认 output")
+
+    single_hss = subparsers.add_parser("hss-to-bkp", help="3. 单个 .hss 文件转 .bkp")
+    single_hss.add_argument("input", help="输入 .hss 文件")
+    single_hss.add_argument("-o", "--output", help="输出 .bkp 文件，默认 output/<同名>.bkp")
+
+    batch_hss = subparsers.add_parser("batch-hss-to-bkp", help="4. 批量 .hss 文件转 .bkp")
+    batch_hss.add_argument("input_dir", help="包含 .hss 文件的输入文件夹")
+    batch_hss.add_argument("-d", "--output-dir", default=str(DEFAULT_OUTPUT_DIR), help="输出文件夹，默认 output")
 
     args = parser.parse_args()
-
-    if args.decrypt:
-        hss_file, json_file = args.decrypt
-        HssTool.decrypt(hss_file, json_file)
-        return
-
-    if args.extract_only:
-        converter = AspenToTopConverter()
-        if not args.bkp_file:
-            parser.error("--extract-only 需要提供 BKP 文件")
-        converter.extract_only(args.bkp_file[0], args.extract_only)
-        return
-
-    if args.build_only:
-        converter = AspenToTopConverter()
-        converter.build_only(args.build_only, args.top_json)
-        return
-
-    if args.encrypt_only:
-        converter = AspenToTopConverter()
-        converter.encrypt_only(args.encrypt_only, args.output)
-        return
-
-    if not args.bkp_file:
+    if not args.command:
         parser.print_help()
         print("\n示例:")
-        print("   python main.py flash.bkp                    # 一键转换为 output/flash.hss")
-        print("   python main.py flash.bkp -o output.hss      # 指定 HSS 输出")
-        print("   python main.py flash.bkp -i                 # 同时保存提取 JSON")
-        print("   python main.py flash.bkp --json-only        # 只生成 ToP JSON")
-        print("   python main.py bkp_folder                   # 批量转换文件夹中的 BKP")
-        print("   python main.py a.bkp b.bkp -d output        # 批量转换")
-        print("   python main.py flash.bkp --extract-only data.json       # 仅提取")
-        print("   python main.py --build-only data.json --top-json top.json # 仅构建 ToP JSON")
-        print("   python main.py --encrypt-only final.json -o out.hss       # 仅加密")
-        print("   python main.py --decrypt project.hss out.json  # 解密")
+        print(r"   AspenToTop.exe bkp-to-hss samples\乙烯塔.bkp -o output\乙烯塔.hss")
+        print(r"   AspenToTop.exe batch-bkp-to-hss samples -d output_hss")
+        print(r"   AspenToTop.exe hss-to-bkp samples\乙烯塔.hss -o output\乙烯塔.bkp")
+        print(r"   AspenToTop.exe batch-hss-to-bkp samples -d output_bkp")
         return
 
-    if len(args.bkp_file) == 1 and Path(args.bkp_file[0]).is_dir():
-        if args.output or args.extract_json or args.top_json:
-            parser.error("文件夹批量转换不能同时使用 --output、--extract-json 或 --top-json，请使用 --output-dir")
-        folder = Path(args.bkp_file[0])
+    if args.command == "bkp-to-hss":
+        converter = AspenToTopConverter()
+        output_dir = str(Path(args.output).resolve().parent) if args.output else str(DEFAULT_OUTPUT_DIR)
+        result = converter.convert(args.input, output_hss=args.output, output_dir=output_dir)
+        remove_temp_file(result.get("top_json"))
+        remove_temp_file(result.get("extract_json"))
+        print(f"完成: {result['hss']}")
+        return
+
+    if args.command == "batch-bkp-to-hss":
+        folder = Path(args.input_dir).resolve()
         bkp_files = sorted(folder.glob("*.bkp"))
         if not bkp_files:
             parser.error(f"文件夹中没有 .bkp 文件: {folder}")
-        args.bkp_file = [str(path) for path in bkp_files]
+        converter = AspenToTopConverter()
+        for bkp_file in bkp_files:
+            result = converter.convert(str(bkp_file), output_dir=args.output_dir)
+            remove_temp_file(result.get("top_json"))
+            remove_temp_file(result.get("extract_json"))
+            print(f"完成: {result['hss']}")
+        return
 
-    if len(args.bkp_file) > 1 and (args.output or args.extract_json or args.top_json):
-        parser.error("批量转换不能同时使用 --output、--extract-json 或 --top-json，请使用 --output-dir")
+    if args.command == "hss-to-bkp":
+        hss_to_bkp(args.input, args.output)
+        return
 
-    converter = AspenToTopConverter()
-    for bkp_file in args.bkp_file:
-        converter.convert(
-            bkp_file,
-            output_hss=args.output,
-            save_intermediate=args.intermediate,
-            output_dir=args.output_dir,
-            extract_json=args.extract_json,
-            top_json=args.top_json,
-            json_only=args.json_only,
-        )
+    if args.command == "batch-hss-to-bkp":
+        folder = Path(args.input_dir).resolve()
+        hss_files = sorted(folder.glob("*.hss"))
+        if not hss_files:
+            parser.error(f"文件夹中没有 .hss 文件: {folder}")
+        output_dir = Path(args.output_dir).resolve()
+        output_dir.mkdir(parents=True, exist_ok=True)
+        for hss_file in hss_files:
+            hss_to_bkp(str(hss_file), str(output_dir / f"{hss_file.stem}.bkp"))
+
+
+def hss_to_bkp(input_hss: str, output_bkp: str = None) -> str:
+    hss_path = Path(input_hss).resolve()
+    if not hss_path.exists():
+        raise FileNotFoundError(f"HSS 文件不存在: {hss_path}")
+    if hss_path.suffix.lower() != ".hss":
+        raise ValueError(f"输入文件不是 .hss: {hss_path}")
+
+    output_path = Path(output_bkp).resolve() if output_bkp else DEFAULT_OUTPUT_DIR / f"{hss_path.stem}.bkp"
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    recovered_json = output_path.with_suffix(".recovered.extracted.json")
+
+    try:
+        extractor = TopJsonToAspenExtractor()
+        extractor.from_hss(str(hss_path), str(recovered_json))
+        builder = ExtractedJsonToBkpBuilder()
+        skeleton_path = output_path.with_name(f"{output_path.stem}.skeleton{output_path.suffix}")
+        builder.build_file(str(recovered_json), str(skeleton_path))
+        applier = ExtractedJsonComApplier()
+        result = applier.apply_file(str(recovered_json), str(skeleton_path), str(output_path))
+        builder.inject_source_stream_flow_units_file(str(recovered_json), result)
+        builder.inject_radfrac_mole_flow_units_file(str(recovered_json), result)
+        builder.inject_radfrac_design_specs_file(str(recovered_json), result)
+        remove_aspen_sidecars(output_path)
+        print(f"完成: {result}")
+        return result
+    finally:
+        for temp_file in (
+            recovered_json,
+            recovered_json.with_name(f"{recovered_json.stem}.decrypted.json"),
+            output_path.with_name(f"{output_path.stem}.skeleton{output_path.suffix}"),
+        ):
+            try:
+                temp_file.unlink()
+            except FileNotFoundError:
+                pass
+
+
+def remove_aspen_sidecars(bkp_path: Path) -> None:
+    for suffix in (".apw", ".def"):
+        sidecar = bkp_path.with_suffix(suffix)
+        for _ in range(8):
+            try:
+                sidecar.unlink()
+                break
+            except FileNotFoundError:
+                break
+            except PermissionError:
+                time.sleep(0.5)
+
+
+def remove_temp_file(path: str = None) -> None:
+    if not path:
+        return
+    try:
+        Path(path).unlink()
+    except FileNotFoundError:
+        pass
 
 
 if __name__ == "__main__":
