@@ -1,0 +1,10 @@
+INPUT: designspec_create_probe.inm
+MODNAME: apmain
+RUNID: designspec_create_probe
+NEW_RUNID: designspec_create_probe
+OLD_RUNID: designspec_create_probe
+PDF: designspec_create_probe.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:
+DBCONN: _1553vsp.ads

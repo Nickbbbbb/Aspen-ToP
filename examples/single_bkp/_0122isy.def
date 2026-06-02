@@ -1,0 +1,10 @@
+SLAVE:
+INPUT: _0122isy.inm
+MODNAME: apmain
+RUNID: _0122isy
+NEW_RUNID: _0122isy
+OLD_RUNID: _0122isy
+PDF: _0122isy.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:

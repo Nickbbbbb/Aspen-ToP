@@ -1,0 +1,10 @@
+INPUT: roundtrip.inm
+MODNAME: apmain
+RUNID: roundtrip
+NEW_RUNID: roundtrip
+OLD_RUNID: roundtrip
+PDF: roundtrip.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:
+DBCONN: _1131vud.ads

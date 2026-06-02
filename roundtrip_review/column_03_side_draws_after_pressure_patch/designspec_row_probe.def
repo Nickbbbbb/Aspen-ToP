@@ -1,0 +1,10 @@
+INPUT: designspec_row_probe.inm
+MODNAME: apmain
+RUNID: designspec_row_probe
+NEW_RUNID: designspec_row_probe
+OLD_RUNID: designspec_row_probe
+PDF: designspec_row_probe.appdf
+USERNAME: Administrator
+XMOD: D:\aspen\aspen\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:
+DBCONN: _1656xwk.ads
